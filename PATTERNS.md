@@ -12,6 +12,7 @@
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |
+| `/pantheon-mind-forge` | mind-forge | engineering | complex system design |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |

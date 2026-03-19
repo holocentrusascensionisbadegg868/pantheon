@@ -21,7 +21,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] John Von Neumann — game theory, computing architecture
 - [x] Alan Turing — computation, AI foundations
 - [x] Albert Einstein — special/general relativity, thought experiments
-- [ ] Nikola Tesla — AC current, electromagnetic resonance
+- [x] Nikola Tesla — AC current, electromagnetic resonance
 - [ ] Marie Curie — radioactivity research under extreme constraint
 - [ ] Linus Pauling — chemical bonding, vitamin C controversy
 - [ ] Niels Bohr — complementarity, quantum mechanics
