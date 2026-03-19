@@ -11,7 +11,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Andrej Karpathy — Tesla AI, OpenAI, educator
 - [x] Andy Grove — Intel, high-output management
 - [x] Jony Ive — Apple industrial design
-- [ ] Taiichi Ohno — Toyota Production System
+- [x] Taiichi Ohno — Toyota Production System
 - [ ] Sam Altman — Y Combinator, OpenAI
 - [ ] Marc Andreessen — Netscape, software-eats-the-world thesis
 
