@@ -25,6 +25,7 @@
 | `/pantheon-phantom-machine` | phantom-machine | engineering | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | decision-making | high-stakes uncertainty ahead |
 | `/pantheon-scratch-build` | scratch-build | engineering | facing a complex system you need to master |
+| `/pantheon-shape-the-ground` | shape-the-ground | decision-making | facing a confrontation |
 | `/pantheon-strip-to-structure` | strip-to-structure | engineering | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | leadership | structural bottleneck |
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
