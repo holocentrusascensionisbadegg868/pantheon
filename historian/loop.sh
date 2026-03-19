@@ -29,7 +29,8 @@ for hero in "${HEROES[@]}"; do
   read -r
 
   echo "$hero" >> "$PROGRESS"
-  sed -i.bak "s/- \[ \] ${hero}/- [x] ${hero}/" "$SEED" && rm "${SEED}.bak"
+  HERO_ESCAPED=$(printf '%s\n' "$hero" | sed 's/[[\.*^$()+?{|]/\\&/g')
+  sed "s/- \[ \] ${HERO_ESCAPED}/- [x] ${hero}/" "$SEED" > "${SEED}.tmp" && mv "${SEED}.tmp" "$SEED"
 
   cd "$REPO_ROOT"
   bash scripts/generate-patterns.sh
