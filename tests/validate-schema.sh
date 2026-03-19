@@ -14,9 +14,12 @@ if ! grep -q "^---" "$FILE"; then
   exit 1
 fi
 
+# Extract YAML frontmatter (between first and second ---)
+FRONTMATTER=$(awk '/^---/{if(++count==2)exit; if(count==1)next} count==1' "$FILE")
+
 for field in "${REQUIRED_FIELDS[@]}"; do
-  if ! grep -q "^${field}:" "$FILE"; then
-    echo "FAIL: $FILE — missing field: ${field}"
+  if ! echo "$FRONTMATTER" | grep -q "^${field}:"; then
+    echo "FAIL: $FILE — missing YAML field: ${field}"
     ERRORS=$((ERRORS + 1))
   fi
 done
