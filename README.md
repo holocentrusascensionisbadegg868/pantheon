@@ -1,5 +1,9 @@
 # Pantheon
 
+<p align="center">
+  <img src="assets/logo.svg" alt="Pantheon" width="600" />
+</p>
+
 > "Elon Musk didn't invent first principles thinking. Toyota didn't invent the factory stop. Steve Jobs didn't invent subtraction. Every modern genius is a synthesizer — standing on shoulders built across centuries of human problem-solving. Pantheon codifies those shoulders into a deployable AI library."
 
 ---
