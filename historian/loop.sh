@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Historian Phase 1 — Build Loop
 # Usage: bash historian/loop.sh
-# Autonomous: runs all heroes without pausing
+# Autonomous: calls Claude Code for each hero, writes gem files, commits
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -12,6 +12,12 @@ PROMPT_TPL="${SCRIPT_DIR}/prompt.md"
 
 touch "$PROGRESS"
 
+# Verify claude CLI is available
+if ! command -v claude &>/dev/null; then
+  echo "ERROR: claude CLI not found. Install: npm install -g @anthropic-ai/claude-code"
+  exit 1
+fi
+
 # Extract unchecked heroes
 mapfile -t HEROES < <(grep "^- \[ \]" "$SEED" | sed 's/^- \[ \] //' | sed 's/ —.*//')
 echo "Phase 1 — ${#HEROES[@]} heroes remaining"
@@ -21,23 +27,28 @@ for hero in "${HEROES[@]}"; do
 
   echo ""
   echo "=== $hero ==="
-  echo "--- RESEARCH PROMPT ---"
-  sed "s/{HERO}/$hero/g" "$PROMPT_TPL"
-  echo "--- END PROMPT ---"
-  echo ""
+
+  PROMPT=$(sed "s/{HERO}/$hero/g" "$PROMPT_TPL")
+
+  cd "$REPO_ROOT"
+  if ! claude --dangerously-skip-permissions -p "$PROMPT"; then
+    echo "ERROR: Claude failed on $hero — skipping"
+    continue
+  fi
+
   echo "$hero" >> "$PROGRESS"
   HERO_ESCAPED=$(printf '%s\n' "$hero" | sed 's/[[\.*^$()+?{|]/\\&/g')
   sed "s/- \[ \] ${HERO_ESCAPED}/- [x] ${hero}/" "$SEED" > "${SEED}.tmp" && mv "${SEED}.tmp" "$SEED"
 
-  cd "$REPO_ROOT"
   bash scripts/generate-patterns.sh
 
   if ! git diff --quiet || ! git diff --staged --quiet; then
-    git add patterns/ commands/ PATTERNS.md historian/seed-list.md
+    git add patterns/ commands/ PATTERNS.md historian/seed-list.md historian/.progress
     git commit -m "feat(patterns): $hero gem added"
-    echo "✓ Committed: $hero"
+    git push
+    echo "✓ Committed + pushed: $hero"
   else
-    echo "WARNING: No changes detected — may be duplicate, check patterns/"
+    echo "WARNING: No changes detected for $hero — may be a duplicate merge"
   fi
 done
 
