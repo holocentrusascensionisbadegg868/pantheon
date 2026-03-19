@@ -23,7 +23,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Albert Einstein — special/general relativity, thought experiments
 - [x] Nikola Tesla — AC current, electromagnetic resonance
 - [x] Marie Curie — radioactivity research under extreme constraint
-- [ ] Linus Pauling — chemical bonding, vitamin C controversy
+- [x] Linus Pauling — chemical bonding, vitamin C controversy
 - [ ] Niels Bohr — complementarity, quantum mechanics
 - [ ] Stephen Hawking — physics communication under physical constraint
 
