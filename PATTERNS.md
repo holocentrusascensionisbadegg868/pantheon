@@ -6,6 +6,7 @@
 | Command | Pattern | Domain | Trigger |
 |---------|---------|--------|---------|
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
+| `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |
