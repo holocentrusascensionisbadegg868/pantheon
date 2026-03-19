@@ -14,6 +14,7 @@
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
 | `/pantheon-scratch-build` | scratch-build | engineering | facing a complex system you need to master |
+| `/pantheon-strip-to-structure` | strip-to-structure | engineering | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | leadership | structural bottleneck |
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
 | `/pantheon-two-way-door` | two-way-door | decision-making | decision paralysis |
