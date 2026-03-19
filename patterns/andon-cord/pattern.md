@@ -46,9 +46,13 @@ origin-modern: toyota-1970
 
 ### The Pattern
 
+The F-bomb is the most precisely calibrated frustration signal in human communication. Low false-positive rate — most people rarely swear. High signal strength — it fires involuntarily, below the level of deliberate communication. Zero ambiguity — nobody drops one when things are going well.
+
+When someone swears at an AI agent mid-session, the agent is almost never receiving it as a signal. It continues. It tries variation #4. It apologizes and reframes. The line never stopped. Toyota solved this problem in 1960 with a physical cord. The modern equivalent is recognizing that *the word itself* — whatever word the person almost never uses — is the cord being pulled.
+
 In Toyota's manufacturing plants, any worker who sees a defect can pull a cord that stops the entire production line. Work halts. The team gathers. The root cause is identified and fixed before production resumes. No workarounds. No "keep moving and fix later." The stop is respected, not punished.
 
-Applied to knowledge work: when a frustration signal fires, all current tasks pause. The AI acknowledges the stop in one sentence, asks what broke and what the goal was, and does not resume until the blocker is explicitly resolved. This is a full strategy reset — not a tone adjustment, not a sympathy response.
+Applied to AI systems: when the frustration signal fires — F-bomb, "WHY is it doing this," "I give up" — all current tasks pause. The agent acknowledges the stop in one sentence, asks what broke and what the goal was, and does not resume until the blocker is explicitly resolved. This is a full strategy reset — not a tone adjustment, not a sympathy response.
 
 ### Protocol (extended)
 
@@ -95,6 +99,18 @@ Workers initially resisted — stopping the line felt like failure. Ohno reframe
 
 **Tesla Model 3 Production Ramp (2017–2018)**
 During "production hell," Musk camped in the Fremont factory applying stop-and-fix discipline. When a bottleneck appeared: stop, root-cause, fix — not keep moving and hope.
+
+**The F-Bomb Signal Discovery (2026)**
+
+A builder running a multi-agent AI system hit a moment of genuine frustration mid-session. An agent had gone in circles for several iterations — trying variation after variation of the same broken approach, each one framed differently, none of them addressing the actual problem. In that moment, the builder swore out loud at the terminal.
+
+The agent kept going.
+
+The realization that followed: the F-bomb is the most reliable frustration signal a human can produce, and no AI system treats it as one. It's involuntary — it bypasses deliberate communication and fires directly from the limbic system. It's low false-positive — people who rarely swear only produce it when something has genuinely gone wrong. It's precise — it means *everything stop, something is broken at the root.*
+
+Toyota workers pull a physical cord. Builders swear at their terminals. The signal is the same. The question is whether the system is listening.
+
+The Andon Cord pattern, applied to AI agents: the F-bomb is the cord. When it's pulled, the line stops.
 
 ### Lineage
 
