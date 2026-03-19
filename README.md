@@ -17,20 +17,10 @@ Every pattern answers the same question: *what did this genius actually do diffe
 ## Install (Claude Code)
 
 ```bash
-# Commands — invoke manually with /pantheon, /pantheon-musk-filter, etc.
-cp ~/Dev-Projects/pantheon/commands/*.md ~/.claude/commands/
-
-# Skills — auto-trigger when Claude detects the right context
-cp ~/Dev-Projects/pantheon/patterns/*/adapters/claude.md ~/.claude/skills/
+curl -fsSL https://raw.githubusercontent.com/dkschrei/pantheon/main/install.sh | bash
 ```
 
 Restart Claude Code after installing.
-
-**Available commands:**
-- `/pantheon` — index, lists all patterns
-- `/pantheon-andon-cord` — invoke the factory stop protocol
-- `/pantheon-musk-filter` — run the pre-build gate
-- `/pantheon-feynman-clarity` — run the debugging clarity test
 
 ---
 
@@ -64,6 +54,27 @@ patterns/
 
 ---
 
+## The Stacking Demo
+
+Same problem. Three patterns. Three different lenses.
+
+**Problem:** "I want to build a reporting dashboard."
+
+**`/pantheon-musk-filter`:**
+→ Who specifically requires this? What breaks without it? Delete 30% of scope first.
+
+**`/pantheon-feynman-clarity`:**
+→ Explain in plain English what decision this dashboard helps make.
+  If you can't answer that, you don't understand the problem yet.
+
+**`/pantheon-andon-cord`:**
+→ (If you're adding this because your team is frustrated with existing reports)
+  Stop. Ask: what broke and what were you trying to accomplish?
+
+Three useful outputs. You synthesize. You decide. This is not a prompt library — it's a council of advisors.
+
+---
+
 ## Why this exists
 
 I burned through a session's worth of Claude tokens because an agent automated a broken process instead of questioning whether the process should exist. Classic Step 5 before Step 1. I needed the Musk Filter — I just didn't have it installed anywhere.
@@ -76,20 +87,16 @@ The patterns in this library are not new. They have been sitting in history book
 
 ## Status
 
-**v0.1 — private, stealth mode**
+**v1.0 — Building. Target: May 6, 2026 (Anthropic Developer Conference, SF)**
 
-- [x] Andon Cord Protocol (Toyota)
+- [x] Schema v1.0 — YAML frontmatter + two-zone format (Protocol TLDR + The Book)
+- [x] Andon Cord Protocol (Toyota / Taiichi Ohno)
 - [x] Musk Filter (Elon Musk)
 - [x] Feynman Clarity Test (Richard Feynman)
-- [ ] Jobs Subtraction (Steve Jobs)
-- [ ] Working Backwards (Jeff Bezos)
-- [ ] Inversion (Charlie Munger)
-- [ ] First Principles (Tesla / Musk)
-- [ ] Hamming's Question (Richard Hamming)
-- [ ] Kaizen (Toyota)
-- [ ] Shannon Compression (Claude Shannon)
+- [ ] 22-27 more gems via Historian agent research loop
+- [ ] Public launch + community contributions open
 
-Going public at 10 patterns.
+3-gem preview available now via install above.
 
 ---
 

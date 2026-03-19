@@ -48,11 +48,7 @@ Patterns also auto-trigger when Claude detects the right context (if skills are 
 ## Install
 
 ```bash
-# Commands (manual /invoke)
-cp pantheon/commands/*.md ~/.claude/commands/
-
-# Skills (auto-trigger)
-cp pantheon/patterns/*/adapters/claude.md ~/.claude/skills/
+curl -fsSL https://raw.githubusercontent.com/dkschrei/pantheon/main/install.sh | bash
 ```
 
 Restart Claude Code after installing.
