@@ -25,6 +25,7 @@ events:
     gem-role: applied — eliminated every non-essential manufacturing step until Model T reached $290
 lineage: aristotle-analytics-350bc → descartes-systematic-doubt-1637 → ford-waste-elimination-1908 → ohno-muda-1950 → musk-filter-2002
 origin-earliest: aristotle-350bc
+origin-type: authored
 origin-modern: musk-2002
 ---
 

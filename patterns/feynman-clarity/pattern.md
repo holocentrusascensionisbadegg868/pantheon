@@ -25,6 +25,7 @@ events:
     gem-role: applied — rebuilt physics curriculum using plain-language explanation as quality bar
 lineage: socratic-method-470bc → aristotle-analytics-350bc → descartes-clear-ideas-1637 → einstein-thought-experiments-1905 → feynman-clarity-1950s
 origin-earliest: socrates-470bc
+origin-type: authored
 origin-modern: feynman-1950
 ---
 

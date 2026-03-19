@@ -29,6 +29,7 @@ events:
 lineage: {origin-name} → {intermediate} → {modern-hero}
 origin-earliest: {name}-{year}bc or {year}
 origin-modern: {name}-{year}
+origin-type: authored | historian
 ---
 
 # {Pattern Name}

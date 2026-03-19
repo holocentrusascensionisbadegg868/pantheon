@@ -25,6 +25,7 @@ events:
     gem-role: applied — 60-iteration AI agent system built genuine capability but hit local maximum; Musk Filter outer loop identified non-load-bearing rules in 24-rule CLAUDE.md, restoring execution velocity without discarding real capability
 lineage: hegel-dialectic-1807 → schumpeter-creative-destruction-1942 → ohno-kaizen-kaikaku-1950 → boyd-ooda-tempo-1960 → the-ratchet
 origin-earliest: hegel-1807
+origin-type: authored
 origin-modern: ohno-1950
 ---
 

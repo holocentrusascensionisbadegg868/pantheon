@@ -42,8 +42,15 @@ for hero in "${HEROES[@]}"; do
 
   bash scripts/generate-patterns.sh
 
+  # Run PB&J test on any newly written pattern
+  for new_pattern in $(git diff --name-only HEAD 2>/dev/null | grep "^patterns/.*/pattern.md" | awk -F/ '{print $2}'); do
+    echo "  Running PB&J test: $new_pattern"
+    bash tests/pbnj-test.sh "$new_pattern" 2>/dev/null || echo "  WARNING: PB&J test failed for $new_pattern"
+  done
+  bash scripts/generate-pbnj.sh
+
   if ! git diff --quiet || ! git diff --staged --quiet; then
-    git add patterns/ commands/ PATTERNS.md historian/seed-list.md historian/.progress
+    git add patterns/ commands/ PATTERNS.md PBNJ.md historian/seed-list.md historian/.progress tests/pbnj-outputs/
     git commit -m "feat(patterns): $hero gem added"
     git push
     echo "✓ Committed + pushed: $hero"
