@@ -6,6 +6,7 @@
 | Command | Pattern | Domain | Trigger |
 |---------|---------|--------|---------|
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
+| `/pantheon-anomaly-isolation` | anomaly-isolation | engineering | anomalous data |
 | `/pantheon-axiom-blitz` | axiom-blitz | engineering | messy domain with no formal foundation |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
