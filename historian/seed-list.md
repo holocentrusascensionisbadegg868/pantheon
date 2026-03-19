@@ -10,7 +10,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Tony Fadell — iPod, iPhone, Nest
 - [x] Andrej Karpathy — Tesla AI, OpenAI, educator
 - [x] Andy Grove — Intel, high-output management
-- [ ] Jony Ive — Apple industrial design
+- [x] Jony Ive — Apple industrial design
 - [ ] Taiichi Ohno — Toyota Production System
 - [ ] Sam Altman — Y Combinator, OpenAI
 - [ ] Marc Andreessen — Netscape, software-eats-the-world thesis
