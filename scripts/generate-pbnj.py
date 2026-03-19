@@ -10,12 +10,13 @@ PBNJ_FILE = REPO_ROOT / "PBNJ.md"
 
 def summarize(output_text, max_words=140):
     """Strip markdown noise, return first max_words as a single prose paragraph."""
-    # Remove markdown headers, horizontal rules, bold markers, blockquotes
+    # Remove markdown headers, horizontal rules, bold markers, blockquotes, tables
     text = re.sub(r'^#{1,6}\s+', '', output_text, flags=re.MULTILINE)
     text = re.sub(r'^---+\s*$', '', text, flags=re.MULTILINE)
     text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
     text = re.sub(r'^>\s+', '', text, flags=re.MULTILINE)
     text = re.sub(r'^\s*[-*]\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'\|', '', text)  # strip pipe chars — they break outer table
     # Collapse whitespace and newlines into single spaces
     text = re.sub(r'\s+', ' ', text).strip()
     # Trim to max_words
