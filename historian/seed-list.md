@@ -9,7 +9,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Jeff Bezos — Amazon, Blue Origin
 - [x] Tony Fadell — iPod, iPhone, Nest
 - [x] Andrej Karpathy — Tesla AI, OpenAI, educator
-- [ ] Andy Grove — Intel, high-output management
+- [x] Andy Grove — Intel, high-output management
 - [ ] Jony Ive — Apple industrial design
 - [ ] Taiichi Ohno — Toyota Production System
 - [ ] Sam Altman — Y Combinator, OpenAI

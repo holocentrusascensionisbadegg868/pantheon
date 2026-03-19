@@ -7,6 +7,7 @@
 |---------|---------|--------|---------|
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
+| `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
 | `/pantheon-scratch-build` | scratch-build | engineering | facing a complex system you need to master |
