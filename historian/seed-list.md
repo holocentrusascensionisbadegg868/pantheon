@@ -39,7 +39,7 @@ Progress auto-tracked in `historian/.progress`.
 
 ## Industrial Pioneers (6)
 - [x] Henry Ford — assembly line, waste elimination, accessibility
-- [ ] Frederick Winslow Taylor — scientific management, time-motion study
+- [x] Frederick Winslow Taylor — scientific management, time-motion study
 - [ ] Andrew Carnegie — vertical integration, systematic philanthropy
 - [ ] W. Edwards Deming — quality systems, PDCA cycle
 - [ ] Alfred Sloan — decentralized management, GM restructuring
