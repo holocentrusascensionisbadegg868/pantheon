@@ -19,7 +19,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Richard Feynman — quantum physics, Manhattan Project, Challenger
 - [x] Claude Shannon — information theory, entropy
 - [x] John Von Neumann — game theory, computing architecture
-- [ ] Alan Turing — computation, AI foundations
+- [x] Alan Turing — computation, AI foundations
 - [ ] Albert Einstein — special/general relativity, thought experiments
 - [ ] Nikola Tesla — AC current, electromagnetic resonance
 - [ ] Marie Curie — radioactivity research under extreme constraint
