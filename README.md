@@ -16,17 +16,21 @@ Every pattern answers the same question: *what did this genius actually do diffe
 
 ## Install (Claude Code)
 
-Copy a pattern adapter to your skills directory:
-
 ```bash
-# Install a single pattern
-cp patterns/andon-cord/adapters/claude.md ~/.claude/skills/
+# Commands — invoke manually with /pantheon, /pantheon-musk-filter, etc.
+cp ~/Dev-Projects/pantheon/commands/*.md ~/.claude/commands/
 
-# Install all available patterns
-cp patterns/*/adapters/claude.md ~/.claude/skills/
+# Skills — auto-trigger when Claude detects the right context
+cp ~/Dev-Projects/pantheon/patterns/*/adapters/claude.md ~/.claude/skills/
 ```
 
-Restart Claude Code. The pattern is now active.
+Restart Claude Code after installing.
+
+**Available commands:**
+- `/pantheon` — index, lists all patterns
+- `/pantheon-andon-cord` — invoke the factory stop protocol
+- `/pantheon-musk-filter` — run the pre-build gate
+- `/pantheon-feynman-clarity` — run the debugging clarity test
 
 ---
 
