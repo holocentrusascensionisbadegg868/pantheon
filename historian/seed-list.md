@@ -7,7 +7,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Elon Musk — SpaceX, Tesla, Neuralink
 - [x] Steve Jobs — Apple, Pixar
 - [x] Jeff Bezos — Amazon, Blue Origin
-- [ ] Tony Fadell — iPod, iPhone, Nest
+- [x] Tony Fadell — iPod, iPhone, Nest
 - [ ] Andrej Karpathy — Tesla AI, OpenAI, educator
 - [ ] Andy Grove — Intel, high-output management
 - [ ] Jony Ive — Apple industrial design
