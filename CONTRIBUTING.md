@@ -98,6 +98,23 @@ git push origin gem/{gem-name}
 
 ---
 
+## Cross-system validation (authored gems)
+
+After pushing an authored gem (✦), run a cross-system integrity check: feed the originating system or session the validation prompt and ask it to evaluate whether the published gem faithfully captures the original intent.
+
+The prompt template lives at the end of `/pantheon-gem-builder.md` (Phase 7). Fill in:
+- `{GEM_NAME}` — the pattern slug
+- `{ORIGINAL_INTENT}` — the problem and insight in plain language, from the source session
+
+Three questions the originating system answers:
+1. **Fidelity** — did the published gem capture the original problem and insight?
+2. **Scope** — did abstraction/expansion serve the intent or overreach?
+3. **Actionability** — does the Protocol section give enough to apply it immediately in context?
+
+If a gap surfaces, patch at the right layer (universal gap → `pattern.md`, platform-specific → `adapters/claude.md`), push, and confirm. This loop caught the missing Nexus tool bindings in `vessel-and-soul` on first use.
+
+---
+
 ## What Pantheon is not
 
 - A collection of good ideas

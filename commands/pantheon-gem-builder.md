@@ -157,6 +157,49 @@ Build all required files using SCHEMA.md as the canonical format:
 
 ---
 
+## Phase 7: Cross-System Validation (after push)
+
+After the gem is committed and pushed, provide the following prompt for the originating system to run — the agent or session that produced the insight the gem was built from. This closes the loop: the source evaluates whether the published artifact faithfully captures the original intent.
+
+Provide this prompt verbatim, with `{GEM_NAME}`, `{PATTERN_URL}`, and `{ORIGINAL_INTENT}` filled in:
+
+---
+
+```
+Evaluate whether a published Pantheon gem faithfully captures its original intent.
+
+ORIGINAL INTENT:
+{ORIGINAL_INTENT}
+
+PUBLISHED GEM (fetch and read):
+https://raw.githubusercontent.com/dkschrei/pantheon/main/patterns/{GEM_NAME}/pattern.md
+
+Answer three questions:
+
+1. FIDELITY — Does the published gem capture the original problem and insight accurately?
+   What if anything was lost or distorted in translation?
+
+2. SCOPE — Did the abstraction or expansion serve the original intent, or does it overreach?
+   Is the core insight still visible through the framing?
+
+3. ACTIONABILITY — Does the Protocol section (TLDR at the top) give enough to apply this
+   immediately in the context where the insight originated? Or did depth come at the cost
+   of practical utility?
+
+Be direct. If the gem drifted from its source, say so specifically and name the fix.
+```
+
+---
+
+If the cross-system evaluation surfaces a gap (as it did for vessel-and-soul — the Nexus tool bindings were abstracted out), apply the fix in the appropriate layer:
+- Universal gap → patch `pattern.md`
+- Platform-specific gap → patch `adapters/claude.md`
+- Scope drift → revise The Book framing
+
+Then push the patch and confirm with the originating system.
+
+---
+
 ## The Standard
 
 Pantheon is not a collection of good ideas. It is a library of cognitive moves — the specific, non-obvious, universally-applicable things that the best practitioners do when everyone else fails. Every gem in it must be worth installing in an agent's permanent context. That is the test: would a practitioner be worse off not having this? If the answer is "probably not" or "only in specific situations," it is not a Pantheon gem.
