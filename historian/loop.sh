@@ -49,6 +49,7 @@ for hero in "${HEROES[@]}"; do
   done
   bash scripts/generate-pbnj.sh
   bash scripts/generate-practitioners.sh
+  python3 scripts/generate-commands.py "$REPO_ROOT"
 
   if ! git diff --quiet || ! git diff --staged --quiet; then
     git add patterns/ commands/ PATTERNS.md PBNJ.md PRACTITIONERS.md historian/seed-list.md historian/.progress tests/pbnj-outputs/

@@ -27,9 +27,10 @@ if [ -n "$LOCAL_DIR" ] && [ -d "${LOCAL_DIR}/commands" ]; then
   for adapter in "${LOCAL_DIR}"/patterns/*/adapters/claude.md; do
     gem_name=$(basename "$(dirname "$(dirname "$adapter")")")
     cp "$adapter" "${CLAUDE_SKILLS}/pantheon-${gem_name}.md"
+    cp "$adapter" "${CLAUDE_COMMANDS}/pantheon-${gem_name}.md"
     SKILLS_COUNT=$((SKILLS_COUNT + 1))
   done
-  echo "  ✓ ${SKILLS_COUNT} skills → ${CLAUDE_SKILLS}/"
+  echo "  ✓ ${SKILLS_COUNT} gems → ${CLAUDE_SKILLS}/ + ${CLAUDE_COMMANDS}/"
 
 else
   # --- Remote install (curl | bash) ---
@@ -58,12 +59,13 @@ for f in tree:
 ")
   echo "  ✓ ${COMMANDS_COUNT} commands → ${CLAUDE_COMMANDS}/"
 
-  # Install patterns/*/adapters/claude.md as skills
+  # Install patterns/*/adapters/claude.md as both skills AND commands
   SKILLS_COUNT=0
   while IFS= read -r path; do
     [ -z "$path" ] && continue
     gem_name=$(echo "$path" | python3 -c "import sys; p=sys.stdin.read().strip().split('/'); print(p[1])")
     curl -fsSL "${RAW}/${path}" -o "${CLAUDE_SKILLS}/pantheon-${gem_name}.md"
+    curl -fsSL "${RAW}/${path}" -o "${CLAUDE_COMMANDS}/pantheon-${gem_name}.md"
     SKILLS_COUNT=$((SKILLS_COUNT + 1))
   done < <(echo "$TREE" | python3 -c "
 import sys, json
@@ -72,13 +74,13 @@ for f in tree:
     if f['path'].startswith('patterns/') and f['path'].endswith('/adapters/claude.md'):
         print(f['path'])
 ")
-  echo "  ✓ ${SKILLS_COUNT} skills → ${CLAUDE_SKILLS}/"
+  echo "  ✓ ${SKILLS_COUNT} gems → ${CLAUDE_SKILLS}/ + ${CLAUDE_COMMANDS}/"
 fi
 
 echo ""
 echo "Pantheon installed. Restart Claude Code to activate."
 echo ""
-echo "Installed commands:"
-for cmd in "${CLAUDE_COMMANDS}"/pantheon*.md "${CLAUDE_COMMANDS}"/pantheon.md; do
-  [ -f "$cmd" ] && echo "  /$(basename "$cmd" .md)"
-done | sort -u
+echo "Installed commands ($(ls "${CLAUDE_COMMANDS}"/pantheon*.md 2>/dev/null | wc -l | tr -d ' ') total):"
+ls "${CLAUDE_COMMANDS}"/pantheon*.md 2>/dev/null | while read -r cmd; do
+  echo "  /$(basename "$cmd" .md)"
+done | sort
