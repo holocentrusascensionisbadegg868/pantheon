@@ -1,6 +1,6 @@
 ---
 name: ohno-circle
-aliases: [genchi-genbutsu, chalk-circle, go-and-see, reality-first, standing-observation]
+aliases: [genchi-genbutsu, chalk-circle, go-and-see, reality-first, standing-observation, toyota, kaizen, tps, toyota-production-system, taiichi-ohno]
 domain: [engineering, debugging, systems, decision-making, quality-control]
 trigger: [premature solution, theorizing without evidence, debugging from logs alone, "I think the problem is", solving from a dashboard, never visited the actual system, armchair diagnosis]
 practitioners:

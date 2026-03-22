@@ -17,46 +17,53 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
   const searchResults = useMemo(() => {
     if (!query.trim() || query.length < 2) return [];
     const q = query.toLowerCase();
-    const results = [];
-    const addedGemIds = new Set();
+    const seen = new Set();
+    const tiers = [[], [], [], []]; // [gem name/alias, practitioner name, event name, soft matches]
 
     for (const gem of gems) {
       const gemId = `gem:${gem.name}`;
-
-      // Match by gem name or aliases
+      // Tier 1: gem name or alias matches
       if (gem.name.toLowerCase().includes(q) || (gem.aliases || []).some(a => a.toLowerCase().includes(q))) {
-        if (!addedGemIds.has(gemId)) {
-          results.push({ id: gemId, type: 'gem', label: gem.name, data: gem });
-          addedGemIds.add(gemId);
-        }
+        if (!seen.has(gemId)) { seen.add(gemId); tiers[0].push({ id: gemId, type: 'gem', label: gem.name, data: gem }); }
       }
+    }
 
-      // Match by practitioner name or application/org — surface the gem, not the practitioner
+    for (const gem of gems) {
+      const gemId = `gem:${gem.name}`;
+      // Tier 2: practitioner name matches → surface the gem
       for (const p of gem.practitioners) {
-        const nameMatch = p.name.toLowerCase().includes(q);
-        const appMatch = (p.application || '').toLowerCase().includes(q);
-        if ((nameMatch || appMatch) && !addedGemIds.has(gemId)) {
-          results.push({ id: gemId, type: 'gem', label: gem.name, data: gem, matchedPractitioner: p.name });
-          addedGemIds.add(gemId);
+        if (p.name.toLowerCase().includes(q) && !seen.has(gemId)) {
+          seen.add(gemId);
+          tiers[1].push({ id: gemId, type: 'gem', label: gem.name, data: gem, matchedPractitioner: p.name });
           break;
-        }
-      }
-
-      // Match by domain name
-      if (!addedGemIds.has(gemId) && gem.domains.some(d => d.toLowerCase().includes(q))) {
-        results.push({ id: gemId, type: 'gem', label: gem.name, data: gem });
-        addedGemIds.add(gemId);
-      }
-
-      // Match by event name or description
-      for (const e of gem.events) {
-        if (e.name.toLowerCase().includes(q) || (e.description || '').toLowerCase().includes(q)) {
-          results.push({ id: `event:${gem.name}:${e.name}`, type: 'event', label: e.name, data: { ...e, gemName: gem.name } });
         }
       }
     }
 
-    return results.slice(0, 12);
+    for (const gem of gems) {
+      // Tier 3: event name matches
+      for (const e of gem.events) {
+        const eId = `event:${gem.name}:${e.name}`;
+        if (e.name.toLowerCase().includes(q) && !seen.has(eId)) {
+          seen.add(eId);
+          tiers[2].push({ id: eId, type: 'event', label: e.name, data: { ...e, gemName: gem.name } });
+        }
+      }
+    }
+
+    for (const gem of gems) {
+      const gemId = `gem:${gem.name}`;
+      // Tier 4: application text or event description — broadest, lowest priority
+      for (const p of gem.practitioners) {
+        if ((p.application || '').toLowerCase().includes(q) && !seen.has(gemId)) {
+          seen.add(gemId);
+          tiers[3].push({ id: gemId, type: 'gem', label: gem.name, data: gem, matchedPractitioner: p.name });
+          break;
+        }
+      }
+    }
+
+    return [...tiers[0], ...tiers[1], ...tiers[2], ...tiers[3]].slice(0, 12);
   }, [query, gems]);
   lastResultsRef.current = searchResults;
 

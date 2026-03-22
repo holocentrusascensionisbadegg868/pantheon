@@ -1,6 +1,6 @@
 ---
 name: flow-line
-aliases: [ford-assembly-line, moving-line, continuous-flow, one-piece-flow]
+aliases: [ford-assembly-line, moving-line, continuous-flow, one-piece-flow, toyota, assembly-line, production-line]
 domain: [engineering, systems, process-design]
 trigger: [batch processing, work sitting idle, handoff delays, "we process in batches", queue buildup, throughput bottleneck, long cycle time]
 practitioners:

@@ -2,15 +2,13 @@ import React from 'react';
 
 function CollapseTab({ onToggle }) {
   return (
-    <div className="flex-shrink-0 w-6 bg-pantheon-card border-l border-pantheon-border flex items-center justify-center">
-      <button
-        onClick={onToggle}
-        className="h-16 w-full flex items-center justify-center text-pantheon-muted hover:text-pantheon-text transition-colors text-base"
-        title="Open sidebar"
-      >
-        ‹
-      </button>
-    </div>
+    <button
+      onClick={onToggle}
+      className="flex-shrink-0 w-6 h-full bg-pantheon-card border-l border-pantheon-border flex items-center justify-center text-pantheon-muted hover:text-pantheon-text hover:bg-pantheon-border/30 transition-colors text-base"
+      title="Open sidebar"
+    >
+      ‹
+    </button>
   );
 }
 
