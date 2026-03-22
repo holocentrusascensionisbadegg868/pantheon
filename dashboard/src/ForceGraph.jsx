@@ -2,7 +2,8 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import * as d3 from 'd3';
 
 const COLORS = {
-  gem: '#c9a84c',
+  gem: '#8a7a3a',        // historian gems — muted gold
+  gemAuthored: '#f0c040', // authored gems ✦ — bright gold
   practitioner: '#6ee7b7',
   event: '#93c5fd',
   link: '#2a2a3a',
@@ -84,12 +85,23 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       const el = d3.select(this);
       if (d.type === 'gem') {
         const s = d.radius;
+        const isAuthored = d.data.originType === 'authored';
+        const gemColor = isAuthored ? COLORS.gemAuthored : COLORS.gem;
         el.append('polygon')
           .attr('points', `0,${-s} ${s},0 0,${s} ${-s},0`)
-          .attr('fill', COLORS.gem)
-          .attr('fill-opacity', 0.15)
-          .attr('stroke', COLORS.gem)
-          .attr('stroke-width', 1.5);
+          .attr('fill', gemColor)
+          .attr('fill-opacity', isAuthored ? 0.2 : 0.15)
+          .attr('stroke', gemColor)
+          .attr('stroke-width', isAuthored ? 2 : 1.5);
+        if (isAuthored) {
+          el.append('text')
+            .text('✦')
+            .attr('dy', -s - 4)
+            .attr('text-anchor', 'middle')
+            .attr('fill', COLORS.gemAuthored)
+            .attr('font-size', '9px')
+            .attr('opacity', 0.9);
+        }
       } else if (d.type === 'practitioner') {
         el.append('circle')
           .attr('r', d.radius)
@@ -117,7 +129,10 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       })
       .attr('dy', d => d.radius + 14)
       .attr('text-anchor', 'middle')
-      .attr('fill', d => d.type === 'gem' ? COLORS.gem : d.type === 'practitioner' ? COLORS.practitioner : COLORS.event)
+      .attr('fill', d => {
+        if (d.type === 'gem') return d.data.originType === 'authored' ? COLORS.gemAuthored : COLORS.gem;
+        return d.type === 'practitioner' ? COLORS.practitioner : COLORS.event;
+      })
       .attr('font-size', d => d.type === 'event' ? '9px' : '11px')
       .attr('font-weight', d => d.type === 'gem' ? '600' : '400')
       .attr('opacity', d => d.type === 'event' ? 0.6 : 0.85);

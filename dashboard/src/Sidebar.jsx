@@ -81,14 +81,27 @@ function GemDetail({ gem, onNavigate }) {
           </div>
         </div>
       )}
-      {gem.originType && (
+      {gem.originType === 'authored' && gem.authoredBy ? (
+        <div className="p-3 rounded-lg border border-yellow-500/30 bg-yellow-500/5">
+          <div className="flex items-center gap-1.5 mb-1">
+            <span className="text-yellow-400 text-xs">✦</span>
+            <h4 className="text-yellow-400 text-xs uppercase tracking-wider font-medium">Authored Gem</h4>
+          </div>
+          <p className="text-xs text-pantheon-muted">
+            Created by{' '}
+            <a href={`https://github.com/dkschrei`} target="_blank" rel="noopener noreferrer"
+              className="text-yellow-400 hover:underline">{gem.authoredBy}</a>
+            {' · '}
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer"
+              className="text-yellow-400 hover:underline">view pattern</a>
+          </p>
+        </div>
+      ) : gem.originType ? (
         <div>
           <h4 className="text-pantheon-muted text-xs uppercase tracking-wider mb-1">Origin</h4>
-          <span className={`px-2 py-0.5 rounded text-xs ${gem.originType === 'authored' ? 'bg-pantheon-accent/10 text-pantheon-accent' : 'bg-pantheon-event/10 text-pantheon-event'}`}>
-            {gem.originType === 'authored' ? 'Authored' : 'Historian'}
-          </span>
+          <span className="px-2 py-0.5 rounded text-xs bg-pantheon-event/10 text-pantheon-event">Historian</span>
         </div>
-      )}
+      ) : null}
       {gem.lineage && (
         <div>
           <h4 className="text-pantheon-muted text-xs uppercase tracking-wider mb-1">Lineage</h4>
