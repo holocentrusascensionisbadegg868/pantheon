@@ -28,7 +28,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
         }
       }
       for (const e of gem.events) {
-        if (e.name.toLowerCase().includes(q)) {
+        if (e.name.toLowerCase().includes(q) || (e.description || '').toLowerCase().includes(q)) {
           results.push({ id: `event:${gem.name}:${e.name}`, type: 'event', label: e.name, data: { ...e, gemName: gem.name } });
         }
       }

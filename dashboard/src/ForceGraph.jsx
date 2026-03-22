@@ -12,11 +12,15 @@ const COLORS = {
 
 export default function ForceGraph({ data, onNodeClick, selectedNode }) {
   const svgRef = useRef();
+  const zoomRef = useRef();
+  const nodeSelRef = useRef();
+  const linkSelRef = useRef();
 
   const handleClick = useCallback((event, d) => {
     onNodeClick({ id: d.id, type: d.type, label: d.label, data: d.data });
   }, [onNodeClick]);
 
+  // Main effect: rebuild graph only when data changes
   useEffect(() => {
     if (!data.nodes.length) return;
 
@@ -32,6 +36,7 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       .scaleExtent([0.2, 4])
       .on('zoom', (event) => g.attr('transform', event.transform));
     svg.call(zoom);
+    zoomRef.current = { zoom, svg, g, width, height };
 
     const defs = svg.append('defs');
     ['applied', 'violated', 'practices'].forEach(type => {
@@ -168,26 +173,51 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    if (selectedNode) {
-      node.style('opacity', d => {
-        if (d.id === selectedNode.id) return 1;
-        const connected = data.links.some(l =>
-          (l.source.id || l.source) === selectedNode.id && (l.target.id || l.target) === d.id ||
-          (l.target.id || l.target) === selectedNode.id && (l.source.id || l.source) === d.id
-        );
-        return connected ? 0.9 : 0.2;
-      });
-      link.style('opacity', d => {
-        const src = d.source.id || d.source;
-        const tgt = d.target.id || d.target;
-        return src === selectedNode.id || tgt === selectedNode.id ? 0.8 : 0.08;
-      });
-    }
+    nodeSelRef.current = { node, link, nodes: data.nodes, links: data.links };
 
     svg.call(zoom.transform, d3.zoomIdentity.translate(width / 4, height / 4).scale(0.7));
 
     return () => { simulation.stop(); tooltip.remove(); };
-  }, [data, selectedNode, handleClick]);
+  }, [data, handleClick]);
+
+  // Separate effect: highlight + zoom to node when selection changes
+  useEffect(() => {
+    if (!nodeSelRef.current) return;
+    const { node, link, nodes, links } = nodeSelRef.current;
+
+    if (!selectedNode) {
+      node.style('opacity', 1);
+      link.style('opacity', 0.6);
+      return;
+    }
+
+    node.style('opacity', d => {
+      if (d.id === selectedNode.id) return 1;
+      const connected = links.some(l =>
+        (l.source.id || l.source) === selectedNode.id && (l.target.id || l.target) === d.id ||
+        (l.target.id || l.target) === selectedNode.id && (l.source.id || l.source) === d.id
+      );
+      return connected ? 0.9 : 0.2;
+    });
+    link.style('opacity', d => {
+      const src = d.source.id || d.source;
+      const tgt = d.target.id || d.target;
+      return src === selectedNode.id || tgt === selectedNode.id ? 0.8 : 0.08;
+    });
+
+    // Zoom to the selected node
+    const target = nodes.find(n => n.id === selectedNode.id);
+    if (target && target.x != null && zoomRef.current) {
+      const { zoom, svg, width, height } = zoomRef.current;
+      const scale = 1.8;
+      const tx = width / 2 - target.x * scale;
+      const ty = height / 2 - target.y * scale;
+      svg.transition().duration(600).call(
+        zoom.transform,
+        d3.zoomIdentity.translate(tx, ty).scale(scale)
+      );
+    }
+  }, [selectedNode]);
 
   return <svg ref={svgRef} className="w-full h-full" style={{ background: '#0a0a0f' }} />;
 }

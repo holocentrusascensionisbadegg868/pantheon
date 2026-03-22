@@ -1,6 +1,6 @@
 ---
 name: build-the-machine
-aliases: [machine-that-makes-the-machine, logistics-first, hemiunu-method, second-order-construction, factory-as-product]
+aliases: [machine-that-makes-the-machine, logistics-first, hemiunu-method, second-order-construction, factory-as-product, pyramids-of-giza, giza, great-pyramid]
 domain: [engineering, systems, leadership, decision-making, process-design]
 trigger: [monumental goal, "we can't produce fast enough", high-volume sustained delivery, precision at scale, building something that takes years, supply chain bottleneck before construction begins, "how do we do this at this scale"]
 practitioners:
