@@ -205,18 +205,21 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       return src === selectedNode.id || tgt === selectedNode.id ? 0.8 : 0.08;
     });
 
-    // Zoom to the selected node
-    const target = nodes.find(n => n.id === selectedNode.id);
-    if (target && target.x != null && zoomRef.current) {
-      const { zoom, svg, width, height } = zoomRef.current;
-      const scale = 1.8;
-      const tx = width / 2 - target.x * scale;
-      const ty = height / 2 - target.y * scale;
-      svg.transition().duration(600).call(
-        zoom.transform,
-        d3.zoomIdentity.translate(tx, ty).scale(scale)
-      );
-    }
+    // Zoom to the selected node — delay so the simulation has time to settle
+    const timer = setTimeout(() => {
+      const target = nodes.find(n => n.id === selectedNode.id);
+      if (target && target.x != null && !isNaN(target.x) && zoomRef.current) {
+        const { zoom, svg, width, height } = zoomRef.current;
+        const scale = 1.8;
+        const tx = width / 2 - target.x * scale;
+        const ty = height / 2 - target.y * scale;
+        svg.transition().duration(600).call(
+          zoom.transform,
+          d3.zoomIdentity.translate(tx, ty).scale(scale)
+        );
+      }
+    }, 400);
+    return () => clearTimeout(timer);
   }, [selectedNode]);
 
   return <svg ref={svgRef} className="w-full h-full" style={{ background: '#0a0a0f' }} />;

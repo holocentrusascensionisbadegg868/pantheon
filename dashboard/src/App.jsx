@@ -12,8 +12,6 @@ export default function App() {
   const graphData = buildGraphData(gems, filterType, filterValue);
 
   const handleSearchSelect = (result) => {
-    setFilterType('all');
-    setFilterValue('');
     setSelectedNode(result);
   };
 
