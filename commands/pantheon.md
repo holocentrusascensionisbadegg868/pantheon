@@ -42,6 +42,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-strip-to-structure` | strip-to-structure | Claude Shannon | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | Sam Altman | structural bottleneck |
 | `/pantheon-taste-gate` | taste-gate | Steve Jobs | feature list growing |
+| `/pantheon-the-combination` | the-combination | John D. Rockefeller | cutthroat competition |
 | `/pantheon-the-ratchet` | the-ratchet ✦ | Taiichi Ohno | inner loop velocity decreasing |
 | `/pantheon-time-and-motion` | time-and-motion | Frederick Winslow Taylor | optimize process |
 | `/pantheon-two-way-door` | two-way-door | Jeff Bezos | decision paralysis |
@@ -75,4 +76,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 35 patterns*
+*github.com/dkschrei/pantheon — 36 patterns*

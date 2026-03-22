@@ -191,6 +191,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1948-1983 | Derived geodesic dome geometry by saturating structural design with constraints — maximum strength per unit material, uniform stress distribution, triangulated load paths — arriving at forms no architect had imagined |
 
+## Bill Gates
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-combination](patterns/the-combination/pattern.md) | 1980-2000 | Made every software developer a stakeholder in the Windows platform rather than a rival — converting potential competitors into distribution partners through licensing and developer tools |
+
 ## Frank and Lillian Gilbreth
 
 | Pattern | Era | Application |
@@ -311,6 +317,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [structural-unlock](patterns/structural-unlock/pattern.md) | 1950-1979 | Created supranational institutions (ECSC, EEC) to make European war structurally impossible, bypassing national sovereignty constraints |
 
+## J.P. Morgan
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-combination](patterns/the-combination/pattern.md) | 1890-1913 | Applied the combination to steel (U.S. Steel, 1901), railroads, and banking — systematically merging rivals to eliminate the competition destroying margins across industrial America |
+
 ## Elon Musk
 
 | Pattern | Era | Application |
@@ -367,6 +379,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [the-combination](patterns/the-combination/pattern.md) | 1870-1911 | Absorbed 22 of 26 Cleveland oil refiners in six weeks (1872), then extended the method nationally — converting destructive price competition into coordinated scale via the Standard Oil Trust |
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1863-1911 | Controlled oil from wellhead to kerosene lamp — refineries, pipelines, barrel-making, rail agreements — collapsing margins at every stage |
 
 ## Franklin D. Roosevelt
@@ -445,4 +458,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 71 practitioners · 81 pattern appearances_
+_Total: 73 practitioners · 84 pattern appearances_

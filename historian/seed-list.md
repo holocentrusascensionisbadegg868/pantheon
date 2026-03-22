@@ -43,7 +43,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Andrew Carnegie — vertical integration, systematic philanthropy
 - [x] W. Edwards Deming — quality systems, PDCA cycle
 - [x] Alfred Sloan — decentralized management, GM restructuring
-- [ ] John D. Rockefeller — standard oil, systematic cost reduction
+- [x] John D. Rockefeller — standard oil, systematic cost reduction
 
 ## Military Leaders (6)
 - [ ] Alexander the Great — logistics as strategy, speed-of-decision
