@@ -15,6 +15,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-andon-cord` | andon-cord ✦ | Taiichi Ohno | frustration signal |
 | `/pantheon-anomaly-isolation` | anomaly-isolation | Marie Curie | anomalous data |
 | `/pantheon-axiom-blitz` | axiom-blitz | John Von Neumann | messy domain with no formal foundation |
+| `/pantheon-build-the-machine` | build-the-machine | — | — |
 | `/pantheon-cannae` | cannae | — | — |
 | `/pantheon-carve-at-joints` | carve-at-joints | Aristotle | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | Niels Bohr | two valid but contradictory frameworks |
@@ -85,4 +86,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 45 patterns*
+*github.com/dkschrei/pantheon — 46 patterns*
