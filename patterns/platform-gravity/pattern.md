@@ -1,6 +1,6 @@
 ---
 name: platform-gravity
-aliases: [ecosystem-seeding, zero-market-bet, cuda-play, infrastructure-before-market, developer-gravity]
+aliases: [ecosystem-seeding, zero-market-bet, cuda-play, infrastructure-before-market, developer-gravity, nvidia, jensen-huang, jensen, huang, cuda, gpu, ai, ai-infrastructure, platform-war, ai-arms-race]
 domain: [engineering, decision-making, leadership, systems]
 trigger: [emerging compute paradigm with no commercial market yet, "who will win the platform war", building developer tools before customers exist, subsidizing adoption before revenue, "this technology needs a decade to matter", ecosystem lock-in strategy]
 practitioners:

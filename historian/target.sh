@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Historian targeted research — research any person, event, or era on demand.
-# Usage: bash historian/target.sh "Florence Nightingale"
+# Historian targeted research — research any person, event, era, or mix of keywords.
+# Usage: bash historian/target.sh "Jensen Huang"
+#        bash historian/target.sh "Jensen Huang, Nvidia, AI Arms Race"
 #        bash historian/target.sh "The Berlin Airlift"
-#        bash historian/target.sh "Bell Labs 1947-1967"
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -12,12 +12,12 @@ PROMPT_TPL="${SCRIPT_DIR}/target-prompt.md"
 TARGET="${*}"
 
 if [[ -z "$TARGET" ]]; then
-  echo "Usage: bash historian/target.sh \"<person, event, or era>\""
+  echo "Usage: bash historian/target.sh \"<person, event, concept, or mix>\""
   echo ""
   echo "Examples:"
-  echo "  bash historian/target.sh \"Florence Nightingale\""
+  echo "  bash historian/target.sh \"Jensen Huang\""
+  echo "  bash historian/target.sh \"Jensen Huang, Nvidia, AI Arms Race\""
   echo "  bash historian/target.sh \"The Berlin Airlift\""
-  echo "  bash historian/target.sh \"Bell Labs 1947-1967\""
   exit 1
 fi
 
@@ -30,7 +30,15 @@ echo ""
 echo "=== Researching: $TARGET ==="
 echo ""
 
-PROMPT=$(sed "s/{TARGET}/$TARGET/g" "$PROMPT_TPL")
+# Use Python for template substitution — handles em dashes, commas, slashes, any special chars
+PROMPT=$(python3 -c "
+import sys
+tpl = open(sys.argv[1]).read()
+print(tpl.replace('{TARGET}', sys.argv[2]), end='')
+" "$PROMPT_TPL" "$TARGET")
+
+# Sanitize target for git commit message (strip special chars)
+COMMIT_LABEL=$(echo "$TARGET" | tr -cd '[:alnum:] ,.-' | sed 's/  */ /g' | xargs)
 
 cd "$REPO_ROOT"
 if ! claude --dangerously-skip-permissions -p "$PROMPT"; then
@@ -45,7 +53,7 @@ python3 scripts/generate-commands.py "$REPO_ROOT"
 
 if ! git diff --quiet || ! git diff --staged --quiet; then
   git add patterns/ commands/ PATTERNS.md PBNJ.md PRACTITIONERS.md tests/pbnj-outputs/
-  git commit -m "feat(patterns): $TARGET gem added (targeted research)"
+  git commit -m "feat(patterns): $COMMIT_LABEL gem added (targeted research)"
   git push
   echo ""
   echo "✓ Committed + pushed: $TARGET"

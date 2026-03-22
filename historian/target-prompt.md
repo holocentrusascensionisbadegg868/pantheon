@@ -1,26 +1,49 @@
-Research {TARGET} and identify the single most important cognitive pattern it represents.
+You are building a gem for the Pantheon library. Research the following input and identify the single most important cognitive pattern it represents:
 
-{TARGET} may be a person, historical event, organization, era, or competitive dynamic.
+{TARGET}
 
-Requirements:
-1. ONE pattern only — not a list. The ONE defining move or mental model.
-2. The move, not the biography — what was actually done differently that explains the result.
-3. Executable — expressible as numbered steps someone else can follow today.
-4. Historically grounded — at least one real event where the pattern was applied (or violated).
-5. Duplicate check — before creating a new file, run `ls patterns/` and skim each existing pattern.md.
-   - If {TARGET}'s pattern is substantially the same as an existing gem, add the relevant practitioners/events to that existing gem instead of creating a new file.
-   - If it's a distinct pattern, create a new gem.
+## Step 1 — Classify each input
 
-For events and eras (not individual people):
-- Identify the practitioner(s) most responsible for the pattern in this context
-- Use the event/era as the primary evidence in the events[] field
-- Name the gem after the pattern itself, not the event
+The input may be a single item or a comma-separated mix. For each item, determine its type:
+- **Practitioner**: A person who applied a pattern (e.g. "Jensen Huang", "Elon Musk")
+- **Organization/Subject**: A company, institution, or domain (e.g. "Nvidia", "Toyota", "Bell Labs")
+- **Historical Event**: A significant moment or era (e.g. "AI Arms Race", "Manhattan Project", "2008 Financial Crisis")
+- **Concept/Method**: An idea, technology, or approach (e.g. "GPU computing", "kaizen", "CUDA")
 
-Output:
+For each item identified, briefly note: what is this? What is it primarily known for?
+
+## Step 2 — Find the connecting pattern
+
+What is the single cognitive move that best explains the result across all the inputs? If the items represent different patterns, pick the most significant or novel one not already in the library.
+
+The pattern must be:
+1. ONE pattern only — the ONE defining move or mental model
+2. The move, not the biography — what was actually done differently that explains the result
+3. Executable — expressible as numbered steps someone else can follow today
+4. Historically grounded — at least one real event where the pattern was applied (or violated)
+5. Distinct — run `ls patterns/` and skim existing patterns. If this pattern is substantially the same as an existing gem, add the new practitioners/events to that gem instead of creating a new file
+
+## Step 3 — Map practitioners and events
+
+For each practitioner identified in Step 1:
+- Add them to the gem's `practitioners[]` with their era and how they applied the pattern
+
+For each organization or historical event identified in Step 1:
+- Add as an entry in `events[]` with year and gem-role (applied/violated + brief description)
+
+For eras and organizations (not individual people):
+- Identify the person most responsible for the pattern in that context
+- Use the event/era as the primary evidence in events[]
+- Name the gem after the pattern itself, not the event or person
+
+## Output
+
 - If new gem: write `patterns/{gem-name}/pattern.md` and `patterns/{gem-name}/adapters/claude.md` using SCHEMA.md
-- If existing gem: update the practitioners[] and events[] in the existing pattern.md frontmatter
+- If existing gem: update practitioners[] and events[] in the existing pattern.md frontmatter
 
 Gem naming: use the most recognizable label for the underlying cognitive pattern. Prefer concept names over person names unless the person IS the concept (e.g. "feynman-clarity").
+
+Add discoverable aliases: include the names of key practitioners, organizations, and concepts as aliases so users can find this gem by searching any of the input terms.
 
 After writing, run:
   bash scripts/generate-patterns.sh
