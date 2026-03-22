@@ -109,11 +109,11 @@ The patterns in this library are not new. They have been sitting in history book
 **v0.9 — Feature complete. Public launch: May 6, 2026 (Anthropic Developer Conference, SF)**
 
 - [x] Schema v1.0 — YAML frontmatter + two-zone format (Protocol TLDR + The Book)
-- [x] 33 gems — historian path (32) + authored path (1 ✦)
+- [x] 54 gems — historian path + authored path (✦ marked)
 - [x] 9-criteria quality standard — 4 gates + 5 Pantheon challenges
 - [x] Two gem paths — Historian agent loop + `/pantheon-gem-builder` for authored gems
-- [x] 69 practitioners indexed across 78 pattern appearances
-- [x] PB&J test — all 33 gems validated against the same input
+- [x] 118 practitioners indexed across 200 historical events
+- [x] PB&J test — gems validated against the same input
 - [x] Contributing open — see `CONTRIBUTING.md`
 - [ ] Public launch — May 6, 2026
 
