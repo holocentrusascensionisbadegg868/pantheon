@@ -49,7 +49,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Alexander the Great — logistics as strategy, speed-of-decision
 - [x] Napoleon Bonaparte — corps system, information advantage
 - [x] Hannibal Barca — encirclement, outnumbered victory
-- [ ] Ernest Shackleton — leadership under survival conditions
+- [x] Ernest Shackleton — leadership under survival conditions
 - [ ] Winston Churchill — narrative framing, refusing capitulation
 - [ ] George Washington — strategic retreat, long-game patience
 
