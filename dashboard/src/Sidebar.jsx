@@ -93,7 +93,7 @@ function GemDetail({ gem, onNavigate }) {
           </div>
         </div>
       )}
-      {gem.originType === 'authored' && gem.authoredBy ? (
+      {gem.originType === 'authored' ? (
         <div className="p-3 rounded-lg border border-yellow-500/30 bg-yellow-500/5">
           <div className="flex items-center gap-1.5 mb-1">
             <span className="text-yellow-400 text-xs">✦</span>
