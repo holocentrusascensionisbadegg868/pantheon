@@ -216,6 +216,7 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [imperial-self-correction](patterns/imperial-self-correction/pattern.md) | 1706-1790 | Maintained a nightly self-examination journal tracking 13 virtues, scoring his own conduct against explicit standards — a secular Americanization of the Aurelius protocol |
+| [the-latticework](patterns/the-latticework/pattern.md) | 1723-1790 | Deliberately studied across natural philosophy, economics, diplomacy, printing, and ethics; applied converging models to problems (lightning rod derived from electrical theory + structural engineering + weather observation simultaneously) |
 
 ## Buckminster Fuller
 
@@ -363,6 +364,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1890-1913 | Applied the combination to steel (U.S. Steel, 1901), railroads, and banking — systematically merging rivals to eliminate the competition destroying margins across industrial America |
 
+## Charlie Munger
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-latticework](patterns/the-latticework/pattern.md) | 1948-2023 | Built a ~100-model toolkit spanning physics, biology, psychology, mathematics, economics, and engineering — applied as a convergence checklist before every major Berkshire Hathaway investment decision |
+
 ## Elon Musk
 
 | Pattern | Era | Application |
@@ -490,6 +497,7 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [mind-forge](patterns/mind-forge/pattern.md) | 1452-1519 | Used mental simulation as a precursor to drawn rendering — imagined mechanical systems (flying machines, hydraulic screws, armored vehicles) before committing them to notebook diagrams; his primary pattern is render-to-understand |
 | [render-to-understand](patterns/render-to-understand/pattern.md) | 1452-1519 | Dissected 30+ human corpses and drew every muscle, tendon, and valve not to create art but to force mechanistic understanding — his anatomical drawings of the heart's chambers preceded Harvey's discovery of blood circulation by 100 years |
+| [the-latticework](patterns/the-latticework/pattern.md) | 1478-1519 | Maintained interlocking notebooks across anatomy, hydraulics, optics, and mechanics — used observations from each domain to stress-test conclusions in others; his flying machine designs were constrained by bird anatomy, air physics, and material strength simultaneously |
 
 ## Donald Wheeler
 
@@ -505,4 +513,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 80 practitioners · 96 pattern appearances_
+_Total: 81 practitioners · 99 pattern appearances_

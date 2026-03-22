@@ -61,7 +61,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Johann Sebastian Bach — structural mastery, constraint-driven variation
 
 ## Investors & Economists (5)
-- [ ] Charlie Munger — inversion, mental model lattice
+- [x] Charlie Munger — inversion, mental model lattice
 - [ ] Warren Buffett — circle of competence, moat thinking
 - [ ] Daniel Kahneman — cognitive bias mapping, System 1/2
 - [ ] Nassim Taleb — antifragility, Black Swan preparation
