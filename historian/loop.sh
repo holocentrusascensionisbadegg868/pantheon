@@ -18,8 +18,11 @@ if ! command -v claude &>/dev/null; then
   exit 1
 fi
 
-# Extract unchecked heroes
-mapfile -t HEROES < <(grep "^- \[ \]" "$SEED" | sed 's/^- \[ \] //' | sed 's/ —.*//')
+# Extract unchecked heroes (bash 3 compatible)
+HEROES=()
+while IFS= read -r line; do
+  HEROES+=("$line")
+done < <(grep "^- \[ \]" "$SEED" | sed 's/^- \[ \] //' | sed 's/ —.*//')
 echo "Phase 1 — ${#HEROES[@]} heroes remaining"
 
 for hero in "${HEROES[@]}"; do
