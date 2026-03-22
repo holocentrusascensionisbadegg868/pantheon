@@ -17,16 +17,19 @@ events:
   - name: Wu-Chu War (Battle of Boju)
     year: 506bc
     gem-role: applied — Sun Tzu advised King Helü of Wu to attack only after Chu was exhausted by campaigns against other states, its army divided, and its supply lines stretched; 30,000 Wu troops defeated 200,000 Chu soldiers by striking a pre-shaped battlefield
+    magnitude: 4
     practitioner: Sun Tzu
     outcome: Wu's 30,000 troops defeated Chu's 200,000 in five consecutive engagements over fifteen days, capturing the Chu capital Ying — a 5:1 force disadvantage overcome entirely through pre-battle shaping rather than tactical superiority.
   - name: Battle of Red Cliffs
     year: 208
     gem-role: applied — Zhuge Liang shaped conditions for months before battle; secured the Sun Quan alliance, exploited Cao Cao's unfamiliarity with naval warfare, and used fire ships only when wind, disease, and overconfidence had already predetermined the outcome
+    magnitude: 4
     practitioner: Zhuge Liang
     outcome: Cao Cao's vastly larger force was destroyed, halting the unification of China under Wei; the battle preserved the Three Kingdoms balance of power for another six decades and became the most celebrated demonstration of Sun Tzu's shaping principles in Chinese military history.
   - name: Gallipoli Campaign
     year: 1915
     gem-role: violated — Allied forces attacked entrenched Ottoman positions without shaping terrain, intelligence, or supply conditions; direct assault against unshaped ground produced catastrophic losses and total failure
+    magnitude: 4
     practitioner: Allied Command (Hamilton / Churchill)
     outcome: Eight months of fighting produced over 250,000 Allied casualties and zero strategic gain; the campaign was abandoned in January 1916, costing Winston Churchill his position as First Lord of the Admiralty and becoming the textbook example of engaging on unshaped ground.
 lineage: Sun Tzu → Zhuge Liang → Miyamoto Musashi → Napoleon → John Boyd → modern asymmetric strategy

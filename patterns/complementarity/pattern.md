@@ -17,16 +17,19 @@ events:
   - name: Como Lecture
     year: 1927
     gem-role: applied — Bohr introduced complementarity at the International Physics Congress in Como, Italy, declaring that wave and particle descriptions are both necessary but mutually exclusive; the experimental arrangement determines which face nature shows
+    magnitude: 4
     practitioner: Niels Bohr
     outcome: Bohr's complementarity principle resolved the wave-particle paradox and became the interpretive foundation of quantum mechanics, enabling the Copenhagen interpretation that guided physics for decades and reframing the central crisis of quantum physics from "which description is correct?" to "which experimental context are you in?"
   - name: Bohr-Einstein debates at Solvay
     year: 1927-1930
     gem-role: applied — Einstein attacked quantum mechanics with thought experiments designed to force a single consistent picture; Bohr defeated each by showing the experimental setup itself determines which complementary description applies, making Einstein's demand for a unified picture the hidden error
+    magnitude: 4
     practitioner: Niels Bohr
     outcome: Bohr defeated every thought experiment Einstein proposed over three Solvay conferences, including turning Einstein's own general relativity against him in the photon-box challenge; the debates established complementarity as the interpretive framework for quantum mechanics that the physics community adopted for the following century.
   - name: EPR response
     year: 1935
     gem-role: applied — Einstein, Podolsky, and Rosen argued quantum mechanics was incomplete because entangled particles seemed to require instantaneous action. Bohr responded that "physical reality" cannot be defined without specifying the measurement context — the EPR argument smuggled in a classical assumption that both properties exist simultaneously independent of observation
+    magnitude: 4
     practitioner: Niels Bohr
     outcome: Bohr's response demonstrated that the EPR paradox dissolves once complementarity is applied — properties are constituted by measurement context, not pre-existing independent of it; the exchange defined the interpretive debate in quantum mechanics for the next 80 years and prefigured Bell's theorem, which experimentally confirmed Bohr's position in the 1980s.
 lineage: Heraclitus-500bc → Hegel-1807 → Bohr-1927 → Roger Martin-2007

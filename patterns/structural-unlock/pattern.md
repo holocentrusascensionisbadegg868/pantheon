@@ -17,21 +17,25 @@ events:
   - name: OpenAI Nonprofit-to-Capped-Profit Restructure
     year: 2019
     gem-role: applied — Altman restructured OpenAI from a pure nonprofit into a capped-profit entity, unlocking the $1B+ Microsoft investment that funded GPT-4 scale compute
+    magnitude: 4
     practitioner: Sam Altman
     outcome: Microsoft invested $1B immediately after the restructure; by 2023 the partnership had delivered $13B in compute investment, producing GPT-4 — a model that would have been structurally impossible under the original nonprofit form.
   - name: YC Continuity Fund Launch
     year: 2015
     gem-role: applied — Altman created YC's growth-stage fund to remove the structural constraint that YC could only back companies at seed stage, capturing value across the full lifecycle
+    magnitude: 2
     practitioner: Sam Altman
     outcome: The $700M Continuity Fund transformed YC from a seed-stage accelerator into a full-lifecycle investment firm, allowing YC to follow on into Stripe, Airbnb, Dropbox, and other breakout graduates rather than ceding that upside to growth-stage investors.
   - name: Altman Board Crisis and Return
     year: 2023
     gem-role: applied — After being fired by OpenAI's board, Altman engineered his return within days and restructured governance to prevent the nonprofit board from blocking the scaling mission again
+    magnitude: 3
     practitioner: Sam Altman
     outcome: Altman returned within five days backed by near-unanimous employee support and Microsoft leverage; the board was restructured to include members aligned with the scaling mission, removing the governance fault line that had allowed the nonprofit board to unilaterally halt operations.
   - name: Xerox PARC Commercialization Failure
     year: 1979
     gem-role: violated — Xerox invented the GUI, mouse, and ethernet but never restructured its copier-centric business model to commercialize them; the structural constraint was never removed
+    magnitude: 4
     practitioner: Xerox executive leadership
     outcome: Apple and Microsoft commercialized the GUI and personal computing technologies that Xerox invented but could not bring to market; Xerox's failure to restructure its institution around the new opportunity cost it the dominant position in personal computing.
 lineage: Hamilton-1789 → Monnet-1950 → Altman-2014

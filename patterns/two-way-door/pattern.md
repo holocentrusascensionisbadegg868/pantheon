@@ -11,26 +11,31 @@ events:
   - name: Bezos Leaves D.E. Shaw to Found Amazon
     year: 1994
     gem-role: applied — classified the decision as a one-way door, applied his regret minimization framework, decided the regret of not trying outweighed the risk of failure
+    magnitude: 3
     practitioner: Jeff Bezos
     outcome: Amazon grew from a garage startup to the world's largest e-commerce platform and a $1.5T+ company; Bezos's correct classification of the founding decision as a one-way door (and application of regret minimization rather than expected value analysis) produced what became one of the most valuable companies in history.
   - name: Launch of Amazon Web Services
     year: 2006
     gem-role: applied — AWS started as internal infrastructure experiments (two-way doors), iterated rapidly through dozens of service designs before committing to the public platform (one-way door)
+    magnitude: 4
     practitioner: Jeff Bezos
     outcome: AWS became a $90B+/year business generating approximately 70% of Amazon's operating profit; the two-way door experimentation phase allowed Amazon to iterate on pricing and service design before the public launch became irreversible, producing a cloud infrastructure platform no competitor has successfully displaced.
   - name: Amazon Prime Launch
     year: 2005
     gem-role: applied — free two-day shipping was a massive financial commitment (one-way door) that Bezos deliberated carefully, requiring detailed modeling before greenlighting, while individual fulfillment experiments leading up to it were treated as two-way doors
+    magnitude: 3
     practitioner: Jeff Bezos
     outcome: Amazon Prime grew to over 200 million subscribers generating $35B+/year in subscription revenue; the careful one-way-door deliberation before committing to the free shipping guarantee produced a loyalty program that restructured consumer expectations across the entire retail industry.
   - name: Fire Phone Failure
     year: 2014
     gem-role: applied — Bezos treated the Fire Phone as a two-way door bet, moved fast, lost an estimated $170M, but absorbed the loss and redeployed the team to Echo/Alexa, which succeeded
+    magnitude: 2
     practitioner: Jeff Bezos
     outcome: The Fire Phone team's technology and learnings were redeployed to build the Amazon Echo and Alexa platform, which created an entirely new product category (smart speakers) and achieved 100M+ device sales; treating the Fire Phone as a reversible experiment allowed Amazon to absorb the loss and walk through a better door immediately.
   - name: Kodak's Digital Camera Hesitation
     year: 1975-2012
     gem-role: violated — Kodak invented the digital camera in 1975 but treated every move into digital as a one-way door threatening their film business, deliberating for decades while competitors moved, ultimately filing for bankruptcy in 2012
+    magnitude: 3
     practitioner: Kodak leadership (multiple CEOs)
     outcome: Kodak filed for bankruptcy in January 2012, having lost $30B+ in market value from its peak; treating digital photography as a one-way door threat rather than a two-way door opportunity allowed competitors (Canon, Sony, then smartphones) to capture the market Kodak had invented and abandoned.
 lineage: Sun Tzu → Boyd (OODA Loop) → Bezos

@@ -11,16 +11,19 @@ events:
   - name: The Art of Fugue
     year: 1740-1750
     gem-role: applied — Bach derived 14 fugues and 4 canons entirely from a single subject (D-A-F#-D with chromatic returns), applying every contrapuntal transformation available — simple, double, triple, mirror, augmentation, diminution — before combining his own name (B-A-C-H in German notation) with the original subject in the final unfinished contrapuntal. The entire architecture was already implicit in the opening 8 notes.
+    magnitude: 3
     practitioner: Johann Sebastian Bach
     outcome: The Art of Fugue became the definitive demonstration that a single theme, systematically exhausted, could generate an entire cosmos of musical complexity; published posthumously in 1751, it became the foundational pedagogical text for contrapuntal composition and remains the supreme example of the fugue form.
   - name: The Well-Tempered Clavier
     year: 1722-1742
     gem-role: applied — Rather than composing 24 separate unrelated pieces, Bach took a single structural challenge (proving the new equal-temperament tuning system valid across all 24 major and minor keys) and applied it exhaustively — one prelude and fugue per key, no exceptions, no skipping the difficult keys. Systematic exhaustion of a single formal constraint.
+    magnitude: 4
     practitioner: Johann Sebastian Bach
     outcome: The Well-Tempered Clavier became the foundational pedagogical text of Western classical music; it validated equal temperament as the tuning standard that enabled all subsequent Western harmony, and every major composer from Mozart onward studied it as the essential curriculum of keyboard composition.
   - name: Goldberg Variations
     year: 1741
     gem-role: applied — 30 variations over a single bass line (the aria's ground bass), never abandoning the harmonic skeleton, deriving every canonic and ornamental possibility from one harmonic seed. The aria returns at the end unchanged — the point is that all 30 variations were already inside it.
+    magnitude: 3
     practitioner: Johann Sebastian Bach
     outcome: The Goldberg Variations demonstrated that 30 distinct musical characters — spanning every affect from dance to canon to arabesque — could be derived from a single 32-bar harmonic skeleton without introducing new material; Glenn Gould's 1955 recording made the work the defining statement of keyboard mastery in the 20th century.
 lineage: Franco-Flemish-polyphony-1450s → Frescobaldi-1610 → Buxtehude-1680 → Bach-1705

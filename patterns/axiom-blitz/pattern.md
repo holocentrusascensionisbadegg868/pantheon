@@ -17,21 +17,25 @@ events:
   - name: Theory of Games and Economic Behavior (1944)
     year: 1944
     gem-role: applied — Von Neumann and Morgenstern replaced informal economic reasoning about strategy with axiomatic game theory, proving the minimax theorem and creating an entire field from axioms
+    magnitude: 4
     practitioner: John Von Neumann (with Oskar Morgenstern)
     outcome: The book founded game theory as a mathematical discipline, introducing expected utility theory as a byproduct; it transformed economics, political science, evolutionary biology, and military strategy — all from axioms that fit on a single page.
   - name: Mathematical Foundations of Quantum Mechanics (1932)
     year: 1932
     gem-role: applied — Von Neumann unified Schrödinger's and Heisenberg's competing formalisms by axiomatizing quantum mechanics in Hilbert space, giving the field its permanent mathematical foundation
+    magnitude: 4
     practitioner: John Von Neumann
     outcome: Von Neumann's Hilbert-space axiomatization ended the Schrödinger-Heisenberg debate and gave quantum mechanics its rigorous foundation; the formalism remains standard today and his impossibility proof for hidden variables shaped the interpretation debate for decades.
   - name: First Draft of a Report on the EDVAC (1945)
     year: 1945
     gem-role: applied — Von Neumann axiomatized what a computer is — memory, arithmetic unit, control unit, I/O — creating the stored-program architecture that every general-purpose computer still follows
+    magnitude: 5
     practitioner: John Von Neumann
     outcome: The stored-program architecture defined in Von Neumann's report became the logical blueprint for every general-purpose computer built in the following 80 years, enabling the entire modern computing industry.
   - name: Theory of Self-Reproducing Automata (1948-1953)
     year: 1948
     gem-role: applied — Von Neumann axiomatized what self-reproduction means computationally, proving through cellular automata that a machine can contain a complete description of itself and use it to build a copy
+    magnitude: 3
     practitioner: John Von Neumann
     outcome: Von Neumann proved that a universal constructor must exist — a result confirmed decades later when molecular biologists established that DNA encodes and executes self-replication using precisely the architecture he described.
 lineage: Euclid-300bc → Hilbert-1899 → Von Neumann-1928

@@ -17,21 +17,25 @@ events:
   - name: Leonardo's anatomical studies of the heart
     year: 1509-1513
     gem-role: applied — Leonardo dissected the heart of an ox and spent years rendering its chambers, valves, and vessels in cross-section. To draw the aortic valve accurately, he had to understand its mechanical opening and closing mechanism — a fluid dynamics problem. His notebooks show correct valve function a century before cardiology existed as a field.
+    magnitude: 4
     practitioner: Leonardo da Vinci
     outcome: Leonardo's rendering requirement forced a fluid dynamics insight — vortices in the aortic sinus close the valve leaflets — that was not rediscovered until 1968; his notebooks contain the first mechanically accurate depiction of cardiac anatomy, produced solely because faithful rendering demanded mechanistic understanding.
   - name: Leonardo's water vortex studies
     year: 1508-1513
     gem-role: applied — Leonardo spent years at the Arno river sketching turbulent water — not to paint it but to understand the structure of vortices. His notebooks show him iterating through renderings until the spiral geometry of turbulent flow matched what he observed. He then applied the same vortex model to air flow around bird wings, producing the first mechanistic theory of flight.
+    magnitude: 3
     practitioner: Leonardo da Vinci
     outcome: Leonardo's vortex model transferred directly to his analysis of bird flight and wing design, producing the first mechanistic aerodynamic theory; the same rendering-derived insight informed his designs for ornithopters and gliders, anticipating principles of fluid dynamics by nearly four centuries.
   - name: Cajal's retinal architecture
     year: 1888-1904
     gem-role: applied — Cajal drew retinal cells with such fidelity that the one-way directionality of signal transmission became visible in the structure itself — a functional insight that emerged from the rendering constraint, not from theoretical analysis
+    magnitude: 4
     practitioner: Santiago Ramón y Cajal
     outcome: Cajal's meticulous rendering revealed the synaptic gap and one-way signal directionality, establishing the neuron doctrine and earning him the Nobel Prize in Physiology or Medicine in 1906; his drawings remain medically accurate today, more than a century after they were made.
   - name: Anatomy taught from text, not dissection
     year: 1300-1543
     gem-role: violated — Medieval anatomy was taught from Galen's texts while a barber-surgeon dissected a corpse the professor never touched. Descriptions were inherited, not rendered — so errors persisted for centuries. Leonardo's notebooks (unknown to contemporaries) and Vesalius's De Humani Corporis Fabrica (1543) corrected the record only when practitioners required faithful rendering.
+    magnitude: 3
     practitioner: Medieval European medical schools / corrected by Andreas Vesalius
     outcome: Fourteen centuries of Galenic errors — the sternum's structure, the cardiac septum, the nervous system — persisted until Vesalius required himself to render anatomy directly from dissection in 1543; De Humani Corporis Fabrica corrected dozens of errors in a single generation by imposing the rendering constraint.
 lineage: Archimedes (mechanical drawing) → Leonardo da Vinci (render-to-understand) → Cajal (neural rendering) → Feynman (derivation-as-understanding)

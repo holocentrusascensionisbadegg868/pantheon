@@ -17,21 +17,25 @@ events:
   - name: Israeli Curriculum Planning Session
     year: 1976
     gem-role: applied — Kahneman was on a committee writing a new curriculum. When he asked his expert colleague (who had completed similar projects) what fraction of such teams finished on time, the colleague said fewer than 40% and the median was 7 years. The committee's inside-view estimate was 2 years. The book was delivered 8 years later.
+    magnitude: 2
     practitioner: Daniel Kahneman
     outcome: Kahneman and Lovallo's 1993 paper "Timid Choices and Bold Forecasts" formalized the outside view as a debiasing technique; the Israeli curriculum incident became the founding case study for the planning fallacy concept, shaping decades of behavioral economics research and practical forecasting methodology.
   - name: Flyvbjerg's Mega-Project Audit
     year: 2003
     gem-role: applied — Flyvbjerg analyzed 258 transportation infrastructure projects across 20 countries and found that 9 out of 10 were over budget, with a mean cost overrun of 28% for rail and 45% for tunnels — systematically predictable using reference class data that planners routinely ignored
+    magnitude: 2
     practitioner: Bent Flyvbjerg
     outcome: Reference class forecasting became standard in major infrastructure projects; the UK government formally adopted it in 2004, improving cost estimation accuracy for public procurement across all major capital projects.
   - name: Sydney Opera House Construction
     year: 1957-1973
     gem-role: violated — Original estimate: 7 years, £3.5 million. Actual: 16 years, £51 million (14x over budget). Inside-view optimism about a novel design overwhelmed any reference to comparable large-scale public works projects
+    magnitude: 2
     practitioner: Jørn Utzon / NSW government
     outcome: The project became iconic but cost 14x its estimate and took more than twice as long as planned; it remains the canonical cautionary example of inside-view planning and the planning fallacy in infrastructure literature.
   - name: UK Treasury Adopts Reference Class Forecasting
     year: 2004
     gem-role: applied — Following Flyvbjerg's work and citing Kahneman's research directly, the UK Treasury mandated reference class forecasting for all major government procurement and infrastructure projects — the first government to institutionalize the outside view
+    magnitude: 2
     practitioner: Bent Flyvbjerg
     outcome: The UK became the first government to institutionalize the outside view, with the Green Book update requiring base-rate anchoring on comparable past projects before any adjustment; this improved cost estimate accuracy across UK infrastructure procurement.
 lineage: Statistical-prediction (Meehl-1954) → Kahneman-Tversky-inside-outside-view (1979) → Flyvbjerg-reference-class-forecasting (2003) → UK-Treasury-mandate (2004)

@@ -17,21 +17,25 @@ events:
   - name: iPod launch
     year: 2001
     gem-role: applied — MP3 players existed but the experience was fragmented across ripping, transferring, navigating, and listening; Fadell integrated device + iTunes + Music Store + sync into one flow and the iPod dominated for a decade
+    magnitude: 3
     practitioner: Tony Fadell
     outcome: The iPod dominated the digital music player market for a decade and became Apple's largest revenue source prior to iPhone, generating over $22 billion in cumulative sales; it demonstrated that collapsing a fragmented experience stack into one integrated product could define an entire category.
   - name: Nest thermostat launch
     year: 2011
     gem-role: applied — thermostat technology was decades old but nobody owned the full experience; Fadell eliminated the HVAC installer gatekeeper, made it self-installing, self-programming via learning algorithm, and beautiful enough to display in a living room; acquired by Google for $3.2B
+    magnitude: 3
     practitioner: Tony Fadell
     outcome: Google acquired Nest for $3.2 billion three years after launch; in two years Nest displaced a thermostat category that Honeywell had owned for six decades, validating that pain-blindness detection plus technology readiness produces category-defining results.
   - name: General Magic failure
     year: 1993-1995
     gem-role: violated — the team tried to collapse the experience stack before the underlying technology was mature; the product vision was correct (smartphone) but shipped a decade too early, proving that pain-blindness detection requires technology readiness as a precondition
+    magnitude: 2
     practitioner: Tony Fadell / General Magic team
     outcome: General Magic went public at a $500M+ valuation in 1995 then collapsed as the product failed; the technology vision was vindicated 12 years later by iPhone, crystallizing the lesson that pain-blindness detection is only valuable when underlying components are mature.
   - name: Honeywell thermostat stagnation
     year: 1953-2011
     gem-role: violated — Honeywell owned the thermostat market for 60 years but never questioned the normalized pain of ugly, confusing, never-programmed devices; lost the category to a startup in two years
+    magnitude: 2
     practitioner: Honeywell leadership
     outcome: Honeywell lost the thermostat category it had owned for six decades within two years of Nest's launch; the company's failure to de-habituate from normalized pain allowed a startup to redefine the market with the first meaningful thermostat innovation in a generation.
 lineage: general-magic-lessons-1995 → apple-ipod-integration-2001 → nest-experience-collapse-2011

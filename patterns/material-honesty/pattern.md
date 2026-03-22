@@ -17,26 +17,31 @@ events:
   - name: iMac G3 Launch
     year: 1998
     gem-role: applied — Ive made the case translucent polycarbonate to reveal the interior and added a handle to signal approachability; the material itself communicated "don't be afraid of this computer"
+    magnitude: 3
     practitioner: Jony Ive
     outcome: The iMac G3 sold 800,000 units in its first 139 days, reversing Apple's trajectory from near-bankruptcy to profitability and establishing Ive's material-first design language as Apple's signature.
   - name: Unibody MacBook Pro
     year: 2008
     gem-role: applied — carved from a single block of aluminum through 13 CNC milling operations; the structure IS the enclosure, eliminating every intermediary panel and fastener
+    magnitude: 2
     practitioner: Jony Ive
     outcome: The unibody manufacturing process became the template for premium laptop design industry-wide; the MacBook Pro line maintained Apple's position as the benchmark for laptop craftsmanship for over a decade.
   - name: iOS 7 Skeuomorphism Purge
     year: 2013
     gem-role: applied — Ive stripped fake leather, felt, and wood textures from iOS; glass is glass, so let it be glass — the purest software expression of material honesty
+    magnitude: 3
     practitioner: Jony Ive
     outcome: iOS 7 became the fastest-adopted iOS version in Apple's history, with over 74% of devices updated within four months; it set the visual language for iOS through the following decade and triggered a flat-design shift across the entire mobile software industry.
   - name: Butterfly Keyboard Failure
     year: 2015-2019
     gem-role: violated — thinness (an aesthetic property) was prioritized over the material reality of how fingers interact with keys; a single dust particle could jam the mechanism, requiring full top-case replacement
+    magnitude: 2
     practitioner: Jony Ive
     outcome: Apple ran a multi-year keyboard repair program covering affected MacBook models and eventually reverted to scissor-switch mechanisms in 2019; the episode damaged Apple's pro-user reputation and prompted class-action lawsuits, demonstrating that violating material honesty destroys the trust it builds.
   - name: 2013 Mac Pro "Trash Can"
     year: 2013
     gem-role: violated — striking cylindrical form was dishonest about the machine's thermal and expansion requirements; Apple eventually admitted the design was a dead end
+    magnitude: 2
     practitioner: Jony Ive
     outcome: The cylindrical Mac Pro was discontinued without a successor for six years; Apple publicly acknowledged they had "designed themselves into a corner" and released a modular tower Mac Pro in 2019 that prioritized expansion and thermal reality over formal elegance.
 lineage: bauhaus-material-truth-1919 → ulm-school-1953 → rams-braun-1961 → ive-apple-1997

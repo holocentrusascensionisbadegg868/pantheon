@@ -20,21 +20,25 @@ events:
   - name: Trocadéro Revelation and Les Demoiselles mid-painting revision
     year: 1907
     gem-role: applied — Picasso was halfway through Les Demoiselles d'Avignon with Iberian-influenced figures when he visited the Trocadéro ethnographic museum and encountered African masks. He returned to the canvas and overpainted the two rightmost figures with fractured, mask-derived faces. The structural logic of African masks — geometric simplification to convey psychological force, simultaneous multiple viewpoints — was extracted and applied mid-work. The resulting internal inconsistency (two grammars in one painting) created the tension that forced Cubism as a resolution.
+    magnitude: 4
     practitioner: Pablo Picasso
     outcome: Les Demoiselles d'Avignon (1907) became the foundational work of Cubism and one of the most influential paintings of the 20th century; the structural grammar extracted from African masks gave Picasso the tool to shatter Western perspectival convention and invent a new pictorial language that defined modern art.
   - name: Analytic Cubism exhaustion and transition to Synthetic Cubism
     year: 1912
     gem-role: applied — By 1912 Picasso had pushed Cézanne's multi-viewpoint principle to its logical limit: paintings so fractured they were nearly unreadable. Rather than refining Analytic Cubism, he imported the grammar of collage — assembly from external fragments (newspaper, wallpaper) rather than disassembly from a unified whole. Synthetic Cubism was a new structural system that arose directly from what Analytic Cubism could not solve.
+    magnitude: 3
     practitioner: Pablo Picasso
     outcome: Synthetic Cubism opened an entirely new formal vocabulary — assemblage and collage as structural principles — that influenced every subsequent avant-garde movement including Dada, Constructivism, and Pop Art; Picasso's willingness to abandon Analytic Cubism at its peak prevented the creative stagnation that would have come from refining a system he had already exhausted.
   - name: Neoclassical period after WWI
     year: 1920
     gem-role: applied — After Cubism, Picasso imported the structural grammar of Greek and Roman classical proportion — massive, solid figures, clean linearity — in direct reaction to what Cubism's fragmentation could not express. He was not "going back" to classicism. He was extracting its structural logic (weight, solidity, ideal proportion) and imposing it as a constraint he had never fully used.
+    magnitude: 2
     practitioner: Pablo Picasso
     outcome: The Neoclassical period produced a body of monumental figure drawings and paintings that demonstrated Picasso's ability to apply structural grammars with rigorous constraint rather than nostalgic imitation; it confirmed that grammar theft is not stylistic regression but systematic extraction — and extended his productive output across a seventh distinct structural period.
   - name: Matisse stays inside Fauvism
     year: 1906-1954
     gem-role: violated — Matisse discovered expressive color as structural grammar in 1905-1906 and spent his career refining it rather than exhausting it and moving to the next system. The result is a coherent, beautiful body of work — but no new formal invention after Fauvism. Refinement, not theft. Picasso's output across 7 structurally distinct periods vs Matisse's continuous deepening of one system illustrates the difference.
+    magnitude: 2
     practitioner: Henri Matisse
     outcome: Matisse produced a lifelong body of work of extraordinary quality and coherence — but made no new formal inventions after Fauvism; his late cut-paper works (Jazz, 1947) are widely considered his most innovative late achievement, but they remain within the color-as-structure grammar he established in 1905, demonstrating that refinement without theft produces depth but not range.
 lineage: African-mask-carvers (structural geometry) → Cézanne-multifaceted-surfaces-1895 → Gauguin-alien-grammar-import-1888 → Picasso-systematic-theft-1907 → Stravinsky-musical-grammar-theft-1910 → Jobs-cross-domain-import-1984

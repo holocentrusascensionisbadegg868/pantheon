@@ -23,26 +23,31 @@ events:
   - name: Battle of Gaugamela
     year: 331bc
     gem-role: applied — Darius fielded 250,000 troops against Alexander's 47,000. Alexander identified the gap between the Persian left and center as the decisive node and drove the Companion cavalry directly at Darius's command position. Darius fled; his entire army dissolved despite outnumbering Alexander five-to-one
+    magnitude: 5
     practitioner: Alexander the Great
     outcome: By concentrating armored force through the gap toward the Persian command node, Alexander defeated the largest army in history in a single engagement, ending the Achaemenid Empire and opening the entire Persian heartland to Macedonian conquest.
   - name: Battle of Issus
     year: 333bc
     gem-role: applied — Persian forces occupied a narrow coastal pass, eliminating Alexander's numerical disadvantage. While the Macedonian phalanx held Darius's infantry in place, Alexander led the Companions through the Persian left, wheeled into the center, and drove toward Darius personally. Darius fled and abandoned his family in the camp.
+    magnitude: 4
     practitioner: Alexander the Great
     outcome: Darius's flight and the capture of his family gave Alexander enormous political leverage; the victory opened Phoenicia, Egypt, and the Levant to Macedonian control without further major resistance.
   - name: Battle of the Granicus
     year: 334bc
     gem-role: applied — Persian satraps lined the far riverbank expecting a direct frontal assault to be suicidal. Alexander charged directly at the satraps themselves — the human center of gravity — killing Mithridates, Rhoesaces, and Spithridates personally in the opening minutes. Without commanders, the Persian defense collapsed.
+    magnitude: 4
     practitioner: Alexander the Great
     outcome: Persian resistance in Asia Minor collapsed within months; by targeting the command node directly, Alexander secured control of western Anatolia without a prolonged campaign, validating Schwerpunkt as his template for every subsequent engagement.
   - name: Battle of the Hydaspes
     year: 326bc
     gem-role: applied — King Porus deployed 200 war elephants at the front to disrupt Macedonian cavalry. Alexander bypassed the elephants, identified Porus's personal command as the decisive node, and drove toward him until Porus surrendered — ending the battle without the attrition of fighting the elephants directly
+    magnitude: 3
     practitioner: Alexander the Great
     outcome: Porus surrendered and was reinstated as a Macedonian vassal, extending Alexander's empire to the Indus; by targeting the commander rather than the most dangerous weapon, Alexander avoided catastrophic cavalry losses from the elephants.
   - name: Napoleon at Austerlitz
     year: 1805
     gem-role: applied — Napoleon deliberately weakened his right flank to draw allied forces off the Pratzen Heights, identified the heights as the center of gravity of the entire allied line, then struck there with the Imperial Guard. The hinge collapsed and both allied wings were isolated and destroyed.
+    magnitude: 4
     practitioner: Napoleon Bonaparte
     outcome: The Austro-Russian alliance was shattered in a single day; Austria signed the Treaty of Pressburg ceding vast territories, and the Holy Roman Empire dissolved within a year — considered the textbook Schwerpunkt application in European military history.
 lineage: Alexander-334bc → Hannibal-216bc → Caesar-58bc → Napoleon-1805 → Clausewitz-1832 → Wehrmacht-Schwerpunkt-1940 → modern-strategy

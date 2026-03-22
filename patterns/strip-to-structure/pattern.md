@@ -17,16 +17,19 @@ events:
   - name: A Mathematical Theory of Communication (1948)
     year: 1948
     gem-role: applied — Shannon deliberately ignored what messages mean and modeled communication as a probability problem, inventing the bit and founding the entire field of information theory
+    magnitude: 5
     practitioner: Claude Shannon
     outcome: Shannon's paper founded information theory, unified telephony, radio, television, computing, and the internet under a single mathematical framework, and introduced the bit as the universal unit of information; it is widely regarded as the founding document of the information age.
   - name: Shannon's Master's Thesis (1937)
     year: 1937
     gem-role: applied — A 21-year-old Shannon noticed that electrical relay circuits and Boolean algebra shared identical structure, writing what has been called the most important master's thesis of the 20th century
+    magnitude: 4
     practitioner: Claude Shannon
     outcome: Shannon's thesis enabled the systematic design of digital circuits, replacing ad hoc engineering with mathematical design; every digital circuit built since rests on this translation, and Howard Gardner called it "possibly the most important, and also the most noted, master's thesis of the century."
   - name: Communication Theory of Secrecy Systems (1949)
     year: 1949
     gem-role: applied — Shannon proved that cryptography was an information-theoretic problem, not a linguistic one, unifying two previously separate fields under one mathematical framework
+    magnitude: 4
     practitioner: Claude Shannon
     outcome: Shannon's proof that a cipher is perfectly secure if and only if the key entropy equals or exceeds the message entropy placed cryptography on rigorous mathematical ground, stripping it of historical mystique and establishing the information-theoretic framework that underlies all modern cryptography.
 lineage: Boole-1847 → Frege-1879 → Shannon-1937

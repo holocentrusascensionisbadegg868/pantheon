@@ -11,21 +11,25 @@ events:
   - name: The General Theory of Employment, Interest and Money
     year: 1936
     gem-role: applied — Classical economics held that recessions self-correct as wages fall until markets clear. Keynes showed this reasoning commits a composition error: when all workers accept lower wages simultaneously, total purchasing power falls proportionally, demand collapses further, and the equilibrium locks at mass unemployment. The fix was not to fix individual wages but to inject aggregate demand via government spending — intervening at the level where the failure actually lived.
+    magnitude: 5
     practitioner: John Maynard Keynes
     outcome: The General Theory redirected macroeconomics for a generation; countries that applied its fiscal prescription — including the US New Deal and post-WWII full-employment policies — outperformed those that applied the classical individual-level austerity prescription, establishing aggregate demand management as the core tool of modern macroeconomics.
   - name: Bretton Woods Conference
     year: 1944
     gem-role: applied — Keynes proposed an International Clearing Union to address global trade imbalances. His diagnosis: each nation rationally trying to run a trade surplus creates a collective deflationary spiral (all cannot simultaneously export more than they import). His intervention was structural — an international institution with penalties on surplus nations, operating at the aggregate level of the world economy, not pressuring individual countries one at a time.
+    magnitude: 4
     practitioner: John Maynard Keynes
     outcome: Though Keynes lost the negotiation to Harry Dexter White and the weaker IMF structure omitted surplus penalties, the conference established the institutional framework for postwar international finance; the global trade imbalances Keynes predicted subsequently materialized, validating his diagnosis even as his cure was rejected.
   - name: The Paradox of Thrift in the Great Depression
     year: 1929-1933
     gem-role: applied — As the Depression deepened, each household and firm rationally cut spending and hoarded cash. This was individually prudent. Collectively, it destroyed aggregate demand and deepened the contraction. Keynes diagnosed this as the trap; Roosevelt's New Deal spending programs (FERA, PWA, WPA) were the aggregate-level intervention that partially broke it.
+    magnitude: 5
     practitioner: John Maynard Keynes (diagnosis); Franklin D. Roosevelt (intervention)
     outcome: New Deal spending programs partially broke the aggregate demand collapse; US GDP grew 10.8% in 1934 and 8.9% in 1935 following fiscal injection, demonstrating that aggregate-level intervention could interrupt a composition trap that individual prudence was systematically deepening.
   - name: European Austerity After 2008
     year: 2010-2013
     gem-role: violated — When the eurozone crisis hit, creditors demanded austerity from debtor nations simultaneously. Each nation cutting spending looked individually responsible. Collectively, it contracted aggregate demand across the eurozone, prolonged recession, and increased debt-to-GDP ratios — the exact composition trap Keynes had diagnosed. Nations that violated the protocol (UK, US under Obama) recovered faster than those that applied it.
+    magnitude: 4
     practitioner: Troika (EU, ECB, IMF) — violated
     outcome: Synchronized fiscal contraction across Southern Europe deepened the recession; Greece's GDP fell 25% between 2008 and 2013, and debt-to-GDP ratios rose despite austerity — the exact inversion of the intended effect — confirming that applying the individual-level fix universally recreates the composition trap at the continental level.
 lineage: Mandeville-private-vice-public-virtue (1714) → Malthus-general-glut (1820) → Marx-overproduction (1867) → Keynes-aggregate-demand (1936) → Minsky-financial-instability (1975) → Bernanke-helicopter-money (2002)

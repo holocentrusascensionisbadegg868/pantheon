@@ -17,16 +17,19 @@ events:
   - name: Meditations on First Philosophy
     year: 1641
     gem-role: applied — Descartes systematically doubted senses, mathematics, and reality itself until reaching cogito ergo sum, then rebuilt knowledge from that irreducible foundation
+    magnitude: 5
     practitioner: René Descartes
     outcome: By systematically doubting all inherited knowledge until reaching the indubitable "cogito ergo sum," Descartes founded modern philosophy and established a method for grounding knowledge in first principles that became the basis of rationalist epistemology and influenced Kant, Husserl, and ultimately cognitive science.
   - name: Invention of Analytic Geometry
     year: 1637
     gem-role: applied — Descartes doubted the assumed separation between algebra and geometry, reduced both to their simplest operations, and unified them through the coordinate system
+    magnitude: 5
     practitioner: René Descartes
     outcome: The Cartesian coordinate system unified algebra and geometry into a single framework, enabling Newton and Leibniz to develop calculus a generation later and establishing the mathematical foundation for classical mechanics and modern physics.
   - name: Challenger Disaster
     year: 1986
     gem-role: violated — NASA accepted inherited assumptions about O-ring safety margins rather than doubting them under novel conditions; Feynman's investigation applied methodical doubt to expose the failure
+    magnitude: 4
     practitioner: Richard Feynman
     outcome: Feynman's post-disaster investigation — refusing to accept any safety claim he could not independently verify, and demonstrating O-ring brittleness in ice water at a public hearing — exposed NASA's systemic failure to apply methodical doubt to inherited safety assumptions, leading to a complete overhaul of the shuttle's risk assessment process.
 lineage: Socrates-questioning (400bc) → Pyrrhonian-skepticism (100bc) → Descartes-methodical-doubt (1637) → Husserl-epoché (1913) → Musk-first-principles (2002)

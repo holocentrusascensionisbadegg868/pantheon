@@ -17,16 +17,19 @@ events:
   - name: Destruction of the Library of Alexandria
     year: 48bc-642ad
     gem-role: violated — single permanent bucket for all human knowledge, no tier separation, no redundancy; multiple destruction events progressively eliminated irreplaceable permanent-tier knowledge with no recovery path
+    magnitude: 4
     practitioner: Ptolemy I Soter (founder)
     outcome: Multiple destruction events (Julius Caesar's fire 48 BCE, Aurelian's attack 270s CE, Theophilus's decree 391 CE, Arab conquest 642 CE) progressively erased irreplaceable knowledge with no recovery path; works distributed across enough copies — Euclid's Elements — survived every destruction, while works held only in the single-bucket institution were lost permanently.
   - name: Luhmann's Zettelkasten output
     year: 1951-1998
     gem-role: applied — 90,000 index cards, three explicit tiers, 47 years of consistent tier discipline produced the most prolific academic output of any 20th-century social scientist
+    magnitude: 2
     practitioner: Niklas Luhmann
     outcome: Luhmann produced 58 books and 550+ articles over 47 years from a single physical card index; the system's three explicit tiers (fleeting/literature/permanent) and insistence on distilling to standalone insights before storing produced an academic output that researchers have called statistically implausible without the system.
   - name: Nexus session compaction incident
     year: 2026
     gem-role: applied — a rich AI agent research session (7 agent-to-agent handoffs, failure modes, consolidation plan) evaporated when Claude compacted; conversation window had been used as only storage; three-tier fix built same session; this gem was the insight that emerged
+    magnitude: 1
     practitioner: Dana Schreiber
     outcome: The compaction loss triggered the design and immediate implementation of a three-tier storage architecture matching the Luhmann model; the pattern that emerged from the incident (this gem) was captured in the fleeting tier before the session ended and promoted to the permanent Pantheon library — the first successful application of the fix it described.
 lineage: animism-prehistoric → egyptian-ka-ba-3000bc → plato-forms-380bc → locke-commonplace-1680 → luhmann-zettelkasten-1951 → vessel-and-soul

@@ -11,16 +11,19 @@ events:
   - name: The Miserere transcription
     year: 1770
     gem-role: applied — Mozart, age 14, attended a single performance of Allegri's Miserere in the Sistine Chapel (a work the Vatican forbade from copying under penalty of excommunication). He returned to his lodgings and wrote out the complete 9-part score from memory. He had internalized the entire work — all voices, all relationships — as a simultaneous whole during one hearing.
+    magnitude: 2
     practitioner: Wolfgang Amadeus Mozart
     outcome: Mozart produced a complete written score of a secret, 9-part polyphonic work after a single hearing; on a second attendance he made only minor corrections. The transcription demonstrated the gestalt cognitive capacity — simultaneous internalization of a complete complex structure — that would define his compositional method for the rest of his life.
   - name: Mozart's letters describing composition while traveling
     year: 1781-1782
     gem-role: applied — In letters to his father, Mozart described composing entire works in his head while traveling by coach, at meals, or lying in bed — experiencing all parts at once — and then writing them down in a single sitting. The Piano Concerto No. 11 in F major and several others from this period show manuscripts with almost no corrections, confirming the work arrived complete.
+    magnitude: 3
     practitioner: Wolfgang Amadeus Mozart
     outcome: Mozart's manuscripts from this period show almost no corrections, confirming that the complete work existed internally before a single note was written; his compositional output during 1781-1786 — 15 piano concertos, multiple symphonies, and three operas including Le nozze di Figaro — is considered the most concentrated burst of musical invention in Western history.
   - name: Beethoven's sketchbooks
     year: 1798-1827
     gem-role: violated — Beethoven's sketchbooks are the counter-model: thousands of pages of sequential trial and error, parts designed in isolation and revised as their relationship to the whole became clearer. His Fifth Symphony sketches span three years of fragment-to-fragment assembly. The result is as great as Mozart's work, but the process cost 10x the effort and produced famous revision suffering. Sequential assembly, not gestalt-first.
+    magnitude: 3
     practitioner: Ludwig van Beethoven
     outcome: Beethoven's Fifth Symphony, assembled sequentially across three years of sketches, is universally regarded as a masterwork — proving that sequential assembly can produce greatness — but at an order-of-magnitude higher effort cost than Mozart's gestalt-first method; the sketchbooks, now preserved in archives worldwide, are the most documented evidence of sequential assembly in music history.
 lineage: Bach-counterpoint-1720 → Mozart-gestalt-first-1770 → Tolkien-world-whole-1930 → Jobs-complete-product-vision-1984

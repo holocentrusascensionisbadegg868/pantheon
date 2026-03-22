@@ -17,15 +17,19 @@ events:
   - name: CUDA Launch and Decade-Long Investment
     year: 2006-2017
     gem-role: applied — Huang launched CUDA in 2006 and invested $12B over the next decade despite near-zero commercial revenue from GPU computing; every major deep learning framework (TensorFlow, PyTorch, Caffe) was built natively on CUDA by the time AI went commercial in 2017
+    magnitude: 4
   - name: MS-DOS IBM Deal and Open Licensing
     year: 1980-1984
     gem-role: applied — Gates licensed DOS to IBM for $80,000 but retained rights to license to all other PC makers; by 1984 the IBM PC clone market had created millions of DOS-dependent users and thousands of DOS-native programs — ecosystem gravity made Microsoft unassailable
+    magnitude: 4
   - name: IBM System/360 Announcement
     year: 1964
     gem-role: applied — IBM invested $5B (3x annual revenue) in a unified architecture to make backward compatibility a platform feature; the ecosystem of software, operators, and certified technicians became an impenetrable gravity well competitors could not replicate
+    magnitude: 4
   - name: AMD's Failure to Match CUDA
     year: 2008-2023
     gem-role: violated — AMD built GPUs with competitive hardware specs but underinvested in the developer ecosystem (ROCm); despite often matching NVIDIA performance, AMD held single-digit AI accelerator market share — hardware is commoditizable but developer ecosystems are not
+    magnitude: 2
 lineage: IBM-System360-1964 → Microsoft-DOS-1980 → Jensen-Huang-CUDA-2006
 origin-earliest: IBM-1964
 origin-modern: Huang-2006

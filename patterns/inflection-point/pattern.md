@@ -11,16 +11,19 @@ events:
   - name: Intel Memory-to-Microprocessor Pivot
     year: 1985
     gem-role: applied — Grove asked "what would a new CEO do?", killed Intel's founding memory business, committed entirely to microprocessors
+    magnitude: 4
     practitioner: Andy Grove
     outcome: Intel exited the memory chip business and bet entirely on microprocessors; by 1992 Intel was the world's largest semiconductor company with 80% PC processor market share. Grove later documented this in "Only the Paranoid Survive."
   - name: Pentium FDIV Bug Crisis
     year: 1994
     gem-role: violated then applied — initially minimized a reputational inflection point with engineering logic, then recognized the shift and executed a total reversal with unconditional replacements
+    magnitude: 2
     practitioner: Andy Grove
     outcome: After initially failing to recognize a reputational inflection point, Grove reversed course with a $475M unconditional replacement program; Intel's brand survived intact and the episode became the template for corporate crisis response in consumer-facing technology companies.
   - name: Intel Inside Campaign
     year: 1991
     gem-role: applied — detected that PC commoditization was a 10x force against component pricing power, pivoted Intel from B2B chipmaker to consumer brand
+    magnitude: 3
     practitioner: Andy Grove
     outcome: The "Intel Inside" campaign transformed Intel from an invisible component supplier into one of the world's most recognized consumer brands, commanding a price premium that protected Intel's margins even as PC hardware commoditized around it.
 lineage: Clausewitz → Grove → Christensen

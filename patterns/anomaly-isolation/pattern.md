@@ -17,16 +17,19 @@ events:
   - name: Discovery of Polonium and Radium
     year: 1898
     gem-role: applied — Curie measured pitchblende at 4x the radioactivity of pure uranium; instead of dismissing the excess as error, she hypothesized unknown elements and spent four years refining tons of ore to isolate them
+    magnitude: 4
     practitioner: Marie Curie
     outcome: Curie isolated two new elements — polonium and radium — and established the concept of radioactivity as an atomic property, earning the 1903 Nobel Prize in Physics and 1911 Nobel Prize in Chemistry.
   - name: Discovery of Penicillin
     year: 1928
     gem-role: applied — Fleming noticed a mold-cleared zone on a staphylococcus plate; instead of discarding the contaminated sample, he cultured the mold and identified its antibacterial compound
+    magnitude: 5
     practitioner: Alexander Fleming
     outcome: Fleming identified penicillin, the first mass-produced antibiotic, saving an estimated 200 million lives in the 20th century; the discovery began with his refusal to discard an anomalous contaminated culture plate.
   - name: Challenger Disaster Root Cause
     year: 1986
     gem-role: violated — Engineers at Morton Thiokol flagged anomalous O-ring erosion data in cold-weather launches; management dismissed the measurements as inconclusive, overriding the anomaly signal
+    magnitude: 3
     practitioner: Roger Boisjoly (violated by NASA management and Morton Thiokol management)
     outcome: The anomaly signal was overridden; Challenger broke apart 73 seconds after launch on January 28, 1986, killing all seven crew members. The Rogers Commission later confirmed O-ring failure as the cause.
 lineage: Empiricism (Bacon) → Systematic Measurement (Lavoisier) → Anomaly Isolation (Curie)

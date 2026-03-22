@@ -14,16 +14,19 @@ events:
   - name: Budapest Park Revelation
     year: 1882
     gem-role: applied — Tesla visualized the complete rotating magnetic field and AC induction motor while walking in Budapest; ran the design mentally for months before building a physical prototype in 1887, which worked on the first attempt
+    magnitude: 4
     practitioner: Nikola Tesla
     outcome: Tesla's AC induction motor, built five years after the mental conception, worked on the first attempt and became the foundation of the modern AC power grid; Westinghouse licensed the design, and AC power defeated Edison's DC system to become the global standard for electrical distribution.
   - name: Colorado Springs Laboratory
     year: 1899
     gem-role: applied — Tesla mentally designed his magnifying transmitter experiments in advance, predicting resonance behaviors that shocked his assistants when physical results matched his mental models precisely
+    magnitude: 2
     practitioner: Nikola Tesla
     outcome: Tesla's Colorado Springs experiments confirmed his mental models of high-frequency electrical resonance with sufficient fidelity that his notes record predictions followed by confirmations; the work established the theoretical basis for radio-frequency engineering and informed subsequent wireless transmission research.
   - name: Wardenclyffe Tower
     year: 1901-1905
     gem-role: violated — Tesla's mental model of global wireless power transmission was never stress-tested against economic and material constraints; the tower was built but never completed, demonstrating the failure mode when mental simulation outpaces physical and financial reality
+    magnitude: 2
     practitioner: Nikola Tesla
     outcome: Wardenclyffe Tower was never completed; J.P. Morgan withdrew funding in 1904 after Tesla could not demonstrate commercial viability, and the tower was demolished for scrap in 1917 — the canonical example of the mind-forge's failure mode when the practitioner's domain expertise does not cover all relevant constraints (financial and atmospheric physics in this case).
 lineage: Archimedes → Leonardo da Vinci → Nikola Tesla

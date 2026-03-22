@@ -17,21 +17,25 @@ events:
   - name: Jobs returns to Apple
     year: 1997
     gem-role: applied — killed 70% of Apple's product line, reduced to a 2x2 grid (consumer/pro × desktop/portable), saved the company from bankruptcy
+    magnitude: 3
     practitioner: Steve Jobs
     outcome: Apple went from losing $1B/year to profitability within 12 months; the focused lineup became the foundation for Apple's revival and subsequent ascent to the world's most valuable company.
   - name: iPhone launch
     year: 2007
     gem-role: applied — eliminated keyboard, stylus, and dozens of proposed features; shipped with one button and a touchscreen
+    magnitude: 4
     practitioner: Steve Jobs
     outcome: The iPhone redefined the smartphone category and generated over $1T in cumulative revenue; every major phone manufacturer abandoned physical keyboards within five years of the launch.
   - name: Apple Lisa failure
     year: 1983
     gem-role: violated — feature creep and committee design produced an overpriced, unfocused product; commercial failure
+    magnitude: 2
     practitioner: Steve Jobs
     outcome: The Lisa sold approximately 100,000 units at $9,995 and was discontinued within two years; the failure directly preceded the Macintosh, which Jobs developed under a tighter taste gate and which succeeded commercially and culturally.
   - name: iPod development
     year: 2001
     gem-role: applied — rejected every interface proposal until scroll wheel emerged; no file manager, no EQ settings, no visible complexity
+    magnitude: 3
     practitioner: Steve Jobs
     outcome: The iPod captured 70%+ of the digital music player market within three years and generated $4B+ in annual revenue at peak; the scroll wheel interface became the defining industrial design of the early 2000s.
 lineage: zen-aesthetics-800 → bauhaus-less-is-more-1919 → rams-braun-1961 → jobs-apple-1997

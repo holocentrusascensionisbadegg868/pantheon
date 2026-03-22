@@ -11,21 +11,25 @@ events:
   - name: Black Monday 1987
     year: 1987
     gem-role: applied — Taleb held large positions in cheap out-of-the-money options, which the market priced as near-worthless given low recent volatility. On October 19 the Dow fell 22.6% in one day — the options expired massively in-the-money, producing returns of several thousand percent. His loss on non-option positions was capped; his gain was uncapped.
+    magnitude: 3
     practitioner: Nassim Nicholas Taleb
     outcome: Taleb's fund generated returns of several thousand percent on the day of the crash, establishing his reputation and providing the empirical foundation for his later theory of antifragility.
   - name: 2008 Financial Crisis
     year: 2007-2008
     gem-role: applied — Universa Investments (co-founded with Mark Spitznagel, using Taleb's framework) held systematic tail-risk hedges against the consensus that housing-backed securities were safe. When the crisis struck, funds using the barbell strategy returned over 100% while the market fell 37%.
+    magnitude: 4
     practitioner: Nassim Nicholas Taleb and Mark Spitznagel (Universa Investments)
     outcome: Universa Investments returned over 100% in 2008 while the S&P 500 fell 37%, vindicating the barbell strategy and positioning Taleb as the central theorist of tail-risk hedging.
   - name: The Black Swan publication and reception
     year: 2007-2010
     gem-role: applied — Taleb designed his intellectual output antifragilly: he made strong, provocative claims that invited attack. Each attack by economists and statisticians spread the book further and stress-tested its arguments. Sales grew with controversy rather than shrinking from it. He explicitly noted: "My books are like my options positions — they gain from being attacked."
+    magnitude: 2
     practitioner: Nassim Nicholas Taleb
     outcome: The Black Swan sold over three million copies and was named one of the twelve most influential books since World War II by The Sunday Times; attacks from mainstream economists amplified rather than diminished its reach.
   - name: Long-Term Capital Management collapse
     year: 1998
     gem-role: violated — LTCM, managed by Nobel laureates, had modeled risk using thin-tail (Gaussian) distributions and taken enormous leveraged positions betting on mean-reversion. The Russian debt default was a 6-sigma event under their model, essentially impossible. They lost $4.6 billion in under four months and required a Federal Reserve–orchestrated bailout. The fragile structure — massive downside, small recurring upside — collapsed exactly when the tail arrived.
+    magnitude: 3
     practitioner: John Meriwether, Robert Merton, and Myron Scholes (violated)
     outcome: LTCM lost $4.6 billion in under four months and required a Federal Reserve–orchestrated $3.6 billion bailout; the fund's collapse demonstrated that harvesting small premiums on unlimited tail-risk positions is the exact inversion of antifragility.
 lineage: Pascal-expected-value (1654) → Bernoulli-diminishing-returns (1738) → Kelly-optimal-betting (1956) → Black-Scholes-options (1973) → Mandelbrot-fat-tails (1963) → Taleb-antifragility (2007)
