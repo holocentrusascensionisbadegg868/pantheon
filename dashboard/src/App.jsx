@@ -11,6 +11,12 @@ export default function App() {
   const [filterValue, setFilterValue] = useState('');
   const graphData = buildGraphData(gems, filterType, filterValue);
 
+  const handleSearchSelect = (result) => {
+    setFilterType('all');
+    setFilterValue('');
+    setSelectedNode(result);
+  };
+
   return (
     <div className="h-screen flex flex-col">
       <Header
@@ -20,6 +26,7 @@ export default function App() {
         setFilterType={setFilterType}
         filterValue={filterValue}
         setFilterValue={setFilterValue}
+        onSearchSelect={handleSearchSelect}
       />
       <div className="flex flex-1 overflow-hidden">
         <div className="flex-1 relative">

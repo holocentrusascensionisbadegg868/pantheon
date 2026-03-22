@@ -1,6 +1,10 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useRef, useEffect } from 'react';
 
-export default function Header({ gems, practitioners, filterType, setFilterType, filterValue, setFilterValue }) {
+export default function Header({ gems, practitioners, filterType, setFilterType, filterValue, setFilterValue, onSearchSelect }) {
+  const [query, setQuery] = useState('');
+  const [showResults, setShowResults] = useState(false);
+  const searchRef = useRef();
+
   const allDomains = useMemo(() => {
     const set = new Set();
     gems.forEach(g => g.domains.forEach(d => set.add(d)));
@@ -8,6 +12,44 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
   }, [gems]);
 
   const eventCount = useMemo(() => gems.reduce((sum, g) => sum + g.events.length, 0), [gems]);
+
+  const searchResults = useMemo(() => {
+    if (!query.trim() || query.length < 2) return [];
+    const q = query.toLowerCase();
+    const results = [];
+
+    for (const gem of gems) {
+      if (gem.name.toLowerCase().includes(q) || (gem.aliases || []).some(a => a.toLowerCase().includes(q))) {
+        results.push({ id: `gem:${gem.name}`, type: 'gem', label: gem.name, data: gem });
+      }
+      for (const p of gem.practitioners) {
+        if (p.name.toLowerCase().includes(q) && !results.some(r => r.id === `practitioner:${p.name}`)) {
+          results.push({ id: `practitioner:${p.name}`, type: 'practitioner', label: p.name, data: p });
+        }
+      }
+      for (const e of gem.events) {
+        if (e.name.toLowerCase().includes(q)) {
+          results.push({ id: `event:${gem.name}:${e.name}`, type: 'event', label: e.name, data: { ...e, gemName: gem.name } });
+        }
+      }
+    }
+
+    return results.slice(0, 12);
+  }, [query, gems]);
+
+  useEffect(() => {
+    function handleClick(e) {
+      if (searchRef.current && !searchRef.current.contains(e.target)) setShowResults(false);
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
+  const handleSelect = (result) => {
+    onSearchSelect(result);
+    setQuery('');
+    setShowResults(false);
+  };
 
   const handleFilterChange = (type, value) => {
     setFilterType(type);
@@ -18,6 +60,8 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
     setFilterType('all');
     setFilterValue('');
   };
+
+  const typeColor = { gem: 'text-pantheon-gem', practitioner: 'text-pantheon-practitioner', event: 'text-pantheon-event' };
 
   return (
     <header className="bg-pantheon-card border-b border-pantheon-border px-6 py-3 flex items-center justify-between flex-shrink-0">
@@ -31,6 +75,37 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
         </div>
       </div>
       <div className="flex items-center gap-3">
+        {/* Global search */}
+        <div ref={searchRef} className="relative">
+          <input
+            type="text"
+            placeholder="Search gems, people, events..."
+            value={query}
+            onChange={e => { setQuery(e.target.value); setShowResults(true); }}
+            onFocus={() => setShowResults(true)}
+            className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm w-56 focus:outline-none focus:border-pantheon-accent placeholder:text-pantheon-muted/50"
+          />
+          {showResults && searchResults.length > 0 && (
+            <div className="absolute top-full mt-1 left-0 w-80 bg-pantheon-card border border-pantheon-border rounded-lg shadow-xl z-50 overflow-hidden">
+              {searchResults.map(r => (
+                <button key={r.id} onMouseDown={() => handleSelect(r)}
+                  className="w-full text-left px-3 py-2 hover:bg-pantheon-border/40 transition-colors flex items-center gap-2 border-b border-pantheon-border/30 last:border-0">
+                  <span className={`text-[10px] uppercase tracking-wider w-16 flex-shrink-0 ${typeColor[r.type]}`}>{r.type}</span>
+                  <span className="text-sm truncate">{r.label}</span>
+                  {r.type === 'event' && (
+                    <span className="text-[10px] text-pantheon-muted ml-auto flex-shrink-0">via {r.data.gemName}</span>
+                  )}
+                </button>
+              ))}
+            </div>
+          )}
+          {showResults && query.length >= 2 && searchResults.length === 0 && (
+            <div className="absolute top-full mt-1 left-0 w-80 bg-pantheon-card border border-pantheon-border rounded-lg shadow-xl z-50 px-3 py-2 text-xs text-pantheon-muted">
+              No matches for "{query}"
+            </div>
+          )}
+        </div>
+
         <select
           className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-pantheon-accent"
           value={filterType === 'practitioner' ? filterValue : ''}
