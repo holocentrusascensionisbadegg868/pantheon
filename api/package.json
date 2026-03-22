@@ -1,0 +1,19 @@
+{
+  "name": "pantheon-graphql-api",
+  "version": "1.0.0",
+  "description": "GraphQL API for the Pantheon cognitive patterns library",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.13.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "glob": "^11.0.0",
+    "graphql": "^16.9.0",
+    "gray-matter": "^4.0.3"
+  }
+}
