@@ -57,7 +57,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Leonardo da Vinci — cross-domain curiosity, notebook method
 - [x] Michelangelo — constraint as creativity
 - [x] Wolfgang Amadeus Mozart — compositional speed, pattern saturation
-- [ ] Pablo Picasso — deconstruction-reconstruction, period focus
+- [x] Pablo Picasso — deconstruction-reconstruction, period focus
 - [ ] Johann Sebastian Bach — structural mastery, constraint-driven variation
 
 ## Investors & Economists (5)

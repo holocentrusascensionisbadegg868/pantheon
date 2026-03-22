@@ -29,6 +29,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-flow-line` | flow-line | Henry Ford | batch processing |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | — | — |
 | `/pantheon-gestalt-first` | gestalt-first | — | — |
+| `/pantheon-grammar-theft` | grammar-theft | — | — |
 | `/pantheon-imperial-self-correction` | imperial-self-correction | Marcus Aurelius | emotional reaction driving a decision |
 | `/pantheon-inflection-point` | inflection-point | Andy Grove | strategic shift |
 | `/pantheon-lion-and-fox` | lion-and-fox | Niccolò Machiavelli | political decision |
@@ -86,4 +87,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 46 patterns*
+*github.com/dkschrei/pantheon — 47 patterns*
