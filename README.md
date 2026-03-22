@@ -12,6 +12,8 @@
 
 Pantheon is a library of executable cognitive patterns — distilled from history's greatest problem solvers and packaged as AI skills you can drop into any AI coding environment.
 
+It is part history lesson on human ingenuity, part operating manual. Every gem traces a real problem solved by a real person — Jensen Huang seeding a developer ecosystem a decade before the market existed, Toyota stopping the line the moment defects appear, Feynman refusing to accept understanding he couldn't articulate simply. That history is then codified into a protocol any AI agent can run today.
+
 These are not quotes. Not principles. Not motivational frameworks. They are **protocols**: trigger conditions, step-by-step procedures, and anti-patterns that your AI can run when it detects the right context. History's best mental models, made executable.
 
 Every pattern answers the same question: *what did this genius actually do differently when faced with this class of problem?*
