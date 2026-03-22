@@ -51,7 +51,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Hannibal Barca — encirclement, outnumbered victory
 - [x] Ernest Shackleton — leadership under survival conditions
 - [x] Winston Churchill — narrative framing, refusing capitulation
-- [ ] George Washington — strategic retreat, long-game patience
+- [x] George Washington — strategic retreat, long-game patience
 
 ## Artists & Creators (5)
 - [ ] Leonardo da Vinci — cross-domain curiosity, notebook method

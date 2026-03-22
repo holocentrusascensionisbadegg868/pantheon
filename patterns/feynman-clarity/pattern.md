@@ -26,6 +26,7 @@ events:
 lineage: socratic-method-470bc → aristotle-analytics-350bc → descartes-clear-ideas-1637 → einstein-thought-experiments-1905 → feynman-clarity-1950s
 origin-earliest: socrates-470bc
 origin-type: authored
+authored-by: Dana Schreiber
 origin-modern: feynman-1950
 ---
 

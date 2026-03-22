@@ -6,10 +6,12 @@
 
 ## Musk Filter: PB&J Sandwich
 
+---
+
 ### Step 1 — QUESTION IT
 
-**Who needs this?** Me. I'm hungry right now.
-**What breaks without it?** I don't eat.
+**Who needs this?** One hungry person, right now.
+**What breaks without it?** They don't eat.
 
 Passes. Proceed.
 
@@ -17,35 +19,39 @@ Passes. Proceed.
 
 ### Step 2 — DELETE IT
 
-Original scope I might have proposed:
-- Toast the bread ❌ — nothing breaks without it
-- Cut diagonally for presentation ❌ — I'm eating alone
-- Use a plate ❌ — paper towel works
-- Spread butter first for moisture barrier ❌ — unnecessary complexity
-- Measure portions ❌ — eyeball it
+Original assumed scope:
+- ~~Toast the bread~~ — not required, hunger doesn't care
+- ~~Trim crusts~~ — aesthetic only
+- ~~Plate it with a garnish~~ — no one asked
+- ~~Cut diagonally vs. straight~~ — irrelevant to eating
+- ~~Spread peanut butter on both slices~~ — one slice is enough
 
-**Deleted 5 of 8 steps. 62% cut.**
-
-Surviving: bread, peanut butter, jelly, knife.
+**Deleted ~40% of the steps.**
 
 ---
 
 ### Step 3 — SIMPLIFY
 
-One technique, no variants: spread PB on one slice, jelly on the other, press together. Done. No sequencing debate.
+What remains:
+1. Bread (2 slices)
+2. Peanut butter on one slice
+3. Jelly on the other
+4. Press together
+
+One jar, one knife, one motion per slice. Done.
 
 ---
 
 ### Step 4 — ACCELERATE
 
-Minimum path: grab bread → PB knife stroke → jelly knife stroke → close. 45 seconds. Nothing deferred that blocks eating.
+Minimum viable sandwich: skip plating, skip cutting. Hand it directly to the person. Time to edible: 90 seconds.
 
 ---
 
 ### Step 5 — AUTOMATE
 
-No. I make one sandwich maybe twice a week. Automation cost exceeds lifetime value by orders of magnitude.
+**Not yet.** One sandwich, one person, one time. Automating a 90-second task is waste.
 
 ---
 
-**Approved scope:** Two bread slices. PB. Jelly. One knife. Press. Eat.
+**What this pattern did:** Killed toasting, garnishing, diagonal cuts, and double-spreading before anyone started. The sandwich got simpler and faster — without losing the sandwich.

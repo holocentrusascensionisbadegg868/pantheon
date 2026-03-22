@@ -41,6 +41,7 @@
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
 | `/pantheon-the-combination` | the-combination | decision-making | cutthroat competition |
 | `/pantheon-the-endurance` | the-endurance | leadership | primary mission destroyed |
+| `/pantheon-the-fabian` | the-fabian | leadership | outmatched opponent |
 | `/pantheon-the-ratchet` | the-ratchet | systems | inner loop velocity decreasing |
 | `/pantheon-time-and-motion` | time-and-motion | engineering | optimize process |
 | `/pantheon-two-way-door` | two-way-door | decision-making | decision paralysis |

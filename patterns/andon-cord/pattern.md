@@ -20,6 +20,7 @@ events:
 lineage: sakichi-toyoda-autoloom-1896 → taiichi-ohno-jidoka-1950 → toyota-production-system-1970 → elon-musk-2003
 origin-earliest: ohno-1950
 origin-type: authored
+authored-by: Dana Schreiber
 origin-modern: toyota-1970
 ---
 

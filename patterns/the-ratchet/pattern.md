@@ -26,6 +26,7 @@ events:
 lineage: hegel-dialectic-1807 → schumpeter-creative-destruction-1942 → ohno-kaizen-kaikaku-1950 → boyd-ooda-tempo-1960 → the-ratchet
 origin-earliest: hegel-1807
 origin-type: authored
+authored-by: Dana Schreiber
 origin-modern: ohno-1950
 ---
 

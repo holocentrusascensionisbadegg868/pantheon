@@ -27,6 +27,7 @@ lineage: animism-prehistoric → egyptian-ka-ba-3000bc → plato-forms-380bc →
 origin-earliest: animism-prehistoric
 origin-modern: luhmann-1951
 origin-type: authored
+authored-by: Dana Schreiber
 ---
 
 # Vessel and Soul

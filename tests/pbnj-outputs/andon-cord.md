@@ -6,47 +6,42 @@
 
 ## Andon Cord: PB&J Sandwich
 
-**Mid-construction. Spreading peanut butter on bread.**
-
-> "WHY does the bread keep TEARING. I've ruined three slices. This is IMPOSSIBLE. I give up."
+**Scenario in progress:** You're making a PB&J. Bread is out, knife is out, jars are open.
 
 ---
 
-**Andon Cord pulled. All sandwich work stops.**
+**Frustration signal detected:**
+
+> "WHY is the peanut butter not spreading?? I've ruined THREE slices, the bread keeps tearing, NOTHING IS WORKING and I just want a sandwich"
 
 ---
 
-Frustration signal detected — putting the knife down.
+**All sandwich construction stops.**
 
-**What broke and what were you trying to accomplish?**
-
----
-
-*Waiting.*
+The knife goes down. The bread stays on the counter. Nothing moves.
 
 ---
 
-> "I'm using that thin sandwich bread and the peanut butter is straight from the fridge."
+**One sentence:**
+
+The bread situation has clearly hit a wall.
 
 ---
 
-**Blocker identified:** Cold peanut butter + thin bread = tearing.
+**One question:**
 
-**Blocker resolved?** Confirm before resuming.
-
----
-
-> "Yeah, I microwaved the PB for 10 seconds. Ready to continue."
+What broke and what were you trying to accomplish?
 
 ---
 
-**Resuming — only what was asked:**
+**Then: silence. Wait.**
 
-1. Spread softened peanut butter on slice one
-2. Spread jelly on slice two
-3. Press together
-4. Cut diagonally
+No suggestions about cold peanut butter vs. room temperature. No advice about bread thickness. No "have you tried—". Nothing until they answer.
 
 ---
 
-**What the pattern prevented:** Suggesting a different bread, recommending crunchy vs. creamy, explaining gluten structure, or offering five alternative spreading techniques — before understanding that temperature was the only actual problem.
+**Only after they respond** — maybe "the PB is straight from the fridge and tears everything" — does work resume, and only on what they asked: *fix this specific problem*, not restart the whole sandwich from scratch.
+
+---
+
+The cord doesn't fix the sandwich. It stops the bleeding so you can find out what actually broke.
