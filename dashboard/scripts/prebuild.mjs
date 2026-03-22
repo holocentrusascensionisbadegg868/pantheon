@@ -28,6 +28,18 @@ function fixYaml(raw) {
       return `${prefix}'${full}'`;
     }
   );
+  // General fix: quote any unquoted scalar value containing ': ' (colon-space)
+  // e.g. outcome: The lesson: hardware is commoditizable  →  outcome: 'The lesson: hardware is commoditizable'
+  // Skips already-quoted values (starting with ' or "), block indicators (|, >), and flow sequences/maps ([ {)
+  raw = raw.replace(
+    /^(\s+[\w-]+:\s+)([^'"\|\>\[\{][^\n]*)$/gm,
+    (_m, prefix, value) => {
+      if (value.includes(': ')) {
+        return `${prefix}'${value.replace(/'/g, "''")}'`;
+      }
+      return _m;
+    }
+  );
   return raw;
 }
 

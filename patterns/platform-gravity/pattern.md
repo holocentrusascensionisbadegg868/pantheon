@@ -16,24 +16,16 @@ practitioners:
 events:
   - name: CUDA Launch and Decade-Long Investment
     year: 2006-2017
-    gem-role: applied — Huang launched CUDA in 2006 and invested $12B over the next decade despite near-zero commercial revenue from GPU computing. Competitors (AMD, Intel) treated GPU general-purpose compute as a niche research use case and declined to build comparable developer ecosystems. Every major deep learning framework (TensorFlow, PyTorch, Caffe) was built natively on CUDA by the time AI went commercial in 2017.
-    practitioner: Jensen Huang
-    outcome: By 2024, NVIDIA controlled ~80% of the AI accelerator market. Switching costs were so high that hyperscalers began building custom silicon (TPUs, Trainium) rather than switching to GPU competitors — and even custom silicon required years to achieve feature parity with the CUDA ecosystem. NVIDIA's market cap exceeded $3 trillion.
+    gem-role: applied — Huang launched CUDA in 2006 and invested $12B over the next decade despite near-zero commercial revenue from GPU computing; every major deep learning framework (TensorFlow, PyTorch, Caffe) was built natively on CUDA by the time AI went commercial in 2017
   - name: MS-DOS IBM Deal and Open Licensing
     year: 1980-1984
-    gem-role: applied — Gates licensed DOS to IBM for $80,000 (virtually nothing) but retained the right to license to other manufacturers. He was planting the developer ecosystem, not extracting revenue. By 1984 the IBM PC clone market had created millions of DOS-dependent users and thousands of DOS-native software programs — the ecosystem gravity made Microsoft unassailable.
-    practitioner: Bill Gates
-    outcome: By 1990, MS-DOS ran on approximately 80% of personal computers worldwide; the developer ecosystem created by open licensing made Windows the natural successor, and Microsoft became the dominant software company of the 1990s. Gates later said this was the most important business decision in Microsoft's history.
+    gem-role: applied — Gates licensed DOS to IBM for $80,000 but retained rights to license to all other PC makers; by 1984 the IBM PC clone market had created millions of DOS-dependent users and thousands of DOS-native programs — ecosystem gravity made Microsoft unassailable
   - name: IBM System/360 Announcement
     year: 1964
-    gem-role: applied — IBM bet the company on a single unified architecture, investing $5B (3x its annual revenue) to make backward compatibility and software portability a platform feature. The IBM ecosystem — independent software vendors, trained operators, certified technicians — became an impenetrable gravity well. Competitors could not match the installed base of compatible software and trained personnel.
-    practitioner: IBM
-    outcome: System/360 made IBM the dominant computing company for two decades; by 1970 IBM had ~70% of the global mainframe market and the phrase "nobody ever got fired for buying IBM" captured the lock-in. The compatible software ecosystem was the moat — not the hardware.
+    gem-role: applied — IBM invested $5B (3x annual revenue) in a unified architecture to make backward compatibility a platform feature; the ecosystem of software, operators, and certified technicians became an impenetrable gravity well competitors could not replicate
   - name: AMD's Failure to Match CUDA
     year: 2008-2023
-    gem-role: violated — AMD built GPUs with competitive hardware specs but underinvested in the developer ecosystem (ROCm). AI researchers chose NVIDIA not because of hardware benchmarks but because CUDA had 15 years of libraries, documentation, and Stack Overflow answers. AMD's hardware improvements were largely irrelevant — you cannot out-benchmark an ecosystem.
-    practitioner: AMD
-    outcome: Despite often matching or exceeding NVIDIA hardware performance, AMD held single-digit market share in AI accelerators as of 2024. The lesson: hardware is commoditizable; the developer ecosystem is not.
+    gem-role: violated — AMD built GPUs with competitive hardware specs but underinvested in the developer ecosystem (ROCm); despite often matching NVIDIA performance, AMD held single-digit AI accelerator market share — hardware is commoditizable but developer ecosystems are not
 lineage: IBM-System360-1964 → Microsoft-DOS-1980 → Jensen-Huang-CUDA-2006
 origin-earliest: IBM-1964
 origin-modern: Huang-2006
