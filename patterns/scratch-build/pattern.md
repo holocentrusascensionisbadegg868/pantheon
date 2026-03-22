@@ -17,15 +17,23 @@ events:
   - name: nanoGPT release
     year: 2023
     gem-role: applied — Karpathy reimplemented GPT-2 training in ~600 lines of PyTorch; thousands used it to understand transformers for the first time
+    practitioner: Andrej Karpathy
+    outcome: nanoGPT became the most-forked GPT implementation on GitHub; it gave researchers a complete, legible transformer training pipeline for the first time, becoming the default starting point for anyone who needed to understand — not just use — transformer architecture.
   - name: Tesla removes radar from Autopilot
     year: 2021
     gem-role: applied — Karpathy's team rebuilt the perception stack from scratch around pure vision, having understood the system deeply enough to remove a sensor modality entirely
+    practitioner: Andrej Karpathy
+    outcome: Tesla shipped Model 3 and Model Y with vision-only Autopilot; the decision — widely criticized as cost-cutting — was grounded in deep system understanding that radar introduced sensor fusion ambiguities outweighing its benefits, demonstrating that scratch-build mastery enables confident simplification.
   - name: Feynman's blackboard quote
     year: 1988
     gem-role: applied — found on his blackboard at death: "What I cannot create, I do not understand" — the credo of scratch-build
+    practitioner: Richard Feynman
+    outcome: Feynman's insistence on re-deriving results from first principles produced the Feynman Lectures on Physics — a complete from-scratch reconstruction of the physics curriculum that remains the most widely read physics textbook, having revealed connections the standard curriculum obscured.
   - name: llm.c release
     year: 2024
     gem-role: applied — Karpathy rewrote GPT-2 training in pure C (~1000 lines), stripping PyTorch, CUDA abstractions, and Python entirely to expose the raw computation
+    practitioner: Andrej Karpathy
+    outcome: llm.c matched PyTorch's training output while making every floating-point operation explicit at the hardware level; it became a reference implementation for understanding GPU computation in LLM training, extending the scratch-build lineage to the lowest accessible abstraction layer.
 lineage: Feynman → Carmack → Karpathy
 origin-earliest: Feynman-1965
 origin-modern: Karpathy-2020

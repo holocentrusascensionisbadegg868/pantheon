@@ -11,12 +11,18 @@ events:
   - name: Italian Campaign — Montenotte to Millesimo
     year: 1796
     gem-role: applied — Napoleon, commanding a starving army of 37,000, faced 50,000 Austrians under Beaulieu and 25,000 Piedmontese under Colli on opposite sides of a mountain gap. He drove between them at Montenotte, defeated Colli's Piedmontese in three days (forcing Sardinia out of the war), then reversed against Austria before Beaulieu could reinforce. He won a campaign in two weeks that everyone expected to take months.
+    practitioner: Napoleon Bonaparte
+    outcome: Sardinia sued for peace within three days; Napoleon then reversed against Austria and drove Beaulieu back across the Po, winning the entire northern Italian campaign in under two weeks against a numerically superior coalition.
   - name: Jena-Auerstedt
     year: 1806
     gem-role: applied — Prussia mobilized and marched to meet Napoleon without waiting for Russian reinforcement. Napoleon identified the window: the Prussian army was operating as a single mass, not yet integrated with Russian forces 400 miles away. He enveloped and destroyed two Prussian armies simultaneously at Jena and Auerstedt before a single Russian soldier arrived. Prussia capitulated in 33 days.
+    practitioner: Napoleon Bonaparte
+    outcome: Both Prussian army groups were destroyed in a single day; Prussia capitulated in 33 days, signing the Treaty of Tilsit (1807) and ceding half its territory — all before a single Russian soldier engaged.
   - name: Waterloo Campaign
     year: 1815
     gem-role: violated — Napoleon correctly identified that Wellington and Blücher must be separated and destroyed sequentially. He won the first phase (defeating Blücher at Ligny), but Grouchy's detachment failed to fix the Prussians, who regrouped and returned at Waterloo. Napoleon fought both enemies simultaneously — exactly the condition defeat-in-detail is designed to prevent. He lost.
+    practitioner: Napoleon Bonaparte
+    outcome: Napoleon's defeat at Waterloo on June 18, 1815 ended his rule; he abdicated four days later and was exiled to Saint Helena, where he died in 1821. The campaign is the definitive negative example of what happens when the fixing force fails.
 lineage: Napoleon-1796 → Jomini-1838 → Confederate-interior-lines-1861 → modern-asymmetric-strategy
 origin-earliest: Napoleon-1796
 origin-modern: Jomini-1838

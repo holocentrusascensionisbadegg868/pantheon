@@ -17,12 +17,18 @@ events:
   - name: Mosaic Browser Launch
     year: 1993
     gem-role: applied — The web existed since 1991 but was text-only and required Unix expertise. Andreessen built a graphical browser in months — the thinnest bridge between HTTP/HTML and normal humans. Within 18 months the web went from academic curiosity to mass phenomenon.
+    practitioner: Marc Andreessen
+    outcome: Web traffic increased 341,634% within a year of Mosaic's release; Andreessen co-founded Netscape, which went public in 1995 at a $2.9B valuation and made the internet commercially viable for mass consumers.
   - name: Loudcloud Premature Launch
     year: 1999-2002
     gem-role: violated — Andreessen tried to distribute cloud computing before the underlying technology (bandwidth, virtualization, commodity hardware) was truly ready. The bridge was built over a gap that was still too wide. The company nearly died and had to pivot to enterprise software (Opsware).
+    practitioner: Marc Andreessen
+    outcome: Loudcloud burned through $1 billion in capital and was forced to pivot to enterprise software (Opsware); it survived only because HP acquired the software business for $1.6B in 2007, but the cloud infrastructure vision was abandoned a full six years before AWS proved it viable.
   - name: '"Software Is Eating the World" Essay'
     year: 2011
     gem-role: applied — Andreessen codified his pattern into an explicit investment thesis in the Wall Street Journal. Every traditional industry had a technology-distribution gap; a16z would systematically fund the companies building the bridge. The thesis guided billions in venture capital.
+    practitioner: Marc Andreessen
+    outcome: The essay became the foundational investment thesis for a16z, which deployed billions into software-distribution companies across retail, finance, defense, and healthcare; by 2023 a16z had grown to manage over $35B in assets, making it one of the largest venture capital firms in the world.
 lineage: Gutenberg → Carnegie → Andreessen
 origin-earliest: Gutenberg-1440
 origin-modern: Andreessen-1993

@@ -14,12 +14,18 @@ events:
   - name: Toyota machine shop rearrangement
     year: 1947
     gem-role: applied — Ohno observed workers standing idle during machine cycles, then rearranged machines so one worker could operate three or four
+    practitioner: Taiichi Ohno
+    outcome: Multi-machine handling became the foundation of Toyota's labor productivity gains; despite fierce resistance from workers and unions, the rearrangement doubled output per worker and became a core pillar of the Toyota Production System.
   - name: Kanban invention from supermarket observation
     year: 1948-1956
     gem-role: applied — Ohno observed supermarket restocking patterns (pull, not push), transplanted the observed principle into manufacturing as the kanban card system
+    practitioner: Taiichi Ohno
+    outcome: The kanban pull system eliminated overproduction waste across Toyota's supply chain; deployed company-wide by 1962, it became the defining mechanism of just-in-time manufacturing and was adopted globally as a core lean tool.
   - name: Chalk circle engineer training
     year: 1950-1970
     gem-role: applied — Ohno drew a chalk circle on the factory floor and required engineers to stand in it for 8+ hours doing nothing but observing before proposing any improvement
+    practitioner: Taiichi Ohno
+    outcome: Engineers who completed the chalk circle exercise could identify waste invisible to those who hadn't directly observed the process; this became a foundational Toyota Production System training tool that produced the most efficient automotive manufacturing operation in history.
 lineage: sakichi-toyoda-loom-observation-1896 → taiichi-ohno-chalk-circle-1950 → toyota-genchi-genbutsu-1970 → lean-movement-gemba-walk-1990
 origin-earliest: ohno-1947
 origin-modern: toyota-1970

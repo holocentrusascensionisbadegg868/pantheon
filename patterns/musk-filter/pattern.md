@@ -17,12 +17,18 @@ events:
   - name: SpaceX Falcon 9 cost reduction
     year: 2002-2010
     gem-role: applied — Musk decomposed rocket costs to raw materials, eliminated 90% of assumed requirements; cost per kg to orbit dropped 10x
+    practitioner: Elon Musk
+    outcome: By applying a 5-step anti-process to rocket development, SpaceX achieved launch costs approximately 10x lower than incumbents; Falcon 9 became the world's most-launched orbital rocket and SpaceX captured the majority of the commercial launch market by the mid-2010s.
   - name: Karpathy loop incident
     year: 2026
     gem-role: violated — agent applied loop automation (Step 5) without questioning whether the loop should exist (Step 1); result: token burn, no improvement
+    practitioner: Nexus agent
+    outcome: The agent burned tokens running a circular loop that produced no real improvement to conventions.md, demonstrating the canonical failure mode: automation of an unvalidated process produces a faster version of a broken process.
   - name: Ford Model T price reduction
     year: 1908-1916
     gem-role: applied — eliminated every non-essential manufacturing step until Model T reached $290
+    practitioner: Henry Ford
+    outcome: The Model T's price fell from $825 in 1908 to $290 by 1916 through systematic elimination of manufacturing steps; by 1918, half of all cars in America were Model Ts, making the automobile a mass-market product for the first time.
 lineage: aristotle-analytics-350bc → descartes-systematic-doubt-1637 → ford-waste-elimination-1908 → ohno-muda-1950 → musk-filter-2002
 origin-earliest: aristotle-350bc
 origin-type: authored

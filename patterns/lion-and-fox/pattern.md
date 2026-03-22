@@ -20,12 +20,18 @@ events:
   - name: The Remirro de Orco Execution
     year: 1502
     gem-role: applied — Cesare Borgia installed a ruthless governor to pacify Romagna, then had him publicly cut in half in the piazza to distance himself from the cruelty and win popular love. Machiavelli documented this as the exemplary use of the pattern.
+    practitioner: Cesare Borgia
+    outcome: Borgia pacified a lawless province, transferred public hatred from himself to a disposable instrument, and won popular legitimacy — Machiavelli recorded it in Chapter VII of The Prince as the model of well-used severity, cementing Borgia's rule in Romagna.
   - name: The Ems Dispatch
     year: 1870
     gem-role: applied — Bismarck edited a diplomatic telegram to make France appear the aggressor, provoking the Franco-Prussian War on terms that unified German states behind Prussia.
+    practitioner: Otto von Bismarck
+    outcome: France declared war, the southern German states rallied behind Prussia as the aggrieved party, and the Franco-Prussian War ended in French defeat; the German Empire was proclaimed in the Hall of Mirrors at Versailles in January 1871, completing German unification.
   - name: The Fall of the Italian City-States
     year: 1494-1527
     gem-role: violated — Italian rulers relied on mercenary armies and moral posturing instead of facing military and political reality. Machiavelli watched Florence fall and wrote The Prince as a diagnosis of exactly this failure.
+    practitioner: Niccolò Machiavelli
+    outcome: The Prince (1532) provided Renaissance rulers with a political playbook blending force and cunning; it became the foundational text of modern political science and statecraft, and Machiavelli's diagnosis of the city-states' failure shaped every subsequent tradition of political realism.
 lineage: Machiavelli-1513 → Richelieu → Bismarck → Kissinger
 origin-earliest: Machiavelli-1513
 origin-modern: Bismarck-1862

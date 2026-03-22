@@ -17,12 +17,18 @@ events:
   - name: Critique of Pure Reason
     year: 1781
     gem-role: applied — Kant inverted the subject-object relation, showing that space, time, and causation are structures the mind imposes on experience rather than features passively received from objects, dissolving a century-long rationalism-empiricism stalemate
+    practitioner: Immanuel Kant
+    outcome: The Critique of Pure Reason dissolved the century-long rationalism-empiricism deadlock and reset the trajectory of Western philosophy; Kant's "Copernican Revolution" is widely considered the most important single work in modern philosophy, founding the critical tradition and directly enabling German Idealism, analytic philosophy, and phenomenology.
   - name: The Antinomies of Pure Reason
     year: 1781
     gem-role: applied — Kant showed that contradictions about the universe's finitude, free will, and God arise from applying reason beyond its valid domain; the deadlock itself was the diagnostic, not a problem to be solved by picking a side
+    practitioner: Immanuel Kant
+    outcome: By showing that the antinomies are symptoms of reason overreaching its valid domain rather than genuine metaphysical questions, Kant dissolved debates that had paralyzed philosophy for centuries and established the limits of theoretical reason as a productive philosophical finding in its own right.
   - name: Groundwork of the Metaphysics of Morals
     year: 1785
     gem-role: applied — instead of debating which moral outcomes are good, Kant inverted to ask what conditions make moral reasoning possible at all, deriving the categorical imperative from the structure of rational agency itself
+    practitioner: Immanuel Kant
+    outcome: The categorical imperative — derived entirely from the structure of rational agency rather than from any particular moral content — provided a foundation for deontological ethics that remains one of the two dominant frameworks in moral philosophy, displacing outcome-based debates with a structural account of moral obligation.
 lineage: Socrates-questioning (400bc) → Copernicus-heliocentrism (1543) → Kant-transcendental-method (1781) → Kuhn-paradigm-shifts (1962) → Chomsky-universal-grammar (1965)
 origin-earliest: Copernicus-1543
 origin-modern: Kant-1781

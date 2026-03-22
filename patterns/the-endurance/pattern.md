@@ -17,12 +17,18 @@ events:
   - name: Sinking of the Endurance
     year: 1915
     gem-role: applied — When the Endurance sank on November 21, 1915, Shackleton wrote: "Ship and stores have gone — so now we'll go home." Six words, no grief, complete mission substitution. He then executed a flawless 800-mile open-boat journey and unmapped mountain crossing to rescue all 27 men.
+    practitioner: Ernest Shackleton
+    outcome: Shackleton led all 27 crew members to safety over 22 months without a single fatality — the greatest survival story in polar exploration history, subsequently studied at Harvard Business School, the US Navy, and leadership programs worldwide.
   - name: Apollo 13 oxygen tank explosion
     year: 1970
     gem-role: applied — 56 hours into the mission, an oxygen tank exploded, destroying the service module and making lunar landing impossible. Gene Kranz declared "failure is not an option" and pivoted Mission Control entirely to crew return — no mourning for the lost Moon shot, complete focus on the new objective.
+    practitioner: Gene Kranz
+    outcome: All three astronauts (Jim Lovell, Jack Swigert, Fred Haise) returned safely on April 17, 1970; NASA called it a "successful failure" and the mission became the canonical modern case study in mission substitution under catastrophic failure.
   - name: Robert Falcon Scott — Terra Nova expedition
     year: 1912
     gem-role: violated — Scott reached the South Pole five weeks after Amundsen, his original goal achieved but stripped of its meaning. He allowed the team to dwell in the loss of priority — diary entries show grief over being second — rather than immediately pivoting to "execute a perfect return home." Morale degraded, decisions suffered, all five men died.
+    practitioner: Robert Falcon Scott
+    outcome: All five members of Scott's polar party died on the return journey, eleven miles from a supply depot; the psychological frame of defeat — grief over being second — is documented in Scott's own diary as shaping the decisions and morale of the fatal return.
 lineage: Xenophon-401bc → Shackleton-1915 → Kranz-1970
 origin-earliest: Xenophon-401bc
 origin-modern: Shackleton-1915

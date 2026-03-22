@@ -20,21 +20,33 @@ events:
   - name: "We Shall Fight on the Beaches" — House of Commons
     year: 1940
     gem-role: applied — June 4, 1940. France was collapsing. Britain had evacuated 338,000 men from Dunkirk without their equipment. Churchill spoke for 36 minutes. His final paragraph — "we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender" — was not a plan. It was a declaration that performed national will into existence at the moment when national will was the only resource Britain had left. Edward R. Murrow: "He mobilized the English language and sent it into battle."
+    practitioner: Winston Churchill
+    outcome: Churchill's "We shall fight on the beaches" speech transformed British public resolve at the moment of greatest danger, manufacturing the will that made negotiated surrender politically impossible in the War Cabinet; Britain sustained civilian morale through the Blitz and kept fighting until US entry in December 1941.
   - name: "Their Finest Hour" — BBC Radio Broadcast
     year: 1940
     gem-role: applied — June 18, 1940. France surrendered. Churchill reframed the prospect of Nazi invasion not as catastrophe but as historical destiny: "Let us therefore brace ourselves to our duties, and so bear ourselves that, if the British Empire and its Commonwealth last for a thousand years, men will still say, 'This was their finest hour.'" The facts were unchanged — Britain was isolated and outgunned. The frame transformed what those facts meant to 40 million people.
+    practitioner: Winston Churchill
+    outcome: Churchill's "Their Finest Hour" speech reframed imminent Nazi invasion as historical destiny rather than catastrophe, sustaining British civilian morale through the subsequent Battle of Britain; the phrase entered permanent cultural memory as the defining frame for British wartime identity.
   - name: "Never Was So Much Owed" — House of Commons
     year: 1940
     gem-role: applied — August 20, 1940. The Battle of Britain was ongoing and the RAF was losing pilots faster than it could train them. Churchill manufactured public debt to the fighter pilots: "Never in the field of human conflict was so much owed by so many to so few." The phrase transferred moral credit from the many (British public) to the few (600 RAF pilots), creating political support for the air war at the moment the RAF needed it most. The language changed how the public related to the sacrifice being made on their behalf.
+    practitioner: Winston Churchill
+    outcome: The phrase created the moral infrastructure for sustained public support of the RAF during its most critical months; the Battle of Britain was won by October 1940, preventing the German air superiority required for a Channel crossing and keeping Britain in the war.
   - name: Iron Curtain Speech — Westminster College, Fulton, Missouri
     year: 1946
     gem-role: applied — March 5, 1946. The Soviet Union had not yet built the Berlin Wall; the Cold War had no name. Churchill named both: "From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent." The phrase "iron curtain" named a geopolitical reality that most Western leaders could not yet see. Within months, every English-speaking statesman used the phrase. The language created the perception that created the policy response that defined the next 45 years.
+    practitioner: Winston Churchill
+    outcome: Within 18 months of the speech, "iron curtain" had entered every English-speaking statesman's vocabulary and Truman's containment doctrine had adopted it as its organizing frame; the language made a diffuse set of Soviet actions visible as a coherent geopolitical structure, directly shaping Western policy for the next 45 years.
   - name: Wilderness Years speeches on the Nazi threat
     year: 1933
     gem-role: applied — From 1933 to 1939, Churchill repeatedly named Hitler as an existential threat in Parliament while the establishment called him an alarmist and warmonger. He was politically marginalized. Each speech built his credibility: when war came, he was the only leader who had been consistently right. His wilderness-years language pre-manufactured the belief that he was the necessary man — a long-play deployment of the pattern that paid off in May 1940.
+    practitioner: Winston Churchill
+    outcome: Six years of consistent warnings established Churchill as the only senior British politician who had been right about Hitler; when war came in 1939 and Chamberlain's appeasement was discredited, Churchill was the obvious choice for Prime Minister — appointed in May 1940, the exact moment his pattern of manufactured credibility was redeemed.
   - name: Neville Chamberlain — "Peace for Our Time"
     year: 1938
     gem-role: violated — After signing the Munich Agreement surrendering the Sudetenland to Hitler, Chamberlain returned to London and declared "peace for our time." He used language to perform a future that was false — not because he lied, but because his words were wishful description rather than manufactured certainty grounded in structural reality. The language dissolved British will to prepare for war at the exact moment preparation was essential. The contrast with Churchill is the clearest possible demonstration of what the pattern requires: the performed future must be grounded in structural reality, or it collapses.
+    practitioner: Neville Chamberlain
+    outcome: "Peace for our time" eroded British will to rearm at the critical moment; when Germany invaded Poland eleven months later, Chamberlain's credibility was destroyed, his government fell in May 1940, and the false declaration became the definitive historical example of performed language collapsing under structural reality.
 lineage: Pericles-431bc → Cicero-52bc → Lincoln-1863 → Churchill-1940 → King-1963
 origin-earliest: Pericles-431bc
 origin-modern: Churchill-1940

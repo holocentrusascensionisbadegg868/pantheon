@@ -17,15 +17,23 @@ events:
   - name: Highland Park Moving Assembly Line
     year: 1913
     gem-role: applied — Ford installed moving chassis line; assembly time dropped from 12.5 hours to 93 minutes; cost dropped, output multiplied 8x
+    practitioner: Henry Ford
+    outcome: Assembly time for the Model T chassis dropped from 12.5 hours to 93 minutes; Ford could produce a car every 24 seconds, slashing the price from $850 to $360 by 1916 and making the automobile accessible to the working class.
   - name: River Rouge Vertical Integration
     year: 1927
     gem-role: applied — iron ore entered one end, finished cars exited the other; continuous flow extended from raw material to final product
+    practitioner: Henry Ford
+    outcome: The River Rouge complex reduced the time from raw iron ore to finished automobile to 28 hours; at its peak it employed 100,000 workers and produced a complete car every 49 seconds, making it the largest integrated manufacturing complex in the world.
   - name: Ford $5 Day Wage
     year: 1914
     gem-role: applied — flow requires stable workers; Ford doubled wages to cut turnover from 370% to 16%, stabilizing the line
+    practitioner: Henry Ford
+    outcome: Annual employee turnover dropped from 370% to 16%; the stable workforce allowed the moving line to reach its full productive potential, and the higher wages created a new class of workers who could afford to buy the cars they built — expanding Ford's own market.
   - name: Boeing 787 Dreamliner Delays
     year: 2007-2011
     gem-role: violated — outsourced to 50+ suppliers in batch mode; parts arrived incomplete, out of sequence; three years late, billions over budget
+    practitioner: Boeing (program leadership)
+    outcome: The 787 was delivered three years late and billions of dollars over budget; Boeing eventually brought significant production work back in-house, and the program's losses contributed to long-term financial strain on the company — a textbook case of what batch-mode outsourcing does to a flow-dependent production system.
 lineage: venetian-arsenal-1320 → portsmouth-block-mills-1803 → chicago-meatpacking-1860s → ford-highland-park-1913 → ohno-one-piece-flow-1950s
 origin-earliest: venetian-arsenal-1320
 origin-modern: ford-1913

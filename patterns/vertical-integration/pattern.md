@@ -17,15 +17,23 @@ events:
   - name: Carnegie acquires Frick Coke Company
     year: 1882
     gem-role: applied — Secured coke supply (steel's key input), eliminated supplier markup, and gained leverage over competitors dependent on the same source
+    practitioner: Andrew Carnegie
+    outcome: Acquiring Frick Coke stabilized Carnegie's most volatile input cost and gave him pricing control that competitors lacked; Carnegie went on to reduce the cost of producing a ton of steel rail from $56 to $11.50 between 1880 and 1900, a structural cost advantage no competitor could match.
   - name: Carnegie acquires Oliver Iron Mining Company
     year: 1892
     gem-role: applied — Locked up Mesabi Range iron ore, the richest deposit in North America, cutting raw material costs by 50% and starving rivals of supply
+    practitioner: Andrew Carnegie
+    outcome: Securing the Mesabi Range ore supply cut Carnegie's raw material costs by 50% and denied competitors access to the cheapest ore in North America; by 1900, Carnegie Steel produced more steel than all of Great Britain, with a cost per ton of $12 against a competitor average of $23.
   - name: U.S. Steel formation
     year: 1901
     gem-role: applied — J.P. Morgan paid $480M (≈$17B today) to buy Carnegie out — the price of owning the entire chain was so high because no single link could be attacked
+    practitioner: Andrew Carnegie
+    outcome: Morgan paid $480M — the largest business transaction in history to that point — because Carnegie's vertically integrated chain was so structurally advantaged that no competitor could match it without replicating decades of integration; Carnegie retired with more capital than any individual in American history to that date.
   - name: GM's over-integration crisis
     year: 1980s
     gem-role: violated — GM owned too many supplier operations but failed to drive cost discipline at each link, proving that ownership without optimization is just overhead
+    practitioner: General Motors leadership
+    outcome: GM's internal parts divisions became more expensive than what Toyota bought on the open market; the company lost market share throughout the 1980s and eventually required a $49.5B government bailout in 2009, demonstrating that integration without cost discipline at each owned link destroys competitive advantage rather than creating it.
 lineage: Medici banking (1400s) → East India Company (1600s) → Carnegie Steel (1870s) → Rockefeller Standard Oil (1880s) → IKEA (1960s)
 origin-earliest: medici-1397
 origin-modern: carnegie-1875

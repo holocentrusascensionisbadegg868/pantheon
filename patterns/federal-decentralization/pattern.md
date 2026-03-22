@@ -17,15 +17,23 @@ events:
   - name: Sloan's 1920 Organization Study
     year: 1920
     gem-role: applied — Sloan wrote the "Organization Study" memo proposing divisional structure to Durant, who ignored it; after the 1920-21 recession nearly collapsed GM, du Pont installed Sloan's plan — each division got a president and full operational authority; capital was allocated by a central Finance Committee based on ROI
+    practitioner: Alfred P. Sloan
+    outcome: Sloan's divisional structure stabilized GM after the 1920-21 recession; the company grew from near-bankruptcy into the world's largest automaker, with GM surpassing Ford in US market share by 1927 — a position it held for 77 years.
   - name: GM Overtakes Ford
     year: 1927
     gem-role: applied — Ford's functionally centralized model could not respond to market diversity; Sloan's federal structure allowed each GM division to target a distinct price band, upgrade customer loyalty up the brand ladder, and adapt independently; GM surpassed Ford in market share for the first time in 1927 and never relinquished the lead
+    practitioner: Alfred P. Sloan
+    outcome: GM captured the majority of the US automobile market from Ford, a lead it maintained for over seven decades; the divisional price-ladder model (Chevrolet through Cadillac) became the template for diversified consumer product strategy worldwide.
   - name: Durant's Centralized Chaos (Anti-Pattern)
     year: 1908-1920
     gem-role: violated — William Durant built GM by personally acquiring companies (Buick, Cadillac, Oakland, Oldsmobile) with no divisional accountability structure, no standardized reporting, and no capital allocation framework; Durant nearly bankrupted GM twice and was forced out in 1920
+    practitioner: William C. Durant
+    outcome: Durant was forced out of GM in 1920 after the company faced collapse during the postwar recession; without standardized reporting or capital controls, GM had no mechanism to identify which divisions were bleeding, and the board replaced him with Pierre du Pont, who implemented Sloan's plan.
   - name: Berkshire Hathaway Acquisition Model
     year: 1965-present
     gem-role: applied — Buffett's purchase commitment: "We will not second-guess your operational decisions." Each subsidiary CEO runs their company as if they own it; Berkshire's role is only capital allocation and successor selection — the canonical modern application of Sloan's framework
+    practitioner: Warren Buffett
+    outcome: By 2024, Berkshire Hathaway managed 60+ wholly autonomous subsidiaries with 400,000+ employees, operating with a corporate staff of approximately 30 people; the model scaled to a market capitalization exceeding $900B with no central operational oversight — the most extreme demonstration of federal decentralization in corporate history.
 lineage: Hamilton-federal-treasury-1789 → Sloan-GM-1920 → Welch-GE-1981 → Buffett-Berkshire-1965
 origin-earliest: Hamilton-1789
 origin-modern: Sloan-1920

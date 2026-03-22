@@ -20,15 +20,23 @@ events:
   - name: Construction of the Great Pyramid of Khufu
     year: 2560bc
     gem-role: applied — Hemiunu engineered a 64-km Nile branch canal, artificial harbor basins, a purpose-built worker village feeding 20,000+ laborers, and a 10-day quarry-to-site supply cycle (documented in Merer's logbooks) before the first block was set; the pyramid was the output of the machine, not the machine itself
+    practitioner: Hemiunu
+    outcome: The logistics machine delivered 2.3 million blocks averaging 2.5 tons over 20 years at a sustained rate of one block every three minutes; the Great Pyramid's base is level to within 2.1 cm across 230 meters — precision achievable only through rhythmic, machine-like delivery.
   - name: Tesla Gigafactory 1 — Model 3 Production Hell
     year: 2017-2018
     gem-role: violated (then recovered) — Tesla launched Model 3 without a mature manufacturing machine; production collapsed to 2,000 cars/week vs. 5,000 target; Musk slept on the factory floor and rebuilt the machine mid-product-launch; production reached 5,000/week once the machine was redesigned
+    practitioner: Elon Musk (violated, then recovered)
+    outcome: After rebuilding the manufacturing machine mid-launch — including dismantling over-automated cells and erecting a new paint shop under a tent — Tesla reached its 5,000 units/week target in June 2018, validating the pattern through its most expensive possible failure mode.
   - name: Kaiser Richmond Shipyard
     year: 1942-1945
     gem-role: applied — Kaiser built dedicated modular fabrication infrastructure before taking Liberty Ship contracts; hull sections were pre-assembled in sequence so final assembly was 4.5 days average; the Robert E. Peary was assembled in 4 days 15 hours 26 minutes
+    practitioner: Henry J. Kaiser
+    outcome: Kaiser's machine averaged 42 days per Liberty Ship versus 300+ days for traditional shipbuilders, reaching 18 ships per month at peak; the Robert E. Peary was assembled in 4 days, 15 hours, 26 minutes — a production record driven entirely by the prefabrication infrastructure, not worker speed.
   - name: D-Day Mulberry Harbors
     year: 1944
     gem-role: applied — The Allied invasion of Normandy required logistics infrastructure that did not exist; two prefabricated harbors (Mulberry A and B) were secretly manufactured in Britain and towed across the Channel — 600,000 tons of steel, assembled offshore in four days; the invasion could not have been sustained without the harbors built before the beachhead existed
+    practitioner: Allied Supreme Headquarters (SHAEF) / Winston Churchill (initiated)
+    outcome: Mulberry B at Gold Beach handled 40% of Allied supplies in the first three months of the Normandy campaign, sustaining 2.5 million men, 500,000 vehicles, and 4 million tons of supplies; without the pre-built harbor machine, the Allied beachhead could not have been held.
 lineage: Egyptian-logistics-2560bc → Roman-legionary-supply-200bc → Kaiser-Richmond-1942 → Musk-Gigafactory-2014
 origin-earliest: Hemiunu-2560bc
 origin-modern: Musk-2014

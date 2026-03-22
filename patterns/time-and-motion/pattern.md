@@ -17,12 +17,18 @@ events:
   - name: Bethlehem Steel pig-iron experiment
     year: 1899
     gem-role: applied — Taylor measured shoveling pig iron, found workers moved 12.5 tons/day using habit; redesigned the sequence to 47.5 tons/day with less fatigue by timing rest intervals and motion paths
+    practitioner: Frederick Winslow Taylor
+    outcome: Taylor's time-and-motion studies at Bethlehem Steel increased worker output from 12.5 to 47.5 tons per day while reducing the workforce from 600 to 140 and saving the yard $78,000/year (~$2.8M today); his Principles of Scientific Management (1911) became one of the most influential management books of the 20th century.
   - name: Resistance at Watertown Arsenal
     year: 1911
     gem-role: violated — Taylor applied time studies to skilled machinists without their input; the resulting worker revolt led to a Congressional investigation, showing the pattern fails when it treats humans as interchangeable machine parts
+    practitioner: Frederick Winslow Taylor
+    outcome: Workers struck and Congress investigated, temporarily banning stopwatch studies in government work; the episode demonstrated that time-and-motion analysis applied without worker input or consent generates organized resistance that destroys the efficiency gains the method was designed to produce.
   - name: Gilbreth bricklaying study
     year: 1909
     gem-role: applied — Frank Gilbreth filmed bricklayers, decomposed the task into atomic motions, eliminated 13 of 18 movements, tripled output per worker
+    practitioner: Frank Gilbreth
+    outcome: Gilbreth's micromotion studies reduced bricklaying from 18 movements to 5 and tripled output per worker; his therbligs (fundamental motion elements) became the standard vocabulary for motion analysis and the direct ancestor of ergonomics and industrial engineering as formal disciplines.
 lineage: Taylor-1880s → Gilbreths-1910s → Deming-1950s → Toyota Production System-1960s
 origin-earliest: Taylor-1881
 origin-modern: Taylor-1911

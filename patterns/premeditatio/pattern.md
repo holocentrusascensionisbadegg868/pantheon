@@ -17,15 +17,23 @@ events:
   - name: Seneca's exile to Corsica
     year: 41
     gem-role: applied — Exiled by Claudius on trumped-up charges, Seneca arrived in Corsica already prepared. His "Consolation to Helvia" (written to comfort his mother) shows a man who had pre-rehearsed exile so thoroughly that he could write with composure within months of banishment, treating it as a philosophical exercise rather than a catastrophe
+    practitioner: Seneca the Younger
+    outcome: Seneca's letters to Lucilius documented the practice of rehearsing potential catastrophes; this psychological technique allowed Stoic philosophers to maintain equanimity during Rome's most turbulent periods, and Seneca's eight-year exile produced some of his most enduring philosophical writing.
   - name: Seneca's ordered suicide
     year: 65
     gem-role: applied — When Nero ordered his death after the Pisonian conspiracy, Seneca met the command with composure, consoling his weeping friends and dictating final thoughts. Tacitus records that Seneca had rehearsed this exact scenario for years — his letters repeatedly practice the mental exercise of facing death calmly
+    practitioner: Seneca the Younger
+    outcome: Seneca's composed death became one of the most celebrated scenes in Roman history, depicted by painters from Rubens to David; Tacitus's account demonstrated that decades of premeditatio malorum produced genuine equanimity in the face of the ultimate adversity.
   - name: Seneca's navigation of Nero's court
     year: 54-62
     gem-role: applied — Served as advisor to an increasingly unstable emperor for eight years by continuously pre-rehearsing the worst outcomes of his position (disgrace, confiscation, execution), which allowed him to advise clearly rather than flatter desperately, and to attempt retirement when the risk calculus shifted
+    practitioner: Seneca the Younger
+    outcome: Seneca advised honestly through the first five years of Nero's reign (the quinquennium Neronis), contributing to stable governance, and attempted retirement in 62 AD — a pre-rehearsed exit strategy that only a man who had already accepted the loss of power could execute.
   - name: Stockdale in the Hanoi Hilton
     year: 1965-1973
     gem-role: applied — Admiral James Stockdale, shot down over Vietnam, survived seven years of torture and solitary confinement by applying Epictetus's Stoic pre-rehearsal. He had studied the Enchiridion and pre-accepted the worst before capture. He later noted that the optimists — those who refused to confront worst cases — were the ones who broke
+    practitioner: James Stockdale
+    outcome: Stockdale survived seven years as the highest-ranking US POW in the Hanoi Hilton, maintaining enough psychological coherence to lead fellow prisoners; his account became the founding case study for the "Stockdale Paradox" — the superiority of confronting brutal facts over optimistic denial.
 lineage: Socrates-examined-life (400bc) → Zeno-of-Citium-Stoa (300bc) → Chrysippus-premeditatio (250bc) → Seneca-Letters-and-Dialogues (60) → Epictetus-Enchiridion (108) → Stockdale-Hanoi-Hilton (1965) → Ferriss-fear-setting (2017)
 origin-earliest: Chrysippus-250bc
 origin-modern: Seneca-60

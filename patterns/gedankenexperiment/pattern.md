@@ -20,27 +20,43 @@ events:
   - name: Chasing a beam of light
     year: 1895
     gem-role: applied — the 16-year-old Einstein imagined running alongside a light beam; a frozen electromagnetic wave contradicts Maxwell's equations, planting the seed for special relativity ten years later
+    practitioner: Albert Einstein
+    outcome: Einstein's thought experiment of riding alongside a light beam led directly to special relativity, revolutionizing physics and eventually producing E=mc² and the atomic age.
   - name: The elevator thought experiment
     year: 1907
     gem-role: applied — Einstein imagined a person in free-fall who cannot distinguish between weightlessness and being in deep space; this equivalence principle became the foundation of general relativity
+    practitioner: Albert Einstein
+    outcome: The equivalence principle derived from this thought experiment became the complete physical content of general relativity; Einstein spent eight more years translating it into mathematics, publishing the field equations in 1915 — the theory that GPS satellites and gravitational wave detectors depend on today.
   - name: Train and lightning
     year: 1905
     gem-role: applied — simultaneous lightning strikes seen differently by a platform observer and a train passenger proved simultaneity is relative, the core insight of special relativity
+    practitioner: Albert Einstein
+    outcome: The thought experiment established that simultaneity is relative to the observer's frame of motion, which Einstein published in "On the Electrodynamics of Moving Bodies" (1905) — the paper that introduced special relativity and overturned 200 years of Newtonian absolute time.
   - name: EPR paradox
     year: 1935
     gem-role: applied — Einstein, Podolsky, and Rosen constructed a thought experiment with entangled particles to argue quantum mechanics was incomplete; the scenario drove decades of physics and led to Bell's theorem and experimental confirmation of entanglement
+    practitioner: Albert Einstein
+    outcome: The thought experiment intended as a disproof of quantum completeness instead opened the field of quantum information; Bell's theorem (1964) and subsequent experiments confirmed that nature really does exhibit the entanglement EPR described, founding quantum cryptography and quantum computing.
   - name: Galileo's falling bodies
     year: 1590
     gem-role: applied — Galileo imagined tying a heavy and light ball together; Aristotle's theory predicts the pair both falls faster (more mass) and slower (light ball drags heavy one), a contradiction that disproves the theory without any experiment
+    practitioner: Galileo Galilei
+    outcome: The thought experiment refuted Aristotelian physics — that heavier objects fall faster — without requiring any physical experiment; it established that all objects fall at the same rate regardless of mass, a foundational principle later formalized by Newton and confirmed by every subsequent measurement.
   - name: Hawking radiation
     year: 1974
     gem-role: applied — Hawking applied quantum field theory to the event horizon of a black hole, where GR predicts nothing escapes and QM predicts vacuum fluctuations create particle pairs; the collision revealed that black holes radiate, connecting thermodynamics, gravity, and quantum mechanics
+    practitioner: Stephen Hawking
+    outcome: Hawking demonstrated that black holes must emit thermal radiation and have a temperature, connecting three previously separate branches of physics — thermodynamics, general relativity, and quantum mechanics; the result, published in Nature in 1974, is considered one of the most important theoretical physics discoveries of the 20th century.
   - name: Black hole information paradox
     year: 1976
     gem-role: applied — Hawking followed the Gedankenexperiment to its hardest consequence: if black holes radiate thermally and eventually evaporate, the quantum information of everything that fell in is destroyed — violating unitarity, a bedrock principle of quantum mechanics; the contradiction forced three decades of theoretical physics and remains partially unresolved
+    practitioner: Stephen Hawking
+    outcome: The paradox forced an entire generation of theoretical physicists — including Susskind, 't Hooft, and Maldacena — to develop new frameworks for reconciling quantum mechanics and gravity; it led directly to the holographic principle and AdS/CFT correspondence, reshaping theoretical physics for 30+ years.
   - name: No-boundary proposal
     year: 1983
     gem-role: applied — Hawking and Hartle collided GR (which predicts a singularity at the Big Bang) with quantum mechanics (which forbids infinities) by proposing that in imaginary time the universe has no boundary or beginning — dissolving the singularity contradiction by reframing the geometry of spacetime itself
+    practitioner: Stephen Hawking
+    outcome: The no-boundary proposal provided the first quantum cosmological model of the universe's origin that avoided a singularity; published in 1983, it became the most widely cited model in quantum cosmology and directly influenced subsequent work on the origin of the universe's initial conditions.
 lineage: Galileo-1590 → Newton-1687 → Mach-1883 → Einstein-1905 → Hawking-1974
 origin-earliest: Galileo-1590
 origin-modern: Einstein-1905

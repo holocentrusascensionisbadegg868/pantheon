@@ -17,15 +17,23 @@ events:
   - name: Deming's Japan Lectures
     year: 1950
     gem-role: applied — Deming taught SPC to 230 Japanese engineers at JUSE; companies that applied it (Sony, Toyota, Panasonic) achieved quality and cost reductions that reversed Japan's reputation for cheap goods within a decade
+    practitioner: W. Edwards Deming
+    outcome: Deming's experiment demonstrated that worker variation in defect rates was entirely caused by the system, not individual effort; this insight drove the quality revolution in Japan and became foundational to Total Quality Management, which enabled Japan's postwar manufacturing dominance.
   - name: Red Bead Experiment
     year: 1950-1993
     gem-role: applied — Deming's workshop demonstration showed that workers producing 20% red beads (defects) despite their best efforts were subject to the same random variation as the bead paddle itself; praising and punishing them for random outcomes changed nothing except morale
+    practitioner: W. Edwards Deming
+    outcome: The Red Bead Experiment became Deming's most powerful teaching tool across four decades of seminars; it viscerally demonstrated that blaming and rewarding individuals for systemic variation is theater, shifting quality accountability from workers to management and process design.
   - name: Ford Comeback
     year: 1981-1986
     gem-role: applied — Ford hired Deming after the 1980 NBC documentary; he diagnosed that Ford's quality problems were 85% systemic, not worker error, and shifted accountability to process redesign; profits exceeded GM by 1986
+    practitioner: W. Edwards Deming
+    outcome: Ford's profits exceeded GM's for the first time since the 1920s by 1986; the Taurus became America's best-selling car, proving that applying common-cause/special-cause thinking at scale could reverse a catastrophic quality decline in American manufacturing.
   - name: NASA Space Shuttle Challenger
     year: 1986
     gem-role: violated — engineers had O-ring erosion data showing common-cause variation outside safe limits; management treated it as isolated incidents (special cause) and launched; the system's defect rate was already out of control
+    practitioner: NASA management / Morton Thiokol
+    outcome: Seven astronauts died when the O-ring failed at 28°F; Richard Feynman's appendix to the Rogers Commission report demonstrated that the probability of failure had been systematically misread because erosion data was never plotted against temperature — a direct consequence of treating common-cause variation as isolated special-cause incidents.
 lineage: shewhart-control-charts-1924 → deming-pdsa-1950 → deming-14-points-1982 → wheeler-process-behavior-charts-1993
 origin-earliest: shewhart-1924
 origin-modern: deming-1950

@@ -17,12 +17,18 @@ events:
   - name: Aristotle's biological surveys at Lesbos
     year: 344bc-342bc
     gem-role: applied — Aristotle spent two years on Lesbos dissecting and classifying marine life, producing Historia Animalium — the first systematic taxonomy of the animal kingdom, dividing ~500 species by blood/bloodless, live-bearing/egg-laying, habitat, and organ structure
+    practitioner: Aristotle
+    outcome: Historia Animalium catalogued approximately 500 species and remained the most advanced zoological work until the Renaissance; Darwin called Aristotle the greatest biological observer who ever lived, and Aristotle's observation that cetaceans are not fish was not confirmed by Western science for another two thousand years.
   - name: Aristotle's Prior Analytics
     year: 350bc
     gem-role: applied — Aristotle categorized all valid deductive arguments into three syllogistic figures, each subdivided by mood, creating the first complete formal logic — a taxonomy of reasoning itself
+    practitioner: Aristotle
+    outcome: The syllogistic taxonomy of valid inference was the entirety of formal logic for over two millennia, until Frege's Begriffsschrift in 1879; by carving argument forms at their natural joints, Aristotle made logic a teachable, transferable discipline rather than a matter of rhetorical intuition.
   - name: Mendeleev's periodic table prediction
     year: 1869-1886
     gem-role: applied — By carving elements at the joints of atomic weight and chemical properties, Mendeleev's table had gaps that predicted three undiscovered elements (gallium, scandium, germanium), all found within 17 years with properties matching his predictions
+    practitioner: Dmitri Mendeleev
+    outcome: All three predicted elements — gallium (1875), scandium (1879), and germanium (1886) — were discovered with atomic weights and chemical properties closely matching Mendeleev's specifications, vindicating the periodic table as a genuine carving of chemical reality and establishing it as the organizing framework of modern chemistry.
 lineage: Plato-myth-of-joints-370bc → Aristotle-categories-350bc → Linnaeus-taxonomy-1735 → Mendeleev-periodic-table-1869
 origin-earliest: Aristotle-350bc
 origin-modern: Linnaeus-1735

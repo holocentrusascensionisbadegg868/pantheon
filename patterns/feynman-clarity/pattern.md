@@ -17,12 +17,18 @@ events:
   - name: Manhattan Project debugging
     year: 1943-1945
     gem-role: applied — Feynman found critical calculation errors by demanding plain-language explanation of every assumption
+    practitioner: Richard Feynman
+    outcome: Feynman's insistence on plain-language explanation caught critical calculation errors that senior physicists had missed, directly contributing to the computational accuracy required for the Manhattan Project's success.
   - name: Challenger disaster investigation
     year: 1986
     gem-role: applied — Feynman bypassed NASA bureaucracy, asked simple questions, demonstrated O-ring failure with ice water in 30 seconds
+    practitioner: Richard Feynman
+    outcome: By placing an O-ring in ice water at a press conference, Feynman demonstrated the root cause in seconds, cutting through bureaucratic obfuscation and producing the Rogers Commission's definitive finding on the disaster's cause.
   - name: Feynman Lectures on Physics
     year: 1961-1963
     gem-role: applied — rebuilt physics curriculum using plain-language explanation as quality bar
+    practitioner: Richard Feynman
+    outcome: The Feynman Lectures on Physics, published in three volumes in 1963-1965, became the most widely used physics textbook in the world; they remain in print and are considered the clearest exposition of undergraduate physics ever produced, still assigned at universities globally more than 60 years later.
 lineage: socratic-method-470bc → aristotle-analytics-350bc → descartes-clear-ideas-1637 → einstein-thought-experiments-1905 → feynman-clarity-1950s
 origin-earliest: socrates-470bc
 origin-type: authored

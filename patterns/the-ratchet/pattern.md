@@ -17,12 +17,18 @@ events:
   - name: Toyota Production System Development
     year: 1950-1978
     gem-role: applied — Ohno's Kaizen/Kaikaku alternation built TPS into the dominant global manufacturing philosophy; each Kaikaku moment was informed by years of Kaizen learnings
+    practitioner: Taiichi Ohno
+    outcome: The Toyota Production System became the dominant global manufacturing philosophy, spawning lean manufacturing, Six Sigma, and agile methodologies; Toyota became the world's most efficient automaker and the TPS is studied in engineering programs worldwide as the definitive example of compounding process improvement.
   - name: SpaceX Starship Development
     year: 2019-present
     gem-role: applied — each test flight is inner loop (accumulate failure data); full reusability architecture was an outer loop reset questioning the entire expendable rocket paradigm
+    practitioner: Elon Musk
+    outcome: SpaceX's outer loop reset of the expendable rocket paradigm produced Starship — the most powerful rocket ever flown — and the first full-stack rocket to be caught by its launch tower on return; the approach reduced estimated per-launch costs by an order of magnitude compared to expendable architectures.
   - name: Nexus Intelligence Flywheel Refactor
     year: 2026
     gem-role: applied — 60-iteration AI agent system built genuine capability but hit local maximum; Musk Filter outer loop identified non-load-bearing rules in 24-rule CLAUDE.md, restoring execution velocity without discarding real capability
+    practitioner: Dana Schreiber
+    outcome: The outer loop pruned the 24-rule accumulated system to its load-bearing bones (security, secrets, agent isolation), eliminating gate ceremonies and approval structures that had been designed for team-scale coordination problems; execution velocity on the Pantheon project restored without discarding the hard-won security and reliability gains from 60 inner-loop iterations.
 lineage: hegel-dialectic-1807 → schumpeter-creative-destruction-1942 → ohno-kaizen-kaikaku-1950 → boyd-ooda-tempo-1960 → the-ratchet
 origin-earliest: hegel-1807
 origin-type: authored

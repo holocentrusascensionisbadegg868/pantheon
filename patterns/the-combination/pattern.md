@@ -17,15 +17,23 @@ events:
   - name: The Cleveland Massacre
     year: 1872
     gem-role: applied — In six weeks, Rockefeller privately approached all 26 Cleveland refiners; 22 accepted Standard Oil stock at book value; 4 refused and were driven out or sold later at distress prices. He moved so fast that the industry couldn't organize a defense.
+    practitioner: John D. Rockefeller
+    outcome: Standard Oil absorbed 22 of 26 Cleveland refiners in six weeks, establishing control over the region's refining capacity before the industry could organize a defense; the Cleveland Massacre became the template for national consolidation that followed.
   - name: Standard Oil Trust Formation
     year: 1882
     gem-role: applied — Rockefeller consolidated 40 companies under one trust agreement, converting former rivals into trust certificate holders. The combination controlled 90% of US oil refining — not through destruction but through absorption.
+    practitioner: John D. Rockefeller
+    outcome: The trust controlled 90% of US oil refining and drove kerosene prices from 26 cents per gallon in 1870 to 8 cents by 1885 while simultaneously increasing Standard Oil's margins — the combination proved its own thesis that coordinated production creates more value than competitive fragmentation.
   - name: Carnegie's Rejection of Combination
     year: 1900
     gem-role: violated — Carnegie refused Morgan's attempt to combine the steel industry; Morgan was forced to pay $480M ($17B today) to buy Carnegie out rather than absorb him. The holdout extracted maximum value but left Carnegie outside the combination.
+    practitioner: Andrew Carnegie
+    outcome: Carnegie extracted $480M ($17B today) — the highest price ever paid in a business transaction to that point — by refusing absorption and forcing Morgan to buy him out; Carnegie then retired and gave away most of his fortune, while U.S. Steel went on to dominate American steel production for decades.
   - name: Standard Oil Antitrust Ruling
     year: 1911
     gem-role: applied — The Supreme Court broke up Standard Oil not because the pattern failed, but because it succeeded completely. The 34 successor companies created by the breakup were each immediately profitable — the combination had built durable cost advantages throughout the chain.
+    practitioner: John D. Rockefeller
+    outcome: The Supreme Court dissolution produced 34 successor companies (including predecessors of ExxonMobil, Chevron, and Amoco), each immediately profitable; Rockefeller, as the largest shareholder in all 34, became significantly wealthier after the breakup than before, demonstrating the combination's durable underlying value.
 lineage: Medici-partnerships-1400s → East-India-Company-1600s → Rockefeller-Standard-Oil-1872 → Morgan-US-Steel-1901 → modern-platform-economics
 origin-earliest: medici-1397
 origin-modern: rockefeller-1872

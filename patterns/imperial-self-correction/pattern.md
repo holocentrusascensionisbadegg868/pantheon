@@ -17,12 +17,18 @@ events:
   - name: Avidius Cassius revolt
     year: 175
     gem-role: applied — When his general declared himself emperor, Marcus suppressed the emotional case for vengeance, marched east to resolve the crisis, and after Cassius was assassinated by his own soldiers, burned all of Cassius's correspondence unread to prevent a purge
+    practitioner: Marcus Aurelius
+    outcome: By burning Cassius's correspondence unread and issuing a general amnesty rather than a purge, Aurelius preserved eastern provincial loyalty and avoided the political bloodbath that typically followed Roman succession crises, keeping the empire intact.
   - name: Antonine Plague governance
     year: 165-180
     gem-role: applied — With a plague killing millions across the empire, Marcus sold imperial furniture to fund the treasury rather than raise taxes, reopened gladiatorial schools as hospitals, and maintained governance continuity by separating the catastrophe from his capacity to act within it
+    practitioner: Marcus Aurelius
+    outcome: Despite ruling at the height of Roman imperial power during the Antonine Plague and Marcomannic Wars, Aurelius maintained governance quality documented in Meditations, which historians credit as contributing to the stability of the empire during a 20-year crisis.
   - name: Marcomannic Wars command
     year: 166-180
     gem-role: applied — Spent over a decade on the Danubian frontier commanding wars he had no military training for, writing Meditations in his tent at night to correct for the distortions of fear, exhaustion, and frustration — the journal was the instrument that kept his judgment calibrated under sustained pressure
+    practitioner: Marcus Aurelius
+    outcome: A philosopher with no military training commanded the Roman frontier for over a decade without a single major governance failure; the Meditations — the operational byproduct of his nightly self-correction — survived as the most studied work of Stoic philosophy, confirming the method produced sustained performance under extreme pressure.
 lineage: Socrates-examined-life (400bc) -> Zeno-of-Citium-Stoa (300bc) -> Epictetus-Discourses (108) -> Marcus-Aurelius-Meditations (170) -> Franklin-virtue-journal (1726) -> Cognitive-Behavioral-Therapy (1960s)
 origin-earliest: Socrates-400bc
 origin-modern: Marcus-Aurelius-170

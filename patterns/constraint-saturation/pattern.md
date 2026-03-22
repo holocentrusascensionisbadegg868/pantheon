@@ -17,15 +17,23 @@ events:
   - name: Discovery of the Alpha Helix
     year: 1948-1951
     gem-role: applied — Pauling folded a paper strip applying every known constraint (planar peptide bond, correct bond angles, hydrogen bond geometry) and found a helix with 3.6 residues per turn — a non-integer that everyone else had ruled out by assuming whole-number symmetry
+    practitioner: Linus Pauling
+    outcome: The alpha helix was the first correctly predicted protein secondary structure, confirmed by X-ray diffraction within months of publication; it became a cornerstone of structural biology and demonstrated that sufficient constraints, precisely known and simultaneously applied, can predict structures no experimental data had yet resolved.
   - name: The Nature of the Chemical Bond
     year: 1939
     gem-role: applied — Pauling compiled quantum mechanical constraints (resonance, electronegativity, atomic radii, bond energies) into a unified framework that predicted molecular geometry across the periodic table
+    practitioner: Linus Pauling
+    outcome: The book has been cited over 16,000 times and transformed molecular structure prediction from art into method; it gave chemists a universal constraint-based framework that enabled systematic prediction of bond lengths, bond strengths, and molecular geometry for any pair of atoms.
   - name: Pauling's Triple Helix Failure
     year: 1953
     gem-role: violated — Pauling rushed a DNA model with phosphates on the inside, violating ionization constraints at physiological pH; the one time he skipped a constraint, he got the structure wrong
+    practitioner: Linus Pauling (violated)
+    outcome: Pauling published an incorrect DNA structure; Watson and Crick, who properly satisfied all known constraints including Chargaff's base-pairing rules and Franklin's X-ray data, published the correct double helix within weeks — the episode proves that the method works only when no constraint is relaxed, even for its greatest practitioner.
   - name: Sickle Cell as Molecular Disease
     year: 1949
     gem-role: applied — Pauling reasoned that if a disease altered red blood cell shape, the structural defect must be in the hemoglobin molecule itself; electrophoresis confirmed abnormal charge, coining the concept of molecular disease
+    practitioner: Linus Pauling (with Harvey Itano)
+    outcome: Pauling and Itano's demonstration that sickle cell anemia results from a specific molecular defect in hemoglobin founded the field of molecular medicine and established the principle that macroscopic disease phenotypes can be traced to discrete molecular structural changes.
 lineage: Kekulé-1865 → Lewis-1916 → Pauling-1928
 origin-earliest: Kekulé-1865
 origin-modern: Pauling-1928

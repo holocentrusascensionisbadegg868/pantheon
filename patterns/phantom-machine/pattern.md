@@ -17,15 +17,23 @@ events:
   - name: Entscheidungsproblem
     year: 1936
     gem-role: applied — Turing constructed an imaginary machine (the Turing machine) to define what computation means, then proved some problems are undecidable by showing no such machine can solve them
+    practitioner: Alan Turing
+    outcome: Turing's construction didn't just prove the theorem — it defined computation itself, creating the theoretical foundation for all of computer science; his paper "On Computable Numbers" became the most influential mathematical paper of the 20th century.
   - name: Enigma Codebreaking
     year: 1939-1942
     gem-role: applied — instead of relying on human cryptanalysts' intuition, Turing designed the Bombe — a physical machine that mechanically tested Enigma configurations, turning codebreaking from art into engineering
+    practitioner: Alan Turing
+    outcome: The Bombe transformed codebreaking from a craft dependent on individual genius into an industrial process; intelligence estimates suggest breaking Enigma shortened WWII by roughly two years and saved an estimated 14 million lives.
   - name: Computing Machinery and Intelligence
     year: 1950
     gem-role: applied — rather than debating whether machines can "think," Turing constructed an imaginary test (the Imitation Game) that mechanized the question itself — if you can't tell the difference, the distinction doesn't matter
+    practitioner: Alan Turing
+    outcome: The Turing Test dissolved an unanswerable philosophical debate into a concrete empirical question, framing the entire AI research program for the next 70 years; it remains the most cited and debated operational definition of machine intelligence.
   - name: Morphogenesis Paper
     year: 1952
     gem-role: applied — modeled biological pattern formation (spots, stripes) as chemical computation, constructing a reaction-diffusion machine on paper that explained what seemed like irreducible biological mystery
+    practitioner: Alan Turing
+    outcome: Turing's reaction-diffusion model predicted animal coat patterns with mathematical precision; his phantom machine was confirmed experimentally in 1968 when studies of the sinuses of Valsalva validated the vortex dynamics he had described on paper, and the model became the foundation of mathematical biology.
 lineage: Leibniz-1679 → Babbage-1837 → Turing-1936 → Von Neumann-1945
 origin-earliest: Leibniz-1679
 origin-modern: Turing-1936

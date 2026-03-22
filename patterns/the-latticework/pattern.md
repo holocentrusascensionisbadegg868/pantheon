@@ -17,15 +17,23 @@ events:
   - name: See's Candies Acquisition
     year: 1972
     gem-role: applied — Munger overrode Graham's "cigar butt" balance-sheet-only framework by adding models from consumer psychology (brand loyalty), competitive moat theory, and pricing power economics; Berkshire paid 3x book value and earned 80x the investment over decades
+    practitioner: Charlie Munger
+    outcome: See's Candies generated over $2 billion in cumulative pre-tax earnings for Berkshire on a $25 million purchase price; the acquisition proved that multi-model reasoning could identify value that single-framework (Graham balance-sheet) analysis would miss entirely.
   - name: Berkshire Avoids Tech Bubble
     year: 1999-2000
     gem-role: applied — Munger and Buffett applied convergent models (network effects theory, historical bubble psychology, accounting reality checks, intrinsic value math) to reach refusal; contemporaries using only momentum or DCF models alone were trapped
+    practitioner: Charlie Munger
+    outcome: Berkshire preserved capital while the NASDAQ fell 78% from peak; Munger and Buffett were publicly mocked for missing the boom in 1999, then vindicated when the bubble collapsed — the multi-model convergence (no moat visible, historical bubble pattern matches, intrinsic value math fails) produced a clear negative signal that single-model investors missed.
   - name: Munger's USC Business School Speech
     year: 1994
     gem-role: applied — Munger publicly named and demonstrated the latticework, applying models from thermodynamics, evolutionary biology, psychology, and economics to a single pharmaceutical company case; the speech was subsequently published as a foundational text on multi-disciplinary reasoning
+    practitioner: Charlie Munger
+    outcome: Munger's articulation of the "latticework of mental models" framework became the most widely circulated text on multi-disciplinary reasoning in business education; the speech guided Berkshire Hathaway's investment philosophy across a partnership that generated a 20%+ CAGR over 50 years, compounding Berkshire's market cap to ~$900B.
   - name: Long-Term Capital Management Collapse
     year: 1998
     gem-role: violated — LTCM's Nobel-laureate quants used a single disciplinary framework (stochastic finance), ignoring psychology, political risk, and liquidity models; Munger publicly noted the collapse was "obvious" to anyone running a multi-model check
+    practitioner: John Meriwether
+    outcome: LTCM lost $4.6 billion in six weeks and required a Federal Reserve-orchestrated $3.6 billion bailout by major banks to prevent systemic financial contagion; the fund's single-framework failure (stochastic finance with no model for political contagion or liquidity spirals) became the canonical case study in the cost of missing-model errors.
 lineage: Aristotle-categories-350bc → Francis-Bacon-induction-1620 → Benjamin-Franklin-1723 → Munger-latticework-1960s
 origin-earliest: Aristotle-350bc
 origin-modern: Munger-1962

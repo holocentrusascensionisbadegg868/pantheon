@@ -17,15 +17,23 @@ events:
   - name: Einstein's 1919 Eclipse Test
     year: 1919
     gem-role: applied — Einstein's general relativity predicted a precise degree of light-bending near the sun; Eddington's expedition could have falsified the theory with a single measurement, and Einstein stated he would abandon the theory if the prediction failed
+    practitioner: Albert Einstein
+    outcome: Eddington's expedition confirmed the predicted 1.75-arcsecond light deflection; general relativity survived its most critical falsification test, Einstein became world-famous overnight, and the theory became the accepted framework for gravitation.
   - name: Popper's Vienna Epiphany
     year: 1919
     gem-role: applied — seventeen-year-old Popper attended an Einstein lecture and contrasted Einstein's risky, falsifiable predictions with the unfalsifiable explanations of Freud, Adler, and Marx — crystallizing the demarcation criterion
+    practitioner: Karl Popper
+    outcome: Popper's 1934 work Logik der Forschung established falsifiability as the demarcation criterion between science and pseudo-science, reshaping philosophy of science and scientific practice throughout the 20th century.
   - name: Cold Fusion Announcement
     year: 1989
     gem-role: violated — Fleischmann and Pons announced cold fusion based on confirming evidence without designing experiments to falsify their own claims; the scientific community's rapid replication attempts (applying falsification) collapsed the claim within months
+    practitioner: Martin Fleischmann and Stanley Pons
+    outcome: No independent laboratory was able to replicate the cold fusion results under controlled conditions; the claim was rejected by the scientific community within months, and both researchers' reputations were severely damaged — a case study in confirmation-seeking without falsification design.
   - name: Semmelweis and Childbed Fever
     year: 1847
     gem-role: applied — Semmelweis designed a falsification test: if cadaverous particles caused puerperal fever, then handwashing should eliminate the difference in mortality between two clinics; mortality dropped from 18% to 1%, and the hypothesis survived the attempt to kill it
+    practitioner: Ignaz Semmelweis
+    outcome: Mortality from puerperal fever in Semmelweis's ward dropped from 18% to under 2% after introducing chlorinated lime handwashing; the hypothesis survived the falsification test and provided the first evidence-based argument for antiseptic practice, predating Lister and Pasteur's germ theory.
 lineage: Socrates-elenchus (400bc) → Bacon-negative-instances (1620) → Hume-problem-of-induction (1739) → Popper-falsification (1934) → Kahneman-debiasing (1979)
 origin-earliest: Socrates-400bc
 origin-modern: Popper-1934

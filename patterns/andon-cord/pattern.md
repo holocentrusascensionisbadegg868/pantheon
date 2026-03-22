@@ -14,9 +14,13 @@ events:
   - name: Toyota Production System deployment
     year: 1950-1970
     gem-role: applied — Ohno systematized line-stop authority across all Toyota plants, reducing defect escape rate to near-zero
+    practitioner: Taiichi Ohno
+    outcome: Toyota's defect escape rate fell to near-zero; the system became the template for lean manufacturing worldwide, enabling Toyota to achieve the highest quality ratings in the automotive industry by the 1970s.
   - name: Tesla Model 3 production ramp
     year: 2017-2018
     gem-role: applied — Musk applied stop-and-fix discipline during production hell at Fremont factory
+    practitioner: Elon Musk
+    outcome: After stopping the over-automated "tent factory" line and applying manual stop-and-fix discipline, Tesla hit its 5,000 units/week production target in June 2018, rescuing the Model 3 program from near-failure.
 lineage: sakichi-toyoda-autoloom-1896 → taiichi-ohno-jidoka-1950 → toyota-production-system-1970 → elon-musk-2003
 origin-earliest: ohno-1950
 origin-type: authored
