@@ -24,6 +24,33 @@ Every pattern answers the same question: *what did this genius actually do diffe
 
 **[pantheon-lilac.vercel.app](https://pantheon-lilac.vercel.app)** — interactive force-graph visualization of all gems, practitioners, and historical events. Click any node to explore.
 
+### The Historian's Ranking
+
+History doesn't repeat itself by accident. The same conditions that produced a breakthrough in 400 BC surface again in 1687, again in 1905, again in 2006 — because the underlying problem class never changed. Only the vocabulary did. The Pantheon Historian's job is to find that signal beneath the noise: the cognitive move that recurs across millennia, disciplines, and civilizations, and name it once so it can be used deliberately.
+
+For every gem in the library, the Historian conducts a structured research pass — tracing the original breakthrough to its source, mapping every confirmed recurrence across history, and scoring each event on two axes:
+
+- **Quantitative reach** — how many people were affected, across how many generations, across how many domains
+- **Qualitative depth** — how fundamentally it shifted the way humans *frame* problems, not just solve them
+
+The scores compound into a single ranking that answers one question: *if this pattern had never been discovered, how differently does civilization unfold?*
+
+The result is not a list of famous people. It is a leaderboard of cognitive leverage — the rare moments when one person's way of seeing became the default way everyone sees.
+
+---
+
+**The ranking is a provocation, not a verdict.**
+
+We ranked `gedankenexperiment` #1. Einstein's thought experiments score five civilizational events; the pattern traces from Galileo's falling bodies to Hawking's black hole information paradox. Maybe you agree. Maybe you think we underweighted the industrial patterns that fed billions, or overweighted the theoretical physics that fed equations. Maybe there's an entire era of human ingenuity we haven't mapped yet — a culture, a discipline, a century the Historian hasn't reached.
+
+Good. Bring it.
+
+This ranking is open source. Every score is visible, every event is documented, every reasoning chain is in the repo. If you can find a gem we missed, an event we misweighted, or a magnitude score you can argue against with evidence — that's not a comment section opinion. That's a pull request. Fork the repo, write the pattern, cite the history, submit the PR. The 9-criteria quality standard is the only jury. Convince it.
+
+*The history is written. The synthesis has just begun.*
+
+[→ Challenge the record — see `CONTRIBUTING.md`](CONTRIBUTING.md)
+
 ---
 
 ## Install (Claude Code)
