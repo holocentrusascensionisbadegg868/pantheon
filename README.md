@@ -43,13 +43,9 @@ The result is not a list of famous people. It is a leaderboard of cognitive leve
 
 We ranked `gedankenexperiment` #1. Einstein's thought experiments score five civilizational events; the pattern traces from Galileo's falling bodies to Hawking's black hole information paradox. Maybe you agree. Maybe you think we underweighted the industrial patterns that fed billions, or overweighted the theoretical physics that fed equations. Maybe there's an entire era of human ingenuity we haven't mapped yet — a culture, a discipline, a century the Historian hasn't reached.
 
-Good. Bring it.
-
-This ranking is open source. Every score is visible, every event is documented, every reasoning chain is in the repo. If you can find a gem we missed, an event we misweighted, or a magnitude score you can argue against with evidence — that's not a comment section opinion. That's a pull request. Fork the repo, write the pattern, cite the history, submit the PR. The 9-criteria quality standard is the only jury. Convince it.
+Every score is visible in the dashboard. Every event is documented. Every reasoning chain is in the repo. The synthesis is ongoing — the Historian is still working.
 
 *The history is written. The synthesis has just begun.*
-
-[→ Challenge the record — see `CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ---
 
