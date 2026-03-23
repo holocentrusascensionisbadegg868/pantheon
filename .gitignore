@@ -1,6 +1,10 @@
 # Internal build scaffolding — not user-facing
 docs/
 
+# Private brainstorm / personal working files — never publish
+brainstorm/
+.claude/
+
 .DS_Store
 *.swp
 *.swo
@@ -10,3 +14,4 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+.vercel
