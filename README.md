@@ -10,7 +10,7 @@
 
 ## What is Pantheon?
 
-Pantheon is a library of 54 cognitive patterns distilled from history's greatest problem solvers — and a tool for running them against any situation you're actually facing.
+Pantheon is a growing library of cognitive patterns distilled from history's greatest problem solvers — and a tool for running them against any situation you're actually facing.
 
 Every gem traces a real problem solved by a real person: Jensen Huang seeding a developer ecosystem a decade before the market existed, Toyota stopping the line the moment a defect appears, Feynman refusing to accept understanding he couldn't articulate simply. That history is codified into a protocol — trigger conditions, step-by-step procedure, anti-patterns — that you can run today.
 
