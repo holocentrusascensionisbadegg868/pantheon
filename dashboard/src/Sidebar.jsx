@@ -184,7 +184,7 @@ function GemDetail({ gem, onNavigate }) {
                     <span className="text-pantheon-muted text-[10px]">{e.year}</span>
                   </div>
                   <p className="text-pantheon-text pl-6 leading-snug">{e.name}</p>
-                  {e.description && <p className="text-pantheon-muted pl-6 leading-snug line-clamp-2">{e.description}</p>}
+                  {e.description && <p className="text-pantheon-muted pl-6 leading-snug">{e.description}</p>}
                 </div>
               );
             })}
