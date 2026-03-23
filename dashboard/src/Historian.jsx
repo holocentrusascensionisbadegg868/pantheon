@@ -80,7 +80,7 @@ export default function Historian({ gems, onGemSelect }) {
     : null;
 
   return (
-    <div className="h-full overflow-y-auto bg-pantheon-bg">
+    <div className="flex-1 h-full overflow-y-auto bg-pantheon-bg">
       {/* Header */}
       <div className="border-b border-pantheon-border px-6 py-5">
         <div className="max-w-5xl mx-auto">
