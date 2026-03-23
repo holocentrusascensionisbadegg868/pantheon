@@ -293,9 +293,16 @@ export default function GemRunner() {
       }}>
         <div style={{ width: "420px", padding: "40px", background: "#0c0c0e", border: "1px solid #18181b", borderRadius: "4px" }}>
           <div style={{ fontSize: "11px", letterSpacing: "0.2em", color: "#3f3f46", marginBottom: "6px" }}>PANTHEON GEM RUNNER</div>
-          <div style={{ fontSize: "20px", fontWeight: 500, color: "#fafafa", marginBottom: "8px" }}>Bring your own key</div>
-          <div style={{ fontSize: "13px", color: "#52525b", lineHeight: 1.7, marginBottom: "24px" }}>
-            This tool runs on OpenRouter. Paste your API key below — it stays in your browser only, never sent to any server except OpenRouter directly.
+          <div style={{ fontSize: "20px", fontWeight: 500, color: "#fafafa", marginBottom: "8px" }}>One key. Five minutes. Free forever.</div>
+          <div style={{ fontSize: "13px", color: "#52525b", lineHeight: 1.8, marginBottom: "8px" }}>
+            This tool is free. No paywall, no subscription, no account. It runs on your own AI credits — you pay OpenRouter directly, fractions of a cent per run.
+          </div>
+          <div style={{ fontSize: "13px", color: "#3f3f46", lineHeight: 1.8, marginBottom: "24px" }}>
+            <span style={{ color: "#a1a1aa" }}>Step 1.</span> Go to <span style={{ color: "#60a5fa" }}>openrouter.ai</span> and create a free account.<br />
+            <span style={{ color: "#a1a1aa" }}>Step 2.</span> Add $5 in credits (lasts hundreds of runs).<br />
+            <span style={{ color: "#a1a1aa" }}>Step 3.</span> Go to Keys → Create key. Paste it below.<br />
+            <br />
+            Works with Claude, GPT-4, Gemini — one key, every model.
           </div>
           <div style={{ fontSize: "11px", color: "#3f3f46", marginBottom: "6px", letterSpacing: "0.08em" }}>OPENROUTER API KEY</div>
           <input
@@ -324,7 +331,7 @@ export default function GemRunner() {
             SAVE &amp; CONTINUE
           </button>
           <div style={{ fontSize: "10px", color: "#27272a", marginTop: "12px", lineHeight: 1.6 }}>
-            Get a key at openrouter.ai → Keys. Claude Sonnet is ~$3/M tokens — a typical run costs &lt;1¢.
+            Your key stays in your browser only — never sent to any server except OpenRouter directly. A typical run costs &lt;1¢.
           </div>
         </div>
       </div>
