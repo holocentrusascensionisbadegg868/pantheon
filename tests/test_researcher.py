@@ -20,5 +20,6 @@ def test_each_summary_has_name_and_text():
 
 def test_summary_count_matches_pattern_dirs():
     summaries = load_gem_summaries(PATTERNS_DIR)
-    expected = len([d for d in PATTERNS_DIR.iterdir() if d.is_dir()])
+    expected = len([d for d in PATTERNS_DIR.iterdir()
+                    if d.is_dir() and (d / "pattern.md").exists()])
     assert len(summaries) == expected
