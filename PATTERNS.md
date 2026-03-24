@@ -54,6 +54,7 @@
 | `/pantheon-the-endurance` | the-endurance | leadership | primary mission destroyed |
 | `/pantheon-the-fabian` | the-fabian | leadership | outmatched opponent |
 | `/pantheon-the-fugue` | the-fugue | creativity | one idea but don't know where to go |
+| `/pantheon-the-gollum-effect` | the-gollum-effect | leadership | protecting AI capability from colleagues |
 | `/pantheon-the-latticework` | the-latticework | decision-making | high-stakes decision |
 | `/pantheon-the-moat` | the-moat | decision-making | build vs buy |
 | `/pantheon-the-ratchet` | the-ratchet | systems | inner loop velocity decreasing |

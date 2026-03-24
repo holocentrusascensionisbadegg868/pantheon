@@ -61,6 +61,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-the-endurance` | the-endurance | — | — |
 | `/pantheon-the-fabian` | the-fabian | — | — |
 | `/pantheon-the-fugue` | the-fugue | Johann Sebastian Bach | one idea but don't know where to go |
+| `/pantheon-the-gollum-effect` | the-gollum-effect ✦ | Thomas Edison | protecting AI capability from colleagues |
 | `/pantheon-the-latticework` | the-latticework | Charlie Munger | high-stakes decision |
 | `/pantheon-the-moat` | the-moat | — | — |
 | `/pantheon-the-ratchet` | the-ratchet ✦ | Taiichi Ohno | inner loop velocity decreasing |
@@ -96,4 +97,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 56 patterns*
+*github.com/dkschrei/pantheon — 57 patterns*

@@ -155,11 +155,23 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [methodical-doubt](patterns/methodical-doubt/pattern.md) | 1596-1650 | Demolished all inherited knowledge to find the one thing that survives doubt (cogito), then rebuilt philosophy, mathematics, and optics from that foundation |
 
+## Kodak Engineering Division
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-gollum-effect ✦](patterns/the-gollum-effect/pattern.md) | 1975-2012 | Invented the digital camera in 1975 and buried it to protect film revenue — the ring was film dominance, the holding killed the company that made the ring |
+
 ## James Dyson
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [pain-blindness](patterns/pain-blindness/pattern.md) | 1978-present | Vacuum cleaners, hand dryers, fans — targeted household products everyone tolerated as "good enough" and redesigned from first principles of the actual use experience |
+
+## Thomas Edison
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-gollum-effect ✦](patterns/the-gollum-effect/pattern.md) | 1878-1931 | Treated DC electrical transmission as his precious — fought the AC transition viciously, staged public animal electrocutions to discredit Westinghouse, destroyed his own legacy protecting what he refused to release |
 
 ## Albert Einstein
 
@@ -248,6 +260,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [time-and-motion](patterns/time-and-motion/pattern.md) | 1885-1924 | Extended Taylor's method with motion-capture photography, reducing bricklaying from 18 motions to 5 |
+
+## Gollum
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-gollum-effect ✦](patterns/the-gollum-effect/pattern.md) | Third Age | Held the One Ring for 500 years — gained longevity and acute perception, lost language, identity, relationships, sunlight, and eventually life; the ring outlasted every version of him it destroyed |
 
 ## Alexander the Great
 
@@ -557,4 +575,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 88 practitioners · 108 pattern appearances_
+_Total: 91 practitioners · 111 pattern appearances_
