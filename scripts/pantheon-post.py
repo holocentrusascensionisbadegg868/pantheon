@@ -16,10 +16,12 @@ import argparse
 import json
 import os
 import random
-import subprocess
 import sys
 import time
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from shared import get_secret
 
 import anthropic
 import requests
@@ -28,19 +30,6 @@ import tweepy
 # ── Paths ──────────────────────────────────────────────────────────────────
 PANTHEON_ROOT = Path(__file__).parent.parent
 PATTERNS_DIR  = PANTHEON_ROOT / "patterns"
-
-# ── Vault ──────────────────────────────────────────────────────────────────
-def get_secret(key):
-    result = subprocess.run(
-        ["bash", "-c",
-         f"cd ~/Dev-Projects/nexus && source .env && "
-         f"nexus-secrets get {key} | sed 's/^{key}[[:space:]]*=[[:space:]]*//' | tr -d '\\n[:space:]'"],
-        capture_output=True, text=True
-    )
-    val = result.stdout.strip()
-    if not val:
-        sys.exit(f"✗ Secret '{key}' not found in vault")
-    return val
 
 # ── Content generation ─────────────────────────────────────────────────────
 SYSTEM_PROMPT = """You are the content voice for Pantheon — a project that surfaces the cognitive patterns of history's greatest problem-solvers.
