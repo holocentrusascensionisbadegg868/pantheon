@@ -82,6 +82,8 @@ No em-dashes anywhere."""
 
     MAX_RETRIES = 3
     last_error = None
+    content = None
+    raw = ""
 
     for attempt in range(1, MAX_RETRIES + 1):
         extra = "" if attempt == 1 else f"\n\nATTENTION: Previous attempt produced a threads_post that exceeded 500 characters. Write a shorter version — aim for 450 characters max."
@@ -112,6 +114,11 @@ No em-dashes anywhere."""
             f"threads_post={len(content['threads_post'])} chars"
         )
         print(f"✗ {last_error} — retrying...", file=sys.stderr)
+
+    # If all retries failed due to JSON parse errors, content was never assigned.
+    if content is None:
+        print(f"✗ All {MAX_RETRIES} attempts failed to produce valid JSON.\nLast raw response:\n{raw}", file=sys.stderr)
+        sys.exit(1)
 
     # Final fallback: hard-truncate threads_post at last sentence boundary <= 500 chars
     print("✗ Max retries reached — applying hard truncation to threads_post", file=sys.stderr)
