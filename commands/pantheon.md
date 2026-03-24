@@ -36,6 +36,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-imperial-self-correction` | imperial-self-correction | Marcus Aurelius | emotional reaction driving a decision |
 | `/pantheon-inflection-point` | inflection-point | Andy Grove | strategic shift |
 | `/pantheon-lion-and-fox` | lion-and-fox | Niccolò Machiavelli | political decision |
+| `/pantheon-masters-release` | masters-release ✦ | Miyamoto Musashi | reluctance to fully train AI |
 | `/pantheon-material-honesty` | material-honesty | Jony Ive | design review |
 | `/pantheon-methodical-doubt` | methodical-doubt | René Descartes | inherited assumptions |
 | `/pantheon-mind-forge` | mind-forge | Nikola Tesla | complex system design |
@@ -95,4 +96,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 55 patterns*
+*github.com/dkschrei/pantheon — 56 patterns*

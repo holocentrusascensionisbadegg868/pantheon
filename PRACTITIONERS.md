@@ -203,6 +203,7 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [feynman-clarity ✦](patterns/feynman-clarity/pattern.md) | 1940-1988 | Manhattan Project debugging, Challenger investigation, physics education reform |
+| [masters-release ✦](patterns/masters-release/pattern.md) | 1950-1988 | Deliberately demystified physics through lectures and books — made the most complex ideas accessible to anyone, systematically dismantling the gatekeeping that made experts feel necessary |
 | [render-to-understand](patterns/render-to-understand/pattern.md) | 1918-1988 | Required himself to produce a one-page derivation of any result he claimed to understand — if he couldn't render it from first principles, he didn't understand it |
 
 ## F. Scott Fitzgerald
@@ -400,6 +401,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-latticework](patterns/the-latticework/pattern.md) | 1948-2023 | Built a ~100-model toolkit spanning physics, biology, psychology, mathematics, economics, and engineering — applied as a convergence checklist before every major Berkshire Hathaway investment decision |
 
+## Miyamoto Musashi
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [masters-release ✦](patterns/masters-release/pattern.md) | 1584-1645 | Wrote Gorin no Sho (Book of Five Rings) from a cave two weeks before his death — complete transfer of everything he had withheld for decades, the hoarding finally released at the end |
+
 ## Elon Musk
 
 | Pattern | Era | Application |
@@ -509,6 +516,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [mind-forge](patterns/mind-forge/pattern.md) | 1856-1943 | Designed the AC induction motor, Tesla coil, and hundreds of inventions entirely in mental simulation before physical construction |
 
+## Linus Torvalds
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [masters-release ✦](patterns/masters-release/pattern.md) | 1991-present | Built Linux explicitly so no single person, including himself, was load-bearing — the architecture of complete transfer applied at civilizational scale |
+
 ## Alan Turing
 
 | Pattern | Era | Application |
@@ -544,4 +557,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 86 practitioners · 105 pattern appearances_
+_Total: 88 practitioners · 108 pattern appearances_
