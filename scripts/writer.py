@@ -3,6 +3,7 @@
 Pantheon Writer Agent.
 
 Reads a research brief from stdin, writes X and Threads posts.
+Uses local Ollama (qwen2.5:32b) — zero API cost.
 Outputs JSON to stdout.
 
 Usage:
@@ -14,8 +15,10 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
-from shared import get_secret
+import requests
+
+OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
+OLLAMA_MODEL = "qwen2.5:32b-instruct-q4_K_M"
 
 SYSTEM_PROMPT = """You are the content voice for Pantheon — a project that surfaces the cognitive patterns of history's greatest problem-solvers.
 
@@ -29,7 +32,7 @@ The Threads post follows this arc in 5-7 sentences:
 5. THE OPEN LOOP — one sentence. The lesson history handed us that nobody acted on. This is where the reader leans forward.
 End with: "This pattern lives in Pantheon as [gem-name] — and it's still open."
 
-The X post is one punch: hook + open loop only. Under 280 chars. End with #Pantheon.
+The X post is one punch: hook + open loop only. Under 280 chars. End with #PantheonGems.
 
 Hard rules:
 - No em-dashes (use commas or restructure)
@@ -40,27 +43,40 @@ Hard rules:
 - Sound like a smart friend who just noticed something, not a professor"""
 
 
+def ollama_chat(system: str, user: str) -> str:
+    payload = {
+        "model": OLLAMA_MODEL,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        "stream": False,
+        "options": {"temperature": 0.7},
+    }
+    r = requests.post(OLLAMA_URL, json=payload, timeout=180)
+    r.raise_for_status()
+    return r.json()["choices"][0]["message"]["content"].strip()
+
+
 def _parse_json_response(raw: str) -> dict:
-    """Parse JSON from a model response, stripping markdown fences if present."""
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
+    if "```" in raw:
+        parts = raw.split("```")
+        for part in reversed(parts):
+            part = part.strip()
+            if part.startswith("json"):
+                part = part[4:].strip()
+            if part.startswith("{"):
+                return json.loads(part)
     return json.loads(raw.strip())
 
 
 def _enforce_constraints(content: dict) -> dict:
-    """Strip em/en-dashes in place. Returns the mutated dict."""
     for key in ("x_post", "threads_post"):
         content[key] = content[key].replace("\u2014", "-").replace("\u2013", "-")
     return content
 
 
 def generate_posts(brief: dict) -> dict:
-    import anthropic
-
-    client = anthropic.Anthropic(api_key=get_secret("ANTHROPIC_API_KEY"))
-
     base_prompt = f"""Write two social posts based on this research brief:
 
 Current event: {brief['current_event']}
@@ -76,7 +92,7 @@ Return ONLY valid JSON:
   "subject_line": "one-line description of this post"
 }}
 
-x_post must be under 280 characters including #Pantheon.
+x_post must be under 280 characters including #PantheonGems.
 threads_post MUST be strictly under 500 characters — count carefully before responding.
 No em-dashes anywhere."""
 
@@ -89,14 +105,7 @@ No em-dashes anywhere."""
         extra = "" if attempt == 1 else f"\n\nATTENTION: Previous attempt produced a threads_post that exceeded 500 characters. Write a shorter version, aim for 450 characters max."
         user_prompt = base_prompt + extra
 
-        message = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=700,
-            system=SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
-
-        raw = message.content[0].text.strip()
+        raw = ollama_chat(SYSTEM_PROMPT, user_prompt)
 
         try:
             content = _parse_json_response(raw)
@@ -115,7 +124,6 @@ No em-dashes anywhere."""
         )
         print(f"✗ {last_error} — retrying...", file=sys.stderr)
 
-    # If all retries failed due to JSON parse errors, content was never assigned.
     if content is None:
         print(f"✗ All {MAX_RETRIES} attempts failed to produce valid JSON.\nLast raw response:\n{raw}", file=sys.stderr)
         sys.exit(1)
@@ -124,20 +132,17 @@ No em-dashes anywhere."""
     print("✗ Max retries reached — applying hard truncation to threads_post", file=sys.stderr)
     tp = content["threads_post"]
     if len(tp) > 500:
-        # Truncate at last sentence end (. ! ?) within the 500-char window
         truncated = tp[:500]
         for punct in (".", "!", "?"):
             idx = truncated.rfind(punct)
-            if idx > 300:  # keep at least 300 chars
+            if idx > 300:
                 truncated = truncated[: idx + 1]
                 break
         content["threads_post"] = truncated
 
-    # Truncate x_post to 280 chars at last word boundary if needed
     xp = content["x_post"]
     if len(xp) > 280:
         truncated_x = xp[:280]
-        # Cut at last space to avoid splitting a word
         last_space = truncated_x.rfind(" ")
         content["x_post"] = truncated_x[:last_space] if last_space > 200 else truncated_x
 

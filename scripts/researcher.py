@@ -2,7 +2,8 @@
 """
 Pantheon Researcher Agent.
 
-Finds current news, matches to a Pantheon gem, digs historical precedent.
+Finds current news via free RSS feeds, matches to a Pantheon gem, digs historical precedent.
+Uses local Ollama (qwen2.5:32b) — zero API cost.
 Outputs a research brief as JSON to stdout.
 
 Usage:
@@ -14,21 +15,68 @@ Usage:
 import argparse
 import json
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
-from shared import get_secret
+import requests
 
 PANTHEON_ROOT = Path(__file__).parent.parent
 PATTERNS_DIR  = PANTHEON_ROOT / "patterns"
 
-MONITORED_DOMAINS = [
-    "AI and machine learning industry",
-    "geopolitics and international relations",
-    "financial markets and economics",
-    "technology industry and startups",
-    "science and medicine",
+OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
+OLLAMA_MODEL = "qwen2.5:32b-instruct-q4_K_M"
+
+RSS_FEEDS = [
+    "https://feeds.reuters.com/reuters/topNews",
+    "http://feeds.bbci.co.uk/news/rss.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+    "https://feeds.skynews.com/feeds/rss/world.xml",
 ]
+
+
+def fetch_rss_headlines(limit: int = 20) -> list[str]:
+    """Pull top headlines from free RSS feeds. Returns list of 'Title: Description' strings."""
+    stories = []
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; Pantheon/1.0)"}
+    for url in RSS_FEEDS:
+        try:
+            r = requests.get(url, timeout=8, headers=headers)
+            r.raise_for_status()
+            root = ET.fromstring(r.text)
+            for item in root.findall(".//item")[:6]:
+                title = item.findtext("title", "").strip()
+                desc = item.findtext("description", "").strip()
+                link = item.findtext("link", "").strip()
+                if title:
+                    snippet = f"{title}"
+                    if desc:
+                        # Strip HTML tags from description
+                        import re
+                        desc_clean = re.sub(r"<[^>]+>", "", desc)[:200]
+                        snippet += f": {desc_clean}"
+                    if link:
+                        snippet += f" [{link}]"
+                    stories.append(snippet)
+        except Exception as e:
+            print(f"⚠ RSS fetch failed for {url}: {e}", file=sys.stderr)
+            continue
+        if len(stories) >= limit:
+            break
+    return stories[:limit]
+
+
+def ollama_chat(prompt: str) -> str:
+    """Call local Ollama and return the text response."""
+    payload = {
+        "model": OLLAMA_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": False,
+        "options": {"temperature": 0.3},
+    }
+    r = requests.post(OLLAMA_URL, json=payload, timeout=180)
+    r.raise_for_status()
+    return r.json()["choices"][0]["message"]["content"].strip()
 
 
 def load_gem_summaries(patterns_dir: Path) -> list[dict]:
@@ -57,42 +105,41 @@ def load_full_gem(gem_name: str) -> str:
 
 
 def run_research(mode: str, arg: str | None) -> dict:
-    import anthropic
-
-    client = anthropic.Anthropic(api_key=get_secret("ANTHROPIC_API_KEY"))
     summaries = load_gem_summaries(PATTERNS_DIR)
-
-    gem_list = "\n".join(
-        f"- {s['name']}: {s['summary']}" for s in summaries
-    )
+    gem_list = "\n".join(f"- {s['name']}: {s['summary']}" for s in summaries)
 
     if mode == "auto":
-        domain_list = ", ".join(MONITORED_DOMAINS)
-        task = (
-            f"Search for the most compelling current news story (last 48 hours) "
-            f"across these domains: {domain_list}. "
-            f"Then find the Pantheon gem that best illuminates the pattern at work."
-        )
+        headlines = fetch_rss_headlines(limit=20)
+        if not headlines:
+            sys.exit("✗ Could not fetch any RSS headlines. Check network.")
+        news_block = "\n".join(f"{i+1}. {h}" for i, h in enumerate(headlines))
+        task_context = f"Here are today's top news headlines:\n\n{news_block}\n\nPick the single most compelling story that best illustrates one of the Pantheon gems."
+
     elif mode == "gem":
         full_gem = load_full_gem(arg)
-        task = (
+        headlines = fetch_rss_headlines(limit=20)
+        news_block = "\n".join(f"{i+1}. {h}" for i, h in enumerate(headlines))
+        task_context = (
             f"The gem is '{arg}'. Full pattern:\n{full_gem}\n\n"
-            f"Search for a current news story (last 7 days) that best illustrates "
-            f"this pattern in action today."
-        )
-    else:  # topic
-        task = (
-            f"The topic is: {arg}\n\n"
-            f"Search for current news about this topic (last 7 days), then find "
-            f"the Pantheon gem that best explains the pattern at work."
+            f"Here are today's top headlines:\n\n{news_block}\n\n"
+            f"Pick the headline that best illustrates this gem in action today."
         )
 
-    prompt = f"""{task}
+    else:  # topic
+        headlines = fetch_rss_headlines(limit=20)
+        news_block = "\n".join(f"{i+1}. {h}" for i, h in enumerate(headlines))
+        task_context = (
+            f"The requested topic is: {arg}\n\n"
+            f"Here are today's top headlines:\n\n{news_block}\n\n"
+            f"Find the most relevant story about this topic, then match it to the best Pantheon gem."
+        )
+
+    prompt = f"""{task_context}
 
 Available Pantheon gems:
 {gem_list}
 
-After searching and matching, output a JSON research brief with this exact structure:
+Output a JSON research brief with this exact structure:
 {{
   "current_event": "one sentence describing the current news story",
   "gem_name": "exact gem name from the list above",
@@ -100,33 +147,15 @@ After searching and matching, output a JSON research brief with this exact struc
   "historical_precedent": "2-3 sentences: who used this pattern before, when, context",
   "historical_outcome": "one sentence: what happened as a result",
   "open_loop": "one sentence: what the pattern revealed but did not resolve — the lesson history keeps surfacing",
-  "source_urls": ["url1", "url2"]
+  "source_urls": ["url from the headline if available, otherwise empty list"]
 }}
 
-Return ONLY valid JSON. No markdown fences."""
+Return ONLY valid JSON. No markdown fences. No commentary."""
 
-    response = client.beta.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2000,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        betas=["web-search-2025-03-05"],
-        messages=[{"role": "user", "content": prompt}],
-    )
-
-    # Concatenate all text blocks (web search beta returns multiple BetaTextBlock chunks)
-    text_parts = [
-        block.text
-        for block in response.content
-        if hasattr(block, "text") and block.text.strip()
-    ]
-    if not text_parts:
-        raise ValueError("No text response from researcher agent")
-
-    raw = "".join(text_parts).strip()
+    raw = ollama_chat(prompt)
 
     # Strip markdown fences if present
     if "```" in raw:
-        # Find the last JSON fence block
         parts = raw.split("```")
         for part in reversed(parts):
             part = part.strip()
@@ -135,7 +164,6 @@ Return ONLY valid JSON. No markdown fences."""
             if part.startswith("{"):
                 return json.loads(part)
 
-    # Try parsing the whole concatenated text as JSON
     try:
         return json.loads(raw.strip())
     except json.JSONDecodeError as e:
@@ -153,7 +181,6 @@ def main():
     if args.mode in ("gem", "topic") and not args.arg:
         sys.exit(f"✗ --arg is required for --mode {args.mode}")
 
-    # Sanitize --arg: strip shell-special characters (input from Telegram)
     arg = args.arg
     if arg:
         arg = arg.replace("`", "").replace("$", "").replace(";", "").replace("&", "").replace("|", "").replace(">", "").replace("<", "")
