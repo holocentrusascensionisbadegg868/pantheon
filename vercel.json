@@ -1,5 +1,8 @@
 {
   "buildCommand": "cd dashboard && npm install && npm run build",
   "outputDirectory": "dashboard/dist",
-  "installCommand": "echo 'skipping root install'"
+  "installCommand": "echo 'skipping root install'",
+  "rewrites": [
+    { "source": "/api/feedback", "destination": "/api/feedback.js" }
+  ]
 }
