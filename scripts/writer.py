@@ -223,6 +223,7 @@ def generate_posts(brief: dict) -> dict:
     if errors:
         print(f"  ⚠ Constraint warnings: {errors}", file=sys.stderr)
 
+    content["gem_name"] = brief.get("gem_name", "")
     return content
 
 

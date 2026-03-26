@@ -236,10 +236,12 @@ def main():
     print("Generating content via Claude (research + write)...")
     content = generate_content(gem_name=gem_name, subject=subject)
 
-    # Append site URL to last Threads post
+    # Append gem-specific URL to last Threads post
     if not content.get("threads_thread"):
         sys.exit("✗ Writer returned empty threads_thread")
-    content["threads_thread"][-1] += "\n\nhttps://pantheon-lilac.vercel.app/"
+    gem_name = content.get("gem_name", "")
+    site_url = f"https://pantheon-lilac.vercel.app/?gem={gem_name}" if gem_name else "https://pantheon-lilac.vercel.app/"
+    content["threads_thread"][-1] += f"\n\n{site_url}"
 
     print(f"\n── X Thread ({len(content['x_thread'])} posts) ──")
     for i, p in enumerate(content["x_thread"]):

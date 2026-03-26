@@ -21,6 +21,17 @@ export default function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    const gemName = new URLSearchParams(window.location.search).get('gem');
+    if (gemName) {
+      const gem = gems.find(g => g.name === gemName);
+      if (gem) {
+        setSelectedNode({ id: `gem:${gemName}`, type: 'gem', label: gemName, data: gem });
+        setSidebarOpen(true);
+      }
+    }
+  }, []);
+
   const handleSearchSelect = (result) => {
     setActiveTab('graph');
     setSelectedNode(result);
