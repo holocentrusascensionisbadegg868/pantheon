@@ -179,12 +179,17 @@ def _post_threads_single(token: str, text: str, reply_to_id: str = None) -> str:
     if reply_to_id:
         params["reply_to_id"] = reply_to_id
     r = requests.post("https://graph.threads.net/v1.0/me/threads", data=params)
+    if not r.ok:
+        print(f"  Threads container error: {r.status_code} {r.text}", file=sys.stderr)
     r.raise_for_status()
     creation_id = r.json()["id"]
+    time.sleep(2)  # let container finalize before publishing
     r2 = requests.post(
         "https://graph.threads.net/v1.0/me/threads_publish",
         data={"creation_id": creation_id, "access_token": token}
     )
+    if not r2.ok:
+        print(f"  Threads publish error: {r2.status_code} {r2.text}", file=sys.stderr)
     r2.raise_for_status()
     return r2.json()["id"]
 
@@ -192,14 +197,23 @@ def post_to_threads_thread(posts: list) -> str:
     token = get_secret("PANTHEON_THREADS_ACCESS_TOKEN")
     last_id = None
     first_id = None
-    for i, text in enumerate(posts):
-        post_id = _post_threads_single(token, text, reply_to_id=last_id)
-        last_id = post_id
-        if first_id is None:
-            first_id = post_id
-        if i < len(posts) - 1:
-            time.sleep(1)
-    return first_id
+    try:
+        for i, text in enumerate(posts):
+            post_id = _post_threads_single(token, text, reply_to_id=last_id)
+            last_id = post_id
+            if first_id is None:
+                first_id = post_id
+            if i < len(posts) - 1:
+                time.sleep(3)
+        return first_id
+    except Exception as e:
+        print(f"  ⚠ Reply thread failed ({e}) — falling back to single post", file=sys.stderr)
+        # Strip cliffhanger markers and join as one flowing post
+        combined = " ".join(
+            p.replace("🧵 2/4 ↓", "").replace("🧵 3/4 ↓", "").replace("🧵 4/4 ↓", "").strip()
+            for p in posts
+        )
+        return _post_threads_single(token, _safe_truncate(combined, 490))
 
 # ── Main ───────────────────────────────────────────────────────────────────
 def main():
@@ -223,6 +237,8 @@ def main():
     content = generate_content(gem_name=gem_name, subject=subject)
 
     # Append site URL to last Threads post
+    if not content.get("threads_thread"):
+        sys.exit("✗ Writer returned empty threads_thread")
     content["threads_thread"][-1] += "\n\nhttps://pantheon-lilac.vercel.app/"
 
     print(f"\n── X Thread ({len(content['x_thread'])} posts) ──")
@@ -248,16 +264,33 @@ def main():
         return
 
     # Post
-    print("Posting to X...")
-    x_id = post_to_x_thread(content["x_thread"])
-    print(f"✓ X thread: {x_id}")
+    x_id = None
+    t_id = None
+    errors = []
 
-    print("Posting to Threads...")
-    t_id = post_to_threads_thread(content["threads_thread"])
-    print(f"✓ Threads thread: {t_id}")
+    try:
+        print("Posting to X...")
+        x_id = post_to_x_thread(content["x_thread"])
+        print(f"✓ X thread: {x_id}")
+    except Exception as e:
+        print(f"✗ X failed: {e}", file=sys.stderr)
+        errors.append(f"X failed: {e}")
 
-    tg_send(tg_token, tg_chat,
-            f"✅ Posted!\n\nX: `{x_id}`\nThreads: `{t_id}`")
+    try:
+        print("Posting to Threads...")
+        t_id = post_to_threads_thread(content["threads_thread"])
+        print(f"✓ Threads thread: {t_id}")
+    except Exception as e:
+        print(f"✗ Threads failed: {e}", file=sys.stderr)
+        errors.append(f"Threads failed: {e}")
+
+    status = "✅ Posted!"
+    details = "\n".join(filter(None, [
+        f"X: `{x_id}`" if x_id else None,
+        f"Threads: `{t_id}`" if t_id else None,
+        *[f"⚠ {err}" for err in errors],
+    ]))
+    tg_send(tg_token, tg_chat, f"{status}\n\n{details}")
 
 if __name__ == "__main__":
     main()
