@@ -33,16 +33,31 @@ def writer_output():
     return run_writer(SAMPLE_BRIEF)
 
 def test_writer_returns_required_fields(writer_output):
-    assert "x_post" in writer_output
-    assert "threads_post" in writer_output
+    assert "x_thread" in writer_output
+    assert "threads_thread" in writer_output
     assert "subject_line" in writer_output
 
-def test_x_post_within_char_limit(writer_output):
-    assert len(writer_output["x_post"]) <= 280, f"X post too long: {len(writer_output['x_post'])} chars"
+def test_x_thread_is_four_posts(writer_output):
+    assert len(writer_output["x_thread"]) == 4, f"Expected 4 X posts, got {len(writer_output['x_thread'])}"
 
-def test_threads_post_within_char_limit(writer_output):
-    assert len(writer_output["threads_post"]) <= 500, f"Threads post too long: {len(writer_output['threads_post'])} chars"
+def test_threads_thread_is_four_posts(writer_output):
+    assert len(writer_output["threads_thread"]) == 4, f"Expected 4 Threads posts, got {len(writer_output['threads_thread'])}"
+
+def test_x_posts_within_char_limit(writer_output):
+    for i, post in enumerate(writer_output["x_thread"]):
+        assert len(post) <= 280, f"x_thread[{i}] too long: {len(post)} chars"
+
+def test_threads_posts_within_char_limit(writer_output):
+    for i, post in enumerate(writer_output["threads_thread"]):
+        assert len(post) <= 500, f"threads_thread[{i}] too long: {len(post)} chars"
 
 def test_no_em_dashes_in_output(writer_output):
-    assert "\u2014" not in writer_output["x_post"], "em-dash found in X post"
-    assert "\u2014" not in writer_output["threads_post"], "em-dash found in Threads post"
+    for i, post in enumerate(writer_output["x_thread"]):
+        assert "\u2014" not in post, f"em-dash found in x_thread[{i}]"
+    for i, post in enumerate(writer_output["threads_thread"]):
+        assert "\u2014" not in post, f"em-dash found in threads_thread[{i}]"
+
+def test_x_thread_has_cliffhanger_markers(writer_output):
+    for i in range(3):
+        post = writer_output["x_thread"][i]
+        assert "↓" in post or "🧵" in post, f"x_thread[{i}] missing cliffhanger marker"

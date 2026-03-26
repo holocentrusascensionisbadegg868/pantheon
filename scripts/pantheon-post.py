@@ -96,10 +96,16 @@ def tg_answer_callback(token: str, callback_id: str):
 def await_approval(token: str, chat_id: str, content: dict) -> str:
     """Send draft to Telegram, return 'post', 'skip', or edited text."""
 
+    x_preview = "\n".join(
+        f"*[{i+1}/4]* {p}" for i, p in enumerate(content["x_thread"])
+    )
+    t_preview = "\n\n".join(
+        f"*[{i+1}/4]* {p}" for i, p in enumerate(content["threads_thread"])
+    )
     preview = (
         f"*Pantheon draft — {content['subject_line']}*\n\n"
-        f"*X ({len(content['x_post'])} chars):*\n{content['x_post']}\n\n"
-        f"*Threads:*\n{content['threads_post']}"
+        f"*X Thread (4 posts):*\n{x_preview}\n\n"
+        f"*Threads Thread (4 posts):*\n{t_preview}"
     )
 
     keyboard = {
@@ -137,46 +143,63 @@ def await_approval(token: str, chat_id: str, content: dict) -> str:
         time.sleep(1)
 
 # ── Posting ────────────────────────────────────────────────────────────────
-def post_to_x(text: str):
+def post_to_x_thread(posts: list) -> str:
     client = tweepy.Client(
         consumer_key=get_secret("PANTHEON_X_API_KEY"),
         consumer_secret=get_secret("PANTHEON_X_API_SECRET"),
         access_token=get_secret("PANTHEON_X_ACCESS_TOKEN"),
         access_token_secret=get_secret("PANTHEON_X_ACCESS_SECRET"),
     )
-    resp = client.create_tweet(text=text)
-    return resp.data["id"]
+    last_id = None
+    first_id = None
+    for i, text in enumerate(posts):
+        kwargs = {"text": text[:280]}
+        if last_id:
+            kwargs["in_reply_to_tweet_id"] = last_id
+        resp = client.create_tweet(**kwargs)
+        last_id = resp.data["id"]
+        if first_id is None:
+            first_id = last_id
+        if i < len(posts) - 1:
+            time.sleep(1)
+    return first_id
 
 def _safe_truncate(text: str, limit: int = 490) -> str:
-    """Truncate at last sentence boundary within limit characters."""
     if len(text) <= limit:
         return text
     candidate = text[:limit]
-    # Find last sentence-ending period with space or end-of-string
     for marker in (". ", "! ", "? "):
         pos = candidate.rfind(marker)
         if pos > limit // 2:
             return candidate[:pos + 1]
-    # No good boundary found — hard cut
     return candidate
 
-def post_to_threads(text: str):
-    token = get_secret("PANTHEON_THREADS_ACCESS_TOKEN")
-    # Step 1: create container (POST body, not params — avoids URL length issues)
-    truncated = _safe_truncate(text, limit=490)
-    r = requests.post(
-        "https://graph.threads.net/v1.0/me/threads",
-        data={"media_type": "TEXT", "text": truncated, "access_token": token}
-    )
+def _post_threads_single(token: str, text: str, reply_to_id: str = None) -> str:
+    params = {"media_type": "TEXT", "text": _safe_truncate(text, 490), "access_token": token}
+    if reply_to_id:
+        params["reply_to_id"] = reply_to_id
+    r = requests.post("https://graph.threads.net/v1.0/me/threads", data=params)
     r.raise_for_status()
     creation_id = r.json()["id"]
-    # Step 2: publish
     r2 = requests.post(
         "https://graph.threads.net/v1.0/me/threads_publish",
         data={"creation_id": creation_id, "access_token": token}
     )
     r2.raise_for_status()
     return r2.json()["id"]
+
+def post_to_threads_thread(posts: list) -> str:
+    token = get_secret("PANTHEON_THREADS_ACCESS_TOKEN")
+    last_id = None
+    first_id = None
+    for i, text in enumerate(posts):
+        post_id = _post_threads_single(token, text, reply_to_id=last_id)
+        last_id = post_id
+        if first_id is None:
+            first_id = post_id
+        if i < len(posts) - 1:
+            time.sleep(1)
+    return first_id
 
 # ── Main ───────────────────────────────────────────────────────────────────
 def main():
@@ -199,12 +222,15 @@ def main():
     print("Generating content via Claude (research + write)...")
     content = generate_content(gem_name=gem_name, subject=subject)
 
-    content["threads_post"] += "\n\nhttps://pantheon-lilac.vercel.app/"
+    # Append site URL to last Threads post
+    content["threads_thread"][-1] += "\n\nhttps://pantheon-lilac.vercel.app/"
 
-    print(f"\n── X ({len(content['x_post'])} chars) ──")
-    print(content["x_post"])
-    print(f"\n── Threads ──")
-    print(content["threads_post"])
+    print(f"\n── X Thread ({len(content['x_thread'])} posts) ──")
+    for i, p in enumerate(content["x_thread"]):
+        print(f"  [{i+1}/4] ({len(p)} chars) {p}")
+    print(f"\n── Threads Thread ({len(content['threads_thread'])} posts) ──")
+    for i, p in enumerate(content["threads_thread"]):
+        print(f"  [{i+1}/4] ({len(p)} chars) {p}")
 
     if args.dry_run:
         print("\n[dry-run] Done.")
@@ -221,19 +247,14 @@ def main():
         tg_send(tg_token, tg_chat, "❌ Skipped — nothing posted.")
         return
 
-    # If user replied with custom text, use it for both platforms
-    if decision != "post":
-        content["x_post"] = decision[:280]
-        content["threads_post"] = decision
-
     # Post
     print("Posting to X...")
-    x_id = post_to_x(content["x_post"])
-    print(f"✓ X: {x_id}")
+    x_id = post_to_x_thread(content["x_thread"])
+    print(f"✓ X thread: {x_id}")
 
     print("Posting to Threads...")
-    t_id = post_to_threads(content["threads_post"])
-    print(f"✓ Threads: {t_id}")
+    t_id = post_to_threads_thread(content["threads_thread"])
+    print(f"✓ Threads thread: {t_id}")
 
     tg_send(tg_token, tg_chat,
             f"✅ Posted!\n\nX: `{x_id}`\nThreads: `{t_id}`")
