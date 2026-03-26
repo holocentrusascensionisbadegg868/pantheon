@@ -25,9 +25,15 @@ import requests
 OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
 OLLAMA_MODEL = "qwen2.5:32b-instruct-q4_K_M"
 
-SYSTEM_PROMPT = """You write like a journalist who never lets the reader feel satisfied. Every sentence earns the next. You work for Pantheon — a project that surfaces the cognitive patterns of history's greatest problem-solvers.
+SYSTEM_PROMPT = """You are a master of narrative tension writing for Pantheon — a project that surfaces the cognitive patterns of history's greatest problem-solvers.
 
-Your job: connect a current event to a historical pattern in a way that makes the reader feel like they just discovered something everyone else missed. The loop always stays open — no tidy resolution."""
+Rules you never break:
+- Every sentence earns the next. If a sentence doesn't create tension or advance the story, cut it.
+- Drop into scenes mid-action. Never start with "Did you know", "Throughout history", or any orientation phrase.
+- Specificity is everything. "Shockley watched his eight best engineers resign on a single Tuesday" beats "researchers left the company."
+- The reader must feel like they discovered something the rest of the world missed.
+- The loop never closes. The last post always leaves a question permanently open.
+- No em-dashes. No "fascinating", "remarkable", "incredible". Show it — don't label it."""
 
 
 def ollama_chat(system: str, user: str, temperature: float = 0.85) -> str:
@@ -96,76 +102,92 @@ Return ONLY valid JSON:
     return _parse_json(raw)
 
 
-def _pass2_thread(outline: dict) -> dict:
+def _pass2_thread(outline: dict, prior_score: int = None) -> dict:
     """Write 4-part cliffhanger thread from outline."""
-    prompt = f"""Write a 4-part thread series from this narrative outline.
+    score_note = f"\nYour previous attempt scored {prior_score}/10 on tension. Push harder — every post must feel incomplete without the next.\n" if prior_score else ""
 
-Outline:
+    prompt = f"""Write a 4-part cliffhanger thread series. Each post is raw social media text — no labels, no numbering, no "X 1/4:" prefixes. Just the post content itself.
+{score_note}
+Narrative beats:
 Hook: {outline['hook']}
 Mirror: {outline['mirror']}
 Twist: {outline['twist']}
 Payoff: {outline['payoff']}
 Gem: {outline['gem_name']}
 
-Rules:
-- Posts 1-3 must end with a cliffhanger that makes the next post feel necessary
-- Use these exact endings: post 1 ends "🧵 2/4 ↓", post 2 ends "🧵 3/4 ↓", post 3 ends "🧵 4/4 ↓"
-- Post 4 ends with: "This pattern lives in Pantheon as {outline['gem_name']} — and it's still open."
-- X posts: punchy, under 240 chars each, end with #PantheonGems on post 4 only
-- Threads posts: richer prose, under 450 chars each
-- No em-dashes. No bullet points. No "fascinating" or "remarkable".
-- The loop never closes.
+X thread rules (4 short posts):
+- Post 1: drop into the hook mid-scene. End the post with exactly: 🧵 2/4 ↓
+- Post 2: the historical mirror. End with exactly: 🧵 3/4 ↓
+- Post 3: the twist. End with exactly: 🧵 4/4 ↓
+- Post 4: outcome + open loop. End with: #PantheonGems
+- Each X post under 240 characters. Tight. Punchy. No em-dashes.
 
-Return ONLY valid JSON:
+Threads thread rules (4 longer posts):
+- Post 1: hook, 2-3 sentences. End with exactly: 🧵 2/4 ↓
+- Post 2: historical mirror, 2-3 sentences. End with exactly: 🧵 3/4 ↓
+- Post 3: the twist, 2-3 sentences. End with exactly: 🧵 4/4 ↓
+- Post 4: outcome + "This pattern lives in Pantheon as {outline['gem_name']} — and it's still open."
+- Each Threads post under 450 characters. Flowing prose. No bullets. No em-dashes.
+
+Return ONLY valid JSON. The array values are the post text itself — nothing else:
 {{
-  "x_thread": ["post1", "post2", "post3", "post4"],
-  "threads_thread": ["post1", "post2", "post3", "post4"],
-  "subject_line": "one-line description for approval preview"
+  "x_thread": ["<post 1 text>", "<post 2 text>", "<post 3 text>", "<post 4 text>"],
+  "threads_thread": ["<post 1 text>", "<post 2 text>", "<post 3 text>", "<post 4 text>"],
+  "subject_line": "<one-line description for approval preview>"
 }}"""
 
     raw = ollama_chat(SYSTEM_PROMPT, prompt, temperature=0.85)
     return _parse_json(raw)
 
 
-def _pass3_critique(content: dict) -> dict:
-    """Self-critique tension score. Rewrites if score < 7."""
-    x_preview = "\n".join(f"X {i+1}/4: {p}" for i, p in enumerate(content["x_thread"]))
-    threads_preview = "\n".join(f"T {i+1}/4: {p}" for i, p in enumerate(content["threads_thread"]))
+def _pass3_critique(content: dict, outline: dict) -> tuple[dict, int]:
+    """Score tension 1-10. Returns (content, score). If score < 7, retries Pass 2."""
+    x_preview = "\n".join(f"Post {i+1}: {p}" for i, p in enumerate(content["x_thread"]))
 
-    prompt = f"""Rate this 4-part thread series on cliffhanger tension from 1 to 10.
+    prompt = f"""Rate this 4-part thread series on cliffhanger tension. Return a single integer from 1 to 10.
 
 {x_preview}
 
-Scoring criteria:
-- Does each post make the reader need the next? (3 pts)
-- Is the hook irresistible — does it drop mid-scene without explanation? (2 pts)
-- Is the twist genuinely surprising, not the obvious read? (2 pts)
-- Does the payoff leave something permanently unresolved? (3 pts)
+Score on:
+- Hook drops mid-scene with no preamble (2 pts)
+- Each post creates genuine need for the next (3 pts)
+- Twist subverts the obvious read (2 pts)
+- Payoff leaves the loop permanently open (3 pts)
 
-If score >= 7: return the original thread unchanged.
-If score < 7: rewrite the entire thread to raise the tension.
+Return ONLY valid JSON: {{"score": <integer 1-10>, "weakest_point": "<one sentence>"}}"""
 
-Return ONLY valid JSON:
-{{
-  "score": <integer 1-10>,
-  "x_thread": ["post1", "post2", "post3", "post4"],
-  "threads_thread": ["post1", "post2", "post3", "post4"],
-  "subject_line": "{content['subject_line']}"
-}}
+    try:
+        raw = ollama_chat(SYSTEM_PROMPT, prompt, temperature=0.3)
+        result = _parse_json(raw)
+        score = int(result.get("score", 7))
+        weak = result.get("weakest_point", "")
+        print(f"  Tension score: {score}/10 — {weak}", file=sys.stderr)
+    except Exception as e:
+        print(f"  ⚠ Pass 3 scoring failed ({e}) — skipping", file=sys.stderr)
+        return content, 7
 
-The thread posts in your response must be the final version (original if score >= 7, rewritten if < 7)."""
+    if score < 7:
+        print(f"  Score < 7 — rewriting with Pass 2...", file=sys.stderr)
+        try:
+            revised = _pass2_thread(outline, prior_score=score)
+            revised = _enforce_constraints(revised)
+            if _is_valid_thread(revised):
+                return revised, score
+        except Exception as e:
+            print(f"  ⚠ Pass 2 retry failed ({e}) — keeping original", file=sys.stderr)
 
-    raw = ollama_chat(SYSTEM_PROMPT, prompt, temperature=0.3)
-    result = _parse_json(raw)
+    return content, score
 
-    score = result.get("score", 0)
-    print(f"  Tension score: {score}/10", file=sys.stderr)
 
-    return {
-        "x_thread": result["x_thread"],
-        "threads_thread": result["threads_thread"],
-        "subject_line": result.get("subject_line", content["subject_line"]),
-    }
+def _is_valid_thread(content: dict) -> bool:
+    """Check that thread arrays have 4 real posts (not placeholder text)."""
+    for key in ("x_thread", "threads_thread"):
+        posts = content.get(key, [])
+        if len(posts) != 4:
+            return False
+        if any(len(p) < 20 or p in ("post1", "post2", "post3", "post4") for p in posts):
+            return False
+    return True
 
 
 def _validate(content: dict) -> list[str]:
@@ -188,8 +210,13 @@ def generate_posts(brief: dict) -> dict:
     content = _pass2_thread(outline)
     content = _enforce_constraints(content)
 
+    if not _is_valid_thread(content):
+        print("  ⚠ Pass 2 returned invalid thread — retrying...", file=sys.stderr)
+        content = _pass2_thread(outline)
+        content = _enforce_constraints(content)
+
     print("  Pass 3: tension critique...", file=sys.stderr)
-    content = _pass3_critique(content)
+    content, _ = _pass3_critique(content, outline)
     content = _enforce_constraints(content)
 
     errors = _validate(content)

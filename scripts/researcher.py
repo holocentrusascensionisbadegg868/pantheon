@@ -80,7 +80,8 @@ def ollama_chat(prompt: str) -> str:
 
 
 def load_gem_summaries(patterns_dir: Path) -> list[dict]:
-    """Load name + 300-char summary for every gem."""
+    """Load name + trigger + one-line summary for every gem (from YAML frontmatter)."""
+    import re
     summaries = []
     for gem_dir in sorted(patterns_dir.iterdir()):
         if not gem_dir.is_dir():
@@ -89,9 +90,12 @@ def load_gem_summaries(patterns_dir: Path) -> list[dict]:
         if not pattern_file.exists():
             continue
         text = pattern_file.read_text(encoding="utf-8")
+        # Extract trigger from frontmatter for better matching signal
+        trigger_match = re.search(r'^trigger:\s*\[([^\]]+)\]', text, re.MULTILINE)
+        trigger = trigger_match.group(1)[:120] if trigger_match else ""
         summaries.append({
             "name": gem_dir.name,
-            "summary": text[:300],
+            "summary": f"Trigger: {trigger}" if trigger else gem_dir.name,
         })
     return summaries
 
@@ -139,14 +143,15 @@ def run_research(mode: str, arg: str | None) -> dict:
 Available Pantheon gems:
 {gem_list}
 
-Output a JSON research brief with this exact structure:
+Output a JSON research brief. Be SPECIFIC — names, dates, numbers, companies. Vague summaries are useless.
+
 {{
-  "current_event": "one sentence describing the current news story",
+  "current_event": "One sentence. Name the company/person/event. Describe what happened with enough specificity that someone could look it up.",
   "gem_name": "exact gem name from the list above",
-  "gem_summary": "one sentence describing the gem's core insight",
-  "historical_precedent": "2-3 sentences: who used this pattern before, when, context",
-  "historical_outcome": "one sentence: what happened as a result",
-  "open_loop": "one sentence: what the pattern revealed but did not resolve — the lesson history keeps surfacing",
+  "gem_summary": "one sentence: the gem's core insight in plain language",
+  "historical_precedent": "2-3 sentences. Name a SPECIFIC historical figure, the year, and what they did. The parallel to the current event must be vivid and non-obvious — not the first example anyone would think of.",
+  "historical_outcome": "one sentence: what the pattern produced. Be specific about consequences — who won, who lost, what was built or destroyed.",
+  "open_loop": "one sentence: the exact question the pattern raised that nobody ever answered. This should make the reader lean forward.",
   "source_urls": ["url from the headline if available, otherwise empty list"]
 }}
 
