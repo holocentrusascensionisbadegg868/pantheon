@@ -86,7 +86,7 @@ def tg_get_updates(token: str, offset: int = 0, timeout: int = 30) -> list:
             return []
         r.raise_for_status()
         return r.json().get("result", [])
-    except requests.exceptions.Timeout:
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
         return []
 
 def tg_answer_callback(token: str, callback_id: str):
